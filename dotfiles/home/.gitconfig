@@ -1,0 +1,22 @@
+[user]
+	email = ifelse023@gmail.com
+	name = ifelse023
+[color]
+  ui = auto
+[core]
+	editor = nvim
+	preloadIndex = true
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[init]
+	defaultBranch = main
+[merge]
+	tool = vimdiff
+	conflictStyle = diff3
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
