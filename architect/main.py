@@ -63,7 +63,7 @@ def add_cachy_repos():
         tar.extractall(path=".")
 
     os.chmod("./cachyos-repo/cachyos-repo.sh", 0o755)
-    subprocess.run(["./cachyos-repo/cachyos-repo.sh"], check=True)
+    subprocess.run(["sudo", "./cachyos-repo/cachyos-repo.sh"], check=True)
 
 
 def main():
@@ -76,7 +76,7 @@ def main():
     ]
     print("Starting post-installation script...")
 
-    # add_cachy_repos()
+    add_cachy_repos()
     manage_directories()
     install_packages()
     for service in services:

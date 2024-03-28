@@ -1,10 +1,10 @@
 #!/bin/bash
 
-mount_point="/mnt/usb_drive"
+mount_point="/mnt/usb"
 
 if [ -b /dev/sda1 ]; then
 	if ! mount | grep -q /dev/sda1; then
-		mkdir -p $mount_point
+		sudo mkdir -p $mount_point
 		sudo mount /dev/sda1 $mount_point
 	else
 		echo "/dev/sda1 is already mounted."
