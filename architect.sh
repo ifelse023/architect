@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rustup
+sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rustup rsync
 sudo usermod -a -G video,audio,network,sys,wheel wasd
 rustup default nightly
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
@@ -12,5 +12,5 @@ sudo mount -a
 sudo systemctl disable bluetooth
 sudo systemctl mask bluetooth
 sudo keyd reload
-bash ./ssh.sh
+sudo bash ./ssh.sh
 chsh -s "$(which fish)"
