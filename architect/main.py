@@ -52,20 +52,6 @@ def install_packages():
     subprocess.run(aur_command)
 
 
-def add_cachy_repos():
-    filename = "cachyos-repo.tar.xz"
-    url = "https://mirror.cachyos.org/cachyos-repo.tar.xz"
-
-    with open(filename, "wb") as file:
-        file.write(requests.get(url).content)
-
-    with tarfile.open(filename, "r:xz") as tar:
-        tar.extractall(path=".")
-
-    os.chmod("./cachyos-repo/cachyos-repo.sh", 0o755)
-    subprocess.run(["sudo", "./cachyos-repo/cachyos-repo.sh"], check=True)
-
-
 def main():
     services = [
         "thermald",
@@ -76,12 +62,12 @@ def main():
     ]
     print("Starting post-installation script...")
 
-    add_cachy_repos()
-    manage_directories()
     install_packages()
     for service in services:
         enable_service(service)
     print("Post-installation script completed successfully.")
+
+    manage_directories()
 
 
 if __name__ == "__main__":
