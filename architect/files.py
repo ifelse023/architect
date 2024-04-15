@@ -39,7 +39,7 @@ def main():
     replace("/etc/fstab", "relatime", "noatime")
     replace("/boot/loader/entries/linux.conf", "vmlinuz-linux", "vmlinuz-linux-cachyos")
     replace(
-        "/boot/loader/entries/linux.conf",
+        "/boot/loader/entries/00-linux.conf",
         "initramfs-linux.img",
         "initramfs-linux-cachyos.img",
     )

@@ -1,5 +1,3 @@
-import requests
-import tarfile
 import subprocess
 import os
 import json

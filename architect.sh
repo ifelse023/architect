@@ -10,7 +10,7 @@ tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
 chmod +x rename_boot.sh
-sudo ./rename_boot.sh /boot/loader/entries linux.conf
+sudo ./rename_boot.sh /boot/loader/entries 00-linux.conf
 python architect/main.py
 sudo python architect/files.py
 rsync -avh ~/architect/dotfiles/config/ ~/.config
@@ -18,5 +18,5 @@ sudo mount -a
 sudo systemctl disable bluetooth
 sudo systemctl mask bluetooth
 sudo keyd reload
-sudo bash ./ssh.sh
+bash ./ssh.sh
 chsh -s "$(which fish)"
