@@ -1,5 +1,5 @@
 def append_options_to_kernel_config():
-    file_path = "/boot/loader/entries/linux.conf"
+    file_path = "/boot/loader/entries/00-linux.conf"
     new_options = "nowatchdog mitigations=off nopti tsx=on"
 
     try:
@@ -17,7 +17,7 @@ def append_options_to_kernel_config():
 
         print("Options appended successfully.")
     except Exception as e:
-        print(f"An error occurred while modifying the file: {e}")
+        print(f"error occurred while modifying the file: {e}")
 
 
 def replace(file_path, f, r):
@@ -32,12 +32,14 @@ def replace(file_path, f, r):
 
         print("File modified successfully.")
     except Exception as e:
-        print(f"An error occurred while modifying the file: {e}")
+        print(f"error occurred while modifying the file: {e}")
 
 
 def main():
     replace("/etc/fstab", "relatime", "noatime")
-    replace("/boot/loader/entries/linux.conf", "vmlinuz-linux", "vmlinuz-linux-cachyos")
+    replace(
+        "/boot/loader/entries/00-linux.conf", "vmlinuz-linux", "vmlinuz-linux-cachyos"
+    )
     replace(
         "/boot/loader/entries/00-linux.conf",
         "initramfs-linux.img",

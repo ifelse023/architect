@@ -3,10 +3,11 @@ import os
 import json
 from systemd_manager import enable_service
 import shutil
+import time
 
 
 def manage_directories():
-    dirs_to_keep = ["architect", "Downloads", "Documents", "projects"]
+    dirs_to_keep = ["architect", "Downloads", "Documents", "projects", "misc"]
     home_dir = "/home/wasd/"
     try:
         for item in os.listdir(home_dir):
@@ -59,12 +60,13 @@ def main():
         "power-profiles-daemon.service",
     ]
     print("Starting post-installation script...")
+    time.sleep(3)
 
     install_packages()
     for service in services:
         enable_service(service)
     print("Post-installation script completed successfully.")
-
+    time.sleep(2)
     manage_directories()
 
 

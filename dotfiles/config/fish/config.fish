@@ -13,7 +13,6 @@ set -Ux CC clang
 set -Ux CXX clang++
 set -Ux fish_user_paths /usr/lib/ccache $fish_user_paths
 set -Ux EDITOR nvim
-set -Ux fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -gx RIPGREP_CONFIG_PATH /home/wasd/.config/.ripgreprc
 
 function ip --description 'Alias for ip with color'

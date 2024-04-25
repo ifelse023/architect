@@ -39,7 +39,6 @@
     "ntp",
     "smartmontools",
     "thermald",
-    "udiskie",
     "vulkan-intel",
     "mesa",
     "mesa-utils",
