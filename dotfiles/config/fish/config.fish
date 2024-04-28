@@ -1,8 +1,5 @@
 set fish_greeting
 
-if status is-interactive && command -q zoxide
-end
-
 starship init fish | source
 
 set -gx EDITOR (which nvim)
@@ -12,6 +9,7 @@ set -gx SUDO_EDITOR $EDITOR
 set -Ux CC clang
 set -Ux CXX clang++
 set -Ux fish_user_paths /usr/lib/ccache $fish_user_paths
+set -U fish_user_paths ~/miniconda3/bin $fish_user_paths
 set -Ux EDITOR nvim
 set -gx RIPGREP_CONFIG_PATH /home/wasd/.config/.ripgreprc
 
@@ -37,3 +35,5 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+
+fish_add_path /home/wasd/.spicetify
