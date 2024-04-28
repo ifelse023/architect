@@ -1,31 +1,6 @@
 import subprocess
-import os
 import json
 from systemd_manager import enable_service
-import shutil
-import time
-
-
-def manage_directories():
-    dirs_to_keep = ["architect", "Downloads", "Documents", "projects", "misc"]
-    home_dir = "/home/wasd/"
-    try:
-        for item in os.listdir(home_dir):
-            item_path = os.path.join(home_dir, item)
-            if item.startswith(".") or not os.path.isdir(item_path):
-                continue
-            if item not in dirs_to_keep:
-                shutil.rmtree(item_path)
-                print(f"Deleted: {item_path}")
-        for dir_name in dirs_to_keep:
-            dir_path = os.path.join(home_dir, dir_name)
-
-            if not os.path.exists(dir_path):
-                os.makedirs(dir_path, exist_ok=True)
-                print(f"Created: {dir_path}")
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
 
 
 def install_packages():
@@ -60,14 +35,11 @@ def main():
         "power-profiles-daemon.service",
     ]
     print("Starting post-installation script...")
-    time.sleep(3)
 
     install_packages()
     for service in services:
         enable_service(service)
     print("Post-installation script completed successfully.")
-    time.sleep(2)
-    manage_directories()
 
 
 if __name__ == "__main__":

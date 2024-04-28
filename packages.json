@@ -1,6 +1,7 @@
 {
   "packages": [
     "paru",
+    "npm",
     "clang",
     "cmake",
     "ctags",
@@ -8,7 +9,6 @@
     "fzf",
     "gdb",
     "llvm",
-    "meson",
     "rsync",
     "net-tools",
     "inter-font",
@@ -60,8 +60,6 @@
     "wireplumber",
     "xdg-user-dirs",
     "xdg-utils",
-    "xorg-xwayland",
-    "hyprland-git",
     "hyprpaper",
     "xdg-desktop-portal-hyprland",
     "neovim",
@@ -83,9 +81,13 @@
     "linux-cachyos",
     "linux-cachyos-headers",
     "firefox-nightly",
-    "wireless-regdb"
+    "wireless-regdb",
+    "python-pynvim",
+    "dbus-python"
   ],
   "aur-packages": [
+    "aur/hyprland-git",
+    "hyprcursor-git",
     "nwg-look-bin",
     "keyd",
     "brillo",
@@ -93,6 +95,8 @@
     "irqbalance",
     "tofi-git",
     "uksmd",
-    "catppuccin-gtk-theme-mocha"
+    "catppuccin-gtk-theme-mocha",
+    "catppuccin-cursors-mocha",
+    "papirus-folders-catppuccin-git"
   ]
 }
