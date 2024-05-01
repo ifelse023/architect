@@ -1,4 +1,4 @@
-set fish_greeting
+set -g fish_greeting
 
 starship init fish | source
 
@@ -35,5 +35,3 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
-
-fish_add_path /home/wasd/.spicetify

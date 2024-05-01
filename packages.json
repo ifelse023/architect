@@ -4,6 +4,7 @@
     "npm",
     "clang",
     "cmake",
+    "meson",
     "ctags",
     "doxygen",
     "fzf",
@@ -60,8 +61,6 @@
     "wireplumber",
     "xdg-user-dirs",
     "xdg-utils",
-    "hyprpaper",
-    "xdg-desktop-portal-hyprland",
     "neovim",
     "neovide",
     "kitty",
@@ -86,17 +85,21 @@
     "dbus-python"
   ],
   "aur-packages": [
+    "hyprlang-git",
     "aur/hyprland-git",
+    "hyprpaper-git",
+    "xdg-desktop-portal-hyprland-git",
     "hyprcursor-git",
     "nwg-look-bin",
     "keyd",
     "brillo",
-    "bibata-cursor-theme",
     "irqbalance",
     "tofi-git",
     "uksmd",
     "catppuccin-gtk-theme-mocha",
     "catppuccin-cursors-mocha",
-    "papirus-folders-catppuccin-git"
+    "papirus-folders-catppuccin-git",
+    "rose-pine-hyprcursor",
+    "vesktop-bin"
   ]
 }
