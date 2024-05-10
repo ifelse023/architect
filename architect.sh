@@ -16,7 +16,5 @@ sudo python architect/files.py
 rsync -avh ~/architect/dotfiles/config/ ~/.config
 sudo mount -a
 sudo systemctl mask bluetooth
-sudo keyd reload
-bash ./ssh.sh
 chsh -s "$(which fish)"
 python ~/architect/architect/manage_directories.py

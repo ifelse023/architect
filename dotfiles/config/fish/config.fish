@@ -1,6 +1,7 @@
-set -g fish_greeting
-
 starship init fish | source
+
+
+set -g fish_greeting
 
 set -gx EDITOR (which nvim)
 set -gx VISUAL $EDITOR

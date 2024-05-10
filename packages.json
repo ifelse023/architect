@@ -82,11 +82,11 @@
     "firefox-nightly",
     "wireless-regdb",
     "python-pynvim",
-    "dbus-python"
+    "dbus-python",
+    "hyprland-git"
   ],
   "aur-packages": [
     "hyprlang-git",
-    "aur/hyprland-git",
     "hyprpaper-git",
     "xdg-desktop-portal-hyprland-git",
     "hyprcursor-git",
