@@ -83,13 +83,16 @@
     "wireless-regdb",
     "python-pynvim",
     "dbus-python",
-    "hyprland-git"
+    "hyprland-git",
+    "hyprlang",
+    "hyprpaper",
+    "hyprcursor",
+    "xdg-desktop-portal-hyprland",
+    "discord",
+    "jdk21-openjdk",
+    "aria2"
   ],
   "aur-packages": [
-    "hyprlang-git",
-    "hyprpaper-git",
-    "xdg-desktop-portal-hyprland-git",
-    "hyprcursor-git",
     "nwg-look-bin",
     "keyd",
     "brillo",
@@ -100,6 +103,8 @@
     "catppuccin-cursors-mocha",
     "papirus-folders-catppuccin-git",
     "rose-pine-hyprcursor",
-    "vesktop-bin"
+    "vesktop-bin",
+    "intellij-idea-ultimate-edition-jre",
+    "intellij-idea-ultimate-edition"
   ]
 }

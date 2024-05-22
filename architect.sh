@@ -14,7 +14,5 @@ sudo ./rename_boot.sh /boot/loader/entries 00-linux.conf
 python architect/main.py
 sudo python architect/files.py
 rsync -avh ~/architect/dotfiles/config/ ~/.config
-sudo mount -a
-sudo systemctl mask bluetooth
 chsh -s "$(which fish)"
 python ~/architect/architect/manage_directories.py
