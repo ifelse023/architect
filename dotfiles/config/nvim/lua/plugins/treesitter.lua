@@ -1,22 +1,23 @@
 return {
-  -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
         "bash",
+        "c",
+        "hyprlang",
         "json",
         "lua",
-        "c",
-        "toml",
+        "luadoc",
+        "luap",
         "markdown",
-        "markdown_inline",
         "python",
         "query",
         "regex",
         "vim",
+        "python",
         "yaml",
-        "rust",
+        "java",
       },
     },
   },

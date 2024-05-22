@@ -1,6 +1,5 @@
 starship init fish | source
 
-
 set -g fish_greeting
 
 set -gx EDITOR (which nvim)
@@ -36,3 +35,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+
+# Created by `pipx` on 2024-05-19 13:18:18
+set PATH $PATH /home/wasd/.local/bin
