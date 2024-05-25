@@ -89,7 +89,7 @@
     "hyprcursor",
     "xdg-desktop-portal-hyprland",
     "discord",
-    "jdk21-openjdk",
+    "openjdk",
     "aria2"
   ],
   "aur-packages": [
