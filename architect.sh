@@ -9,7 +9,7 @@ wget https://mirror.cachyos.org/cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
-chmod +x rename_boot.sh
+chmod +x architect/rename_boot.sh
 sudo ./rename_boot.sh /boot/loader/entries 00-linux.conf
 python architect/main.py
 sudo python architect/files.py

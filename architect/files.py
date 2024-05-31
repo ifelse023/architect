@@ -1,5 +1,13 @@
+from os import listdir
+
+path = "/boot/loader/entries/"
+
+file_dir = listdir("/boot/loader/entries/")
+file = file_dir[1]
+file_path = path + file
+
+
 def append_options_to_kernel_config():
-    file_path = "/boot/loader/entries/00-linux.conf"
     new_options = "nowatchdog mitigations=off nopti tsx=on"
 
     try:
