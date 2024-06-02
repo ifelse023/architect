@@ -89,7 +89,7 @@
     "hyprcursor",
     "xdg-desktop-portal-hyprland",
     "discord",
-    "openjdk",
+    "jre-openjdk",
     "aria2"
   ],
   "aur-packages": [
@@ -101,10 +101,8 @@
     "uksmd",
     "catppuccin-gtk-theme-mocha",
     "catppuccin-cursors-mocha",
-    "papirus-folders-catppuccin-git",
+    "candy-icons-git",
     "rose-pine-hyprcursor",
-    "vesktop-bin",
-    "intellij-idea-ultimate-edition-jre",
-    "intellij-idea-ultimate-edition"
+    "vesktop-bin"
   ]
 }

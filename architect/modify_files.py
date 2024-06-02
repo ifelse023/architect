@@ -2,8 +2,7 @@ from os import listdir
 
 path = "/boot/loader/entries/"
 
-file_dir = listdir("/boot/loader/entries/")
-file = file_dir[1]
+file = listdir(path)[1]
 file_path = path + file
 
 
@@ -45,11 +44,9 @@ def replace(file_path, f, r):
 
 def main():
     replace("/etc/fstab", "relatime", "noatime")
+    replace(file, "vmlinuz-linux", "vmlinuz-linux-cachyos")
     replace(
-        "/boot/loader/entries/00-linux.conf", "vmlinuz-linux", "vmlinuz-linux-cachyos"
-    )
-    replace(
-        "/boot/loader/entries/00-linux.conf",
+        file,
         "initramfs-linux.img",
         "initramfs-linux-cachyos.img",
     )

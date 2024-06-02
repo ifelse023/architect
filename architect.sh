@@ -5,14 +5,13 @@ sudo usermod -a -G video,audio,network,sys,wheel wasd
 rustup default nightly
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 rsync -avh ~/architect/dotfiles/home/ ~/
-wget https://mirror.cachyos.org/cachyos-repo.tar.xz
+curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
-chmod +x architect/rename_boot.sh
-sudo ./rename_boot.sh /boot/loader/entries 00-linux.conf
 python architect/main.py
-sudo python architect/files.py
+sudo python architect/modify_files.py
 rsync -avh ~/architect/dotfiles/config/ ~/.config
 chsh -s "$(which fish)"
 python ~/architect/architect/manage_directories.py
+sudo pacman -Sc --noconfirm
