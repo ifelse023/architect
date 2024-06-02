@@ -3,7 +3,7 @@ palette = "catppuccin_mocha"
 add_newline = false
 command_timeout = 1000
 format = """$username$os$directory$git_branch$git_status$package$c$python$lua
-[[♥](bold green) ❯](lavender) """
+[[󰋕](bold green) ❯](lavender) """
 
 [os]
 format = '[on](blue) [󰣇](bold blue) '

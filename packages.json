@@ -90,6 +90,10 @@
     "xdg-desktop-portal-hyprland",
     "discord",
     "jre-openjdk",
+    "thunar",
+    "gvfs",
+    "thunar-archive-plugin",
+    "thunar-volman",
     "aria2"
   ],
   "aur-packages": [
