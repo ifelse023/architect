@@ -94,7 +94,8 @@
     "thunar-archive-plugin",
     "thunar-volman",
     "grim",
-    "slurp"
+    "slurp",
+    "python-gobject"
   ],
   "aur-packages": [
     "nwg-look-bin",
