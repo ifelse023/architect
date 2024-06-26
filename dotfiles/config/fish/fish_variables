@@ -47,4 +47,4 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR --export fish_user_paths:/home/wasd/miniconda3/bin\x1e/usr/lib/ccache
+SETUVAR --export fish_user_paths:/usr/lib/ccache\x1e/home/wasd/miniconda3/bin
