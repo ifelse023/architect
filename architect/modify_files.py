@@ -1,52 +1,88 @@
-from os import listdir, path as os_path
+import os
+import shutil
 
 
-def append_options_to_kernel_config(
-    file_path, new_options="nowatchdog mitigations=off nopti tsx=on"
-):
-    try:
-        with open(file_path, "r+") as file:
-            lines = file.readlines()
-            file.seek(0)
-            for line in lines:
-                if line.strip().startswith("options"):
-                    line = line.strip() + " " + new_options + "\n"
-                file.write(line)
-        print("Options appended successfully.")
-    except Exception as e:
-        print(f"Error occurred while modifying the file: {e}")
+class ConfigModifier:
+    def __init__(self, filepath):
+        self.filepath = filepath
+        self.backup_path = filepath + ".bak"
+
+    def read_file(self):
+        with open(self.filepath, "r") as file:
+            return file.readlines()
+
+    def write_file(self, lines):
+        with open(self.filepath, "w") as file:
+            file.writelines(lines)
+
+    def create_backup(self):
+        shutil.copy(self.filepath, self.backup_path)
+
+    def replace_line_parts(self, replacements, separator=" "):
+        lines = self.read_file()
+        modified_lines = []
+        for line in lines:
+            for old, new in replacements:
+                parts = line.split(separator)
+                parts = [new if part == old else part for part in parts]
+                line = separator.join(parts)
+            modified_lines.append(line)
+        self.write_file(modified_lines)
+
+    def append_to_line(self, condition, append_text):
+        lines = self.read_file()
+        modified_lines = []
+        for line in lines:
+            if condition(line):
+                line = line.strip() + " " + append_text + "\n"
+            modified_lines.append(line)
+        self.write_file(modified_lines)
 
 
-def replace(file_path, replacements):
-    try:
-        with open(file_path, "r+") as file:
-            lines = file.readlines()
-            file.seek(0)
-            for line in lines:
-                for old, new in replacements:
-                    line = line.replace(old, new)
-                file.write(line)
-            file.truncate()
-        print("File modified successfully.")
-    except Exception as e:
-        print(f"Error occurred while modifying the file: {e}")
+class FileSystemModifier(ConfigModifier):
+    def add_commit_if_ext4(self):
+        lines = self.read_file()
+        modified_lines = []
+        for line in lines:
+            if "ext4" in line:
+                parts = line.split()
+                options_index = 3
+                options = parts[options_index].split(",")
+                if "rw" in options and "commit=120" not in options:
+                    options.append("commit=120")
+                    parts[options_index] = ",".join(options)
+                    line = " ".join(parts) + "\n"
+            modified_lines.append(line)
+        self.write_file(modified_lines)
+
+
+def modify_boot_configurations(boot_dir, global_replacements, kernel_options):
+    files = os.listdir(boot_dir)
+    if not files:
+        print(f"No files found in the directory: {boot_dir}")
+        return
+    file_path = os.path.join(boot_dir, files[0])
+    boot_modifier = ConfigModifier(file_path)
+    boot_modifier.replace_line_parts(global_replacements)
+    boot_modifier.append_to_line(
+        lambda line: line.strip().startswith("options"), kernel_options
+    )
 
 
 def main():
-    boot_entries_path = "/boot/loader/entries/"
-    files = listdir(boot_entries_path)
-    if not files:
-        print("No files found in the directory: " + boot_entries_path)
-        return
-    file_path = os_path.join(boot_entries_path, files[0])
-    replace("/etc/fstab", [("relatime", "noatime")])
+    fstab_modifier = FileSystemModifier("/etc/fstab")
+    fstab_modifier.create_backup()
+    fstab_modifier.replace_line_parts([("relatime", "noatime")])
+    fstab_modifier.add_commit_if_ext4()
 
+    boot_entries_path = "/boot/loader/entries/"
+    kernel_options = "nowatchdog mitigations=off nopti tsx=on"
     replacements = [
         ("vmlinuz-linux", "vmlinuz-linux-cachyos"),
         ("initramfs-linux.img", "initramfs-linux-cachyos.img"),
     ]
-    replace(file_path, replacements)
-    append_options_to_kernel_config(file_path)
+    modify_boot_configurations(boot_entries_path, replacements, kernel_options)
 
 
-main()
+if __name__ == "__main__":
+    main()
