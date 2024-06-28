@@ -37,6 +37,7 @@
     "intel-media-driver",
     "mlocate",
     "nfs-utils",
+    "dosfstools",
     "ntp",
     "smartmontools",
     "thermald",
