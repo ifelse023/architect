@@ -9,9 +9,12 @@ curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
+
 python architect/main.py
+sudo dosfslabel /dev/nvme0n1p1 BOOT
+sudo e2label /dev/nvme0n1p2 ROOT
+sudo mount -a
 sudo python architect/modify_files.py
 rsync -avh ~/architect/dotfiles/config/ ~/.config
-chsh -s "$(which fish)"
 python ~/architect/architect/manage_directories.py
 sudo pacman -Sc --noconfirm

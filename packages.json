@@ -66,7 +66,6 @@
     "neovide",
     "kitty",
     "eza",
-    "fish",
     "git",
     "cliphist",
     "lazygit",
@@ -96,7 +95,11 @@
     "thunar-volman",
     "grim",
     "slurp",
-    "python-gobject"
+    "python-gobject",
+    "dust",
+    "procs",
+    "zsh",
+    "zoxide"
   ],
   "aur-packages": [
     "nwg-look-bin",
