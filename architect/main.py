@@ -31,7 +31,6 @@ def main():
         "thermald",
         "acpid.service",
         "irqbalance",
-        "keyd",
         "power-profiles-daemon.service",
     ]
     print("Starting post-installation script...")

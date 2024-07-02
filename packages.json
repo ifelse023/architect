@@ -99,19 +99,20 @@
     "dust",
     "procs",
     "zsh",
-    "zoxide"
+    "zoxide",
+    "zellij",
+    "foot",
+    "foot-terminfo"
   ],
   "aur-packages": [
     "nwg-look-bin",
-    "keyd",
     "brillo",
     "irqbalance",
     "tofi-git",
     "uksmd",
-    "catppuccin-gtk-theme-mocha",
-    "catppuccin-cursors-mocha",
+    "rose-pine-gtk-theme",
     "candy-icons-git",
     "rose-pine-hyprcursor",
-    "vesktop-bin"
+    "rose-pine-cursor"
   ]
 }
