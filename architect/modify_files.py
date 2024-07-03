@@ -2,7 +2,7 @@ from os import listdir, path as os_path
 
 
 def modify_kernel_config(
-    file_path, replacements, new_options="nowatchdog mitigations=off nopti tsx=on"
+    file_path, replacements, new_options="i915.enable_guc=3 nowatchdog mitigations=off nopti tsx=on"
 ):
     try:
         with open(file_path, "r+") as file:

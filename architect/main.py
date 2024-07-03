@@ -4,7 +4,7 @@ from systemd_manager import enable_service
 
 
 def install_packages():
-    with open("./packages.json", "r") as file:
+    with open("./packages-sway.json", "r") as file:
         data = json.load(file)
 
     official_packages = data["packages"]
@@ -29,9 +29,7 @@ def install_packages():
 def main():
     services = [
         "thermald",
-        "acpid.service",
         "irqbalance",
-        "power-profiles-daemon.service",
     ]
     print("Starting post-installation script...")
 
@@ -39,7 +37,6 @@ def main():
     for service in services:
         enable_service(service)
     print("Post-installation script completed successfully.")
-
 
 if __name__ == "__main__":
     main()
