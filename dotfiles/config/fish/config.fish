@@ -1,8 +1,12 @@
 set -g fish_greeting
 
 starship init fish | source
+
 if status is-interactive
+    atuin init fish | source
+    eval (zellij setup --generate-auto-start fish | string collect)
 end
+
 
 set -gx EDITOR (which nvim)
 set -gx VISUAL $EDITOR
