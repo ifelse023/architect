@@ -53,7 +53,6 @@
     "libnotify",
     "mako",
     "mpv",
-    "polkit-gnome",
     "qt5-wayland",
     "qt6-wayland",
     "tk",
@@ -62,8 +61,8 @@
     "xdg-utils",
     "neovim",
     "neovide",
-    "kitty",
     "eza",
+    "polkit",
     "git",
     "cliphist",
     "lazygit",
@@ -92,19 +91,21 @@
     "python-gobject",
     "dust",
     "procs",
-    "zsh",
+    "fish",
     "zoxide",
     "zellij",
     "foot",
     "foot-terminfo"
   ],
   "aur-packages": [
+    "wayland-protocols-git",
+    "wlroots-git",
+    "sway-git",
+    "sway-launcher-desktop-git",
     "nwg-look-bin",
-    "bibata-cursor-theme",
     "irqbalance",
-    "tofi-git",
-    "rose-pine-gtk-theme",
+    "catppuccin-cursors-mocha",
     "candy-icons-git",
-    "rose-pine-cursor"
+    
   ]
 }
