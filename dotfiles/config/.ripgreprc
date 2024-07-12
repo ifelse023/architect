@@ -8,3 +8,5 @@ line:fg:green
 
 # Options
 --smart-case
+--glob=!{/proc,*.lock}
+--hidden
