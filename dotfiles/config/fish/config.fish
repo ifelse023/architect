@@ -1,10 +1,19 @@
 set -g fish_greeting
+if not set -q ZELLIJ; and pgrep -x sway >/dev/null; and not pgrep -x zellij >/dev/null
+    if set -q ZELLIJ_AUTO_ATTACH; and test "$ZELLIJ_AUTO_ATTACH" = true
+        zellij attach -c
+    else
+        zellij
+    end
+
+    # Auto exit the shell session when Zellij exits
+    set -q ZELLIJ_AUTO_EXIT; and test "$ZELLIJ_AUTO_EXIT" = true; and exit
+end
 
 starship init fish | source
 
 if status is-interactive
     atuin init fish | source
-    eval (zellij setup --generate-auto-start fish | string collect)
 end
 
 
@@ -23,8 +32,9 @@ alias lt='eza -aT --color=always --group-directories-first --icons' # tree listi
 alias l.="eza -a | egrep '^\.'"
 
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias za zellij attach
 alias rmf='rm -rf'
-alias vim='neovide'
+alias c yazi
 alias sc='sudo systemctl'
 alias jc='sudo journalctl -b -p err'
 alias diff='diff --color=auto'

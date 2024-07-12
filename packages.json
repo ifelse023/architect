@@ -2,6 +2,7 @@
   "packages": [
     "paru",
     "npm",
+    "brightnessctl",
     "clang",
     "cmake",
     "meson",
