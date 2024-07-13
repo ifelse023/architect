@@ -1,8 +1,6 @@
 ### Variables
-#
 # Logo key. Use Mod1 for Alt.
     set $mod Mod4
-
 # Autostart
     exec_always  --no-startup-id  mako &
 
@@ -14,11 +12,11 @@
 # Your preferred terminal emulator
     set $term foot
     for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
-    set $menu exec $term -a launcher -e /path/to/repo/sway-launcher-desktop.sh
+    set $menu exec $term -a launcher -e sway-launcher-desktop
 
 ### Output configuration
     output * bg ~/architect/wallpapers/2.png fill
-      output * adaptive_sync off
+    output * adaptive_sync off
 
     output eDP-1 resolution 1920x1080 position 0,0
     output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -65,8 +63,20 @@
 
 # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    for_window [app_id="pwvucontrol"] floating enable
-    for_window [app_id="flameshot"] floating enable
+    for_window [app_id="pwvucontrol"]                floating enable
+    for_window [app_id="flameshot"]                  floating enable
+    for_window [app_id="pop-up"]                     floating enable
+    for_window [app_id="bubble"]                     floating enable 
+    for_window [app_id="task_dialog"]                floating enable
+    for_window [app_id="Preferences"]                floating enable
+    for_window [app_id="dialog"]                     floating enable 
+    for_window [app_id="menu"]                       floating enable
+    for_window [app_id="Organizer"]                  floating enable
+    for_window [app_id="About"]                      floating enable
+    for_window [app_id="toolbox"]                    floating enable
+    for_window [app_id="page-info"]                  floating enable	
+    for_window [app_id="webconsole"]                 floating enable
+    for_window [app_id="Authy"]                      floating enable
 
     assign [app_id="firefox"] number 4
     assign [app_id="discord"] number 8
@@ -134,7 +144,6 @@
 # You can "split" the current object of your focus with
 # $mod+b or $mod+v, for horizontal and vertical splits
 # respectively.
-    bindsym $mod+b splith
     bindsym $mod+v splitv
 
 # Switch the current container between different layout styles
@@ -199,16 +208,14 @@
 #----------------------------------------#
 # window colours: border background text #
 #----------------------------------------#
-    client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
-    client.focused_inactive #333333 #5f676a #ffffff #484e50 #5f676a
-    client.unfocused #333333 #222222 #888888 #292d2e #222222
-    client.urgent #2f343a #900000 #ffffff #900000 #900000
-    client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
-    client.background #ffffff
-# Border settings
-    default_border pixel 2
-    default_floating_border normal 2
+default_border pixel 1
+default_floating_border pixel 1
 
+client.focused          #ea00d9 #ea00d9 #000b1e #ea00d9 #ea00d9 
+client.focused_inactive	#000b1e #000b1e #0abdc6 #000b1e #000b1e
+client.unfocused		#000b1e #000b1e #0abdc6 #000b1e #000b1e
+client.urgent           #ff0000 #ff0000 #000b1e #ff0000 #ff0000
+client.placeholder      #000b1e #000b1e #0abdc6 #000b1e #000b1e
 
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK

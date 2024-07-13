@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
-sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rustup rsync
+sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync
 sudo usermod -a -G video,audio,network,sys,wheel wasd
-rustup default nightly
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 rsync -avh ~/architect/dotfiles/home/ ~/
 curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz

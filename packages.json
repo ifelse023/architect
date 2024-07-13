@@ -1,11 +1,11 @@
 {
   "packages": [
     "paru",
-    "npm",
     "brightnessctl",
     "clang",
     "cmake",
     "meson",
+    "tlp",
     "ctags",
     "doxygen",
     "fzf",
@@ -79,7 +79,6 @@
     "wireless-regdb",
     "python-pynvim",
     "dbus-python",
-    "xdg-desktop-portal-wlr",
     "xdg-desktop-portal-gtk",
     "thunar",
     "gvfs",
@@ -89,22 +88,34 @@
     "slurp",
     "python-gobject",
     "dust",
+    "atuin",
+    "rust",
     "procs",
-    "fish",
     "zoxide",
     "zellij",
     "foot",
-    "foot-terminfo"
+    "foot-terminfo",
+    "yazi",
+    "profile-sync-daemon"
   ],
   "aur-packages": [
-    "wayland-protocols-git",
-    "wlroots-git",
-    "sway-git",
-    "sway-launcher-desktop-git",
+    "wayland-git",
+    "aur/wayland-protocols-git",
+    "aur/wlroots-git",
+    "hyprlang-git",
+    "hyprcursor-git",
+    "hyprland-git",
+    "hyprpaper-git",
+    "xdg-desktop-portal-hyprland-git",
+    "rose-pine-hyprcursor",
+    "rose-pine-cursor",
     "nwg-look-bin",
     "irqbalance",
+    "papirus-folders-catppuccin-git",
+    "catppuccin-gtk-theme-mocha",
     "catppuccin-cursors-mocha",
-    "candy-icons-git",
+    "fish-git",
+    "fisher"
     
   ]
 }
