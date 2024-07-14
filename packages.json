@@ -79,7 +79,6 @@
     "wireless-regdb",
     "python-pynvim",
     "dbus-python",
-    "xdg-desktop-portal-gtk",
     "thunar",
     "gvfs",
     "thunar-archive-plugin",
@@ -107,15 +106,13 @@
     "hyprland-git",
     "hyprpaper-git",
     "xdg-desktop-portal-hyprland-git",
-    "rose-pine-hyprcursor",
-    "rose-pine-cursor",
     "nwg-look-bin",
     "irqbalance",
     "papirus-folders-catppuccin-git",
     "catppuccin-gtk-theme-mocha",
     "catppuccin-cursors-mocha",
     "fish-git",
-    "fisher"
-    
+    "fisher",
+    "xdg-desktop-portal-gtk",
   ]
 }
