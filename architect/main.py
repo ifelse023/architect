@@ -28,12 +28,16 @@ def install_packages():
 
 def main():
     services = [
+        "tlp",
         "thermald",
         "irqbalance",
     ]
     print("Starting post-installation script...")
 
     install_packages()
+    for service in services:
+        enable_service(service)
+    print("Post-installation script completed successfully.")
 
 
 if __name__ == "__main__":

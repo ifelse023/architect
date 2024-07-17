@@ -40,8 +40,8 @@ def main():
 
         file_path = os_path.join(boot_entries_path, files[0])
         replacements = [
-            ("vmlinuz-linux", "vmlinuz-linux-cachyos"),
-            ("initramfs-linux.img", "initramfs-linux-cachyos.img"),
+            ("vmlinuz-linux", "vmlinuz-linux-cachyos-lto"),
+            ("initramfs-linux.img", "initramfs-linux-cachyos-lto.img"),
         ]
 
         modify_kernel_config(file_path, replacements)
