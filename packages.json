@@ -1,10 +1,10 @@
 {
   "packages": [
+    "wayland-git",
     "paru",
+    "npm",
     "brightnessctl",
     "clang",
-    "cmake",
-    "meson",
     "tlp",
     "fzf",
     "gdb",
@@ -73,6 +73,8 @@
     "gvfs",
     "thunar-archive-plugin",
     "thunar-volman",
+    "efitools",
+    "dosfstools",
     "grim",
     "slurp",
     "python-gobject",
@@ -88,7 +90,6 @@
     "profile-sync-daemon"
   ],
   "aur-packages": [
-    "wayland-git",
     "wayland-protocols-git",
     "wlroots-git",
     "hyprlang-git",

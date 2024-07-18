@@ -1,5 +1,5 @@
 set -g fish_greeting
-if not set -q ZELLIJ; and pgrep -x sway >/dev/null; and not pgrep -x zellij >/dev/null
+if not set -q ZELLIJ; and pgrep -x Hyprland >/dev/null; and not pgrep -x zellij >/dev/null
     if set -q ZELLIJ_AUTO_ATTACH; and test "$ZELLIJ_AUTO_ATTACH" = true
         zellij attach -c
     else
