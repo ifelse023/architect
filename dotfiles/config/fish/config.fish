@@ -1,22 +1,10 @@
 set -g fish_greeting
-if not set -q ZELLIJ; and pgrep -x Hyprland >/dev/null; and not pgrep -x zellij >/dev/null
-    if set -q ZELLIJ_AUTO_ATTACH; and test "$ZELLIJ_AUTO_ATTACH" = true
-        zellij attach -c
-    else
-        zellij
-    end
-
-    # Auto exit the shell session when Zellij exits
-    set -q ZELLIJ_AUTO_EXIT; and test "$ZELLIJ_AUTO_EXIT" = true; and exit
-end
-
 
 starship init fish | source
 if status is-interactive
     atuin init fish | source
     zoxide init fish | source
 end
-
 
 set -gx EDITOR (which nvim)
 set -gx VISUAL $EDITOR
@@ -42,7 +30,6 @@ alias lt='eza -aT --color=always --group-directories-first --icons' # tree listi
 alias l.="eza -a | egrep '^\.'"
 
 alias fixpacman='sudo rm /var/lib/pacman/db.lck'
-alias za='zellij attach'
 alias rmf='rm -rf'
 alias sc='sudo systemctl'
 alias jc='sudo journalctl -b -p err'

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import os
 import sys
@@ -42,7 +42,7 @@ def main():
     )
 
     args = parser.parse_args()
-    project_root = "/home/wasd/projects/gotta-go-fast"
+    project_root = "/home/wasd/architect/scripts/gotta-go-fast"
     src_path = os.path.join(project_root, args.language)
 
     if not os.path.exists(src_path):

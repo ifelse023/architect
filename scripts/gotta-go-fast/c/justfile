@@ -1,0 +1,27 @@
+cc := "clang"
+c-flags := "-Wall -Wextra -Werror"
+release-flags := "-O3 -march=native"
+debug-flags := "-g -O0"
+includes := "-I./include"
+
+c-files := "$(fd -e c)"
+
+set shell := ["bash", "-cu"]
+
+prep:
+    mkdir -p build/bin
+
+build: prep
+    {{cc}} {{c-flags}} {{debug-flags}} {{includes}} -o build/bin/main {{c-files}}
+
+release: prep
+    {{cc}} {{c-flags}} {{release-flags}} {{includes}} -o build/bin/main {{c-files}}
+
+run: build
+    ./build/bin/main
+
+debug: build
+  gdb ./build/bin/main
+
+clean:
+    rm -rf build

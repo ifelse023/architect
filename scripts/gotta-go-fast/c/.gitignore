@@ -3,7 +3,6 @@ target
 result
 .obsidian/
 .vscode
-build/
 
 ### C ###
 # Prerequisites
