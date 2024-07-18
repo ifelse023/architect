@@ -70,6 +70,8 @@
     "python-pynvim",
     "dbus-python",
     "thunar",
+    "gnome-keyring",
+    "polkit-gnome",
     "gvfs",
     "thunar-archive-plugin",
     "thunar-volman",
@@ -104,6 +106,7 @@
     "catppuccin-cursors-mocha",
     "fish-git",
     "fisher",
-    "xdg-desktop-portal-gtk"
+    "xdg-desktop-portal-gtk",
+    "fuzzel-git"
   ]
 }
