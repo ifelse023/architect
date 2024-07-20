@@ -1,8 +1,6 @@
-set -g fish_greeting
-
 starship init fish | source
 if status is-interactive
-    atuin init fish | source
+    set fish_greeting
     zoxide init fish | source
 end
 
@@ -34,7 +32,7 @@ alias rmf='rm -rf'
 alias sc='sudo systemctl'
 alias jc='sudo journalctl -b -p err'
 alias diff='diff --color=auto'
-alias cat='bat --theme="Dracula" --style=plain'
+alias cat='bat --theme="Catppuccin Mocha" --style=plain'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

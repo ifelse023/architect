@@ -81,7 +81,6 @@
     "slurp",
     "python-gobject",
     "dust",
-    "atuin",
     "rust",
     "procs",
     "zoxide",
