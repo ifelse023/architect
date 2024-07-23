@@ -1,7 +1,5 @@
 {
   "packages": [
-    "wayland-git",
-    "paru",
     "npm",
     "brightnessctl",
     "clang",
@@ -81,31 +79,27 @@
     "slurp",
     "python-gobject",
     "dust",
-    "rust",
     "procs",
     "zoxide",
-    "zellij",
     "foot",
     "foot-terminfo",
     "yazi",
+    "hyprlang",
+    "hyprcursor",
+    "hyprland",
+    "hyprpaper",
+    "xdg-desktop-portal-hyprland",
+    "xdg-desktop-portal-gtk",
+    "fish",
+    "fuzzel",
     "profile-sync-daemon"
   ],
   "aur-packages": [
-    "wayland-protocols-git",
-    "wlroots-git",
-    "hyprlang-git",
-    "hyprcursor-git",
-    "hyprland-git",
-    "hyprpaper-git",
-    "xdg-desktop-portal-hyprland-git",
     "nwg-look-bin",
     "irqbalance",
-    "papirus-folders-catppuccin-git",
+    "papirus-folders-catppuccin",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",
-    "fish-git",
-    "fisher",
-    "xdg-desktop-portal-gtk",
-    "fuzzel-git"
+    "fisher"
   ]
 }
