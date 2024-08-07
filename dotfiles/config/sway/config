@@ -16,13 +16,20 @@
 
 ### Output configuration
     output * bg ~/architect/wallpapers/2.png fill
-    output * adaptive_sync off
+output "*" {
+adaptive_sync off
+max_render_time 5
+scale 1
+}
+output "HDMI-A-1" {
+mode 1920x1080@60Hz
+position 1920,0
+}
 
-    output eDP-1 resolution 1920x1080 position 0,0
-    output HDMI-A-1 resolution 1920x1080 position 1920,0
-
-
-
+output "eDP-1" {
+mode 1920x1080@60Hz
+position 0,0
+}
 ### Input configuration
 
     input "type:keyboard" {
