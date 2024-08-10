@@ -60,7 +60,7 @@
     "obsidian",
     "fwupd",
     "hyperfine",
-    "linux-cachyos-lto",
+    "linux-cachyos",
     "firefox-nightly",
     "wireless-regdb",
     "python-pynvim",
@@ -85,7 +85,9 @@
   "aur-packages": [
     "tlp-git",
     "foot-git",
+    "wayland-protocols-git",
     "wayland-git",
+    "wlroots-git",
     "sway-git",
     "sway-launcher-desktop-git",
     "irqbalance-git",

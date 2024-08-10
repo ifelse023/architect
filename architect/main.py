@@ -17,7 +17,7 @@ def install_packages():
         "--needed",
         "--noconfirm",
     ] + official_packages
-    aur_command = ["paru", "-S", "--needed", "--noconfirm"] + aur_packages
+    aur_command = ["paru", "-S", "--needed",] + aur_packages
 
     print("Installing official repository packages...")
     subprocess.run(pacman_command)
@@ -31,6 +31,7 @@ def main():
         "tlp",
         "thermald",
         "irqbalance",
+        "scx"
     ]
     print("Starting post-installation script...")
 
