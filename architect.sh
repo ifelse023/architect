@@ -22,4 +22,5 @@ rsync -avh ~/architect/dotfiles/config/ ~/.config
 paru -Scc
 sudo pacman -Rns $(pacman -Qtdq)
 sudo journalctl --vacuum-size=1M
+chsh -s $(which fish)
 python ~/architect/architect/manage_directories.py

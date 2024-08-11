@@ -2,9 +2,9 @@ keymap:
   - name: yep
     application:
       only:
-        - /vim/
-        - /foot/
-        - /wez/
+        - neovide
+        - foot
+        - wezterm
     remap:
       KEY_0: Shift-KEY_0
       Shift-KEY_0: KEY_0

@@ -1,8 +1,6 @@
 ### Variables
 # Logo key. Use Mod1 for Alt.
     set $mod Mod4
-# Autostart
-    exec_always  --no-startup-id  mako &
 
 # Home row direction keys, like vim
     set $left h
@@ -10,26 +8,26 @@
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term foot
+    set $term wezterm
     for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
     set $menu exec $term -a launcher -e sway-launcher-desktop
 
 ### Output configuration
     output * bg ~/architect/wallpapers/2.png fill
-output "*" {
-adaptive_sync off
-max_render_time 5
-scale 1
-}
-output "HDMI-A-1" {
-mode 1920x1080@60Hz
-position 1920,0
-}
+    output "*" {
+    adaptive_sync off
+    max_render_time 5
+    scale 1
+    }
+    output "HDMI-A-1" {
+    mode 1920x1080@60Hz
+    position 1920,0
+    }
 
-output "eDP-1" {
-mode 1920x1080@60Hz
-position 0,0
-}
+    output "eDP-1" {
+    mode 1920x1080@60Hz
+    position 0,0
+    }
 ### Input configuration
 
     input "type:keyboard" {
@@ -44,7 +42,7 @@ position 0,0
 #
 # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec foot --class="termfloat"
+    bindsym $mod+Shift+Return exec wezterm --class="termfloat"
 # Kill focused window
     bindsym $mod+q kill
 
@@ -70,23 +68,6 @@ position 0,0
 
 # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    for_window [app_id="pwvucontrol"]                floating enable
-    for_window [app_id="flameshot"]                  floating enable
-    for_window [app_id="pop-up"]                     floating enable
-    for_window [app_id="bubble"]                     floating enable 
-    for_window [app_id="task_dialog"]                floating enable
-    for_window [app_id="Preferences"]                floating enable
-    for_window [app_id="dialog"]                     floating enable 
-    for_window [app_id="menu"]                       floating enable
-    for_window [app_id="Organizer"]                  floating enable
-    for_window [app_id="About"]                      floating enable
-    for_window [app_id="toolbox"]                    floating enable
-    for_window [app_id="page-info"]                  floating enable	
-    for_window [app_id="webconsole"]                 floating enable
-    for_window [app_id="Authy"]                      floating enable
-
-    assign [app_id="firefox"] number 4
-    assign [app_id="discord"] number 8
 # Moving around:
 #
 # Move your focus around
@@ -209,22 +190,67 @@ position 0,0
 
 
 # Gaps and border adjustments
-    gaps inner 3
+    gaps inner 2
+    gaps outer 0
     smart_gaps on
     smart_borders on
 #----------------------------------------#
 # window colours: border background text #
 #----------------------------------------#
-default_border pixel 1
-default_floating_border pixel 1
+    default_border pixel 1
+    default_floating_border pixel 1
 
-client.focused          #ea00d9 #ea00d9 #000b1e #ea00d9 #ea00d9 
-client.focused_inactive	#000b1e #000b1e #0abdc6 #000b1e #000b1e
-client.unfocused		#000b1e #000b1e #0abdc6 #000b1e #000b1e
-client.urgent           #ff0000 #ff0000 #000b1e #ff0000 #ff0000
-client.placeholder      #000b1e #000b1e #0abdc6 #000b1e #000b1e
+    client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
+    client.focused_inactive #333333 #5f676a #ffffff #484e50 #5f676a
+    client.unfocused #333333 #222222 #888888 #292d2e #222222
+    client.urgent #2f343a #900000 #ffffff #900000 #900000
+    client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
+    client.background #ffffff
+
+# Assign workspaces
+    assign [app_id="firefox"] 4
+    for_window [app_id="firefox"] focus
+
+    assign [class="firefox"] 4
+    for_window [class="firefox"] focus
+
+    assign [app_id=thunar] 3
+    for_window [app_id=thunar] focus
+
+    assign [class="discord"] 5
+    for_window [class="discord"] focus
+
+
+# set floating (nontiling) for special apps:
+    for_window [app_id="pavucontrol" ] floating enable, resize set width 40 ppt height 30 ppt
+    for_window [class="qt5ct" instance="qt5ct"] floating enable, resize set width 60 ppt height 50 ppt
+
+# set floating for window roles
+    for_window [window_role="pop-up"] floating enable
+    for_window [window_role="bubble"] floating enable
+    for_window [window_role="task_dialog"] floating enable
+    for_window [window_role="Preferences"] floating enable
+    for_window [window_type="dialog"] floating enable
+    for_window [window_type="menu"] floating enable
+    for_window [window_role="About"] floating enable
+    for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+    for_window [app_id="firefox" title="^Library$"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+    for_window [app_id="floating_shell_portrait"] floating enable, border pixel 1, sticky enable, resize set width 30 ppt height 40 ppt
+    for_window [title="Picture in picture"] floating enable, sticky enable
+    for_window [title="waybar_htop"] floating enable, resize set width 70 ppt height 70 ppt
+    for_window [title="waybar_nmtui"] floating enable
+    for_window [app_id="xsensors"] floating enable
+    for_window [title="Save File"] floating enable
+    for_window [app_id="firefox" title="Firefox — Sharing Indicator"] kill
+
+# Inhibit idle
+    for_window [app_id="firefox"] inhibit_idle fullscreen
+
+
+    exec_always  --no-startup-id  mako &
+    exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
     include @sysconfdir@/sway/config.d/*
-    exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK
-    exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP SWAYSOCK
-    exec systemctl --user start sway-session.target
+    exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+    exec hash dbus-update-activation-environment 2>/dev/null && \
+      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

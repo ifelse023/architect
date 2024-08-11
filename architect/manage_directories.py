@@ -3,7 +3,7 @@ import os
 
 
 def manage_directories():
-    dirs_to_keep = ["architect", "Downloads", "Documents", "projects", "misc"]
+    dirs_to_keep = ["architect", "Downloads", "dev", "misc"]
     home_dir = "/home/wasd/"
 
     try:
