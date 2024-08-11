@@ -78,6 +78,7 @@
     "xdg-desktop-portal-gtk",
     "profile-sync-daemon",
     "nwg-look",
+    "xorg-xwayland"
   ],
   "aur-packages": [
     "tlp-git",

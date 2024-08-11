@@ -31,7 +31,7 @@ def main():
         "tlp",
         "thermald",
         "irqbalance",
-        "scx"
+        "scx",
     ]
     print("Starting post-installation script...")
 

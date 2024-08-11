@@ -24,3 +24,6 @@ sudo pacman -Rns $(pacman -Qtdq)
 sudo journalctl --vacuum-size=1M
 chsh -s $(which fish)
 python ~/architect/architect/manage_directories.py
+
+sudo mkdir -p /mnt/usb
+sudo mount /dev/sda1 /mnt/usb
