@@ -78,22 +78,22 @@
     "xdg-desktop-portal-gtk",
     "profile-sync-daemon",
     "nwg-look",
-    "xorg-xwayland"
+    "xorg-xwayland",
+    "fish-git",
   ],
   "aur-packages": [
+
     "tlp-git",
     "wayland-protocols-git",
     "wayland-git",
-    "wlroots-git",
     "sway-git",
-    "sway-launcher-desktop-git",
     "swaybg-git",
     "irqbalance-git",
     "neovim-git",
+    "neovide-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",
-    "fish-git",
     "fisher"
   ]
 }

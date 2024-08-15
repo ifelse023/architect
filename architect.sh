@@ -11,14 +11,14 @@ cd ..
 sudo pacman -S paru-bin
 paru -S alhp-keyring alhp-mirrorlist
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
+rsync -avh ~/architect/dotfiles/config/ ~/.config
 sudo pacman -Syu
 python architect/main.py
-sleep 3
+sleep 5
 sudo dosfslabel /dev/nvme0n1p1 BOOT
 sudo e2label /dev/nvme0n1p2 ROOT
 sudo mount -a
 sudo python architect/modify_files.py
-rsync -avh ~/architect/dotfiles/config/ ~/.config
 paru -Scc
 sudo pacman -Rns $(pacman -Qtdq)
 sudo journalctl --vacuum-size=1M
@@ -26,6 +26,5 @@ chsh -s $(which fish)
 python ~/architect/architect/manage_directories.py
 sudo mkdir -p /mnt/usb
 sudo mount /dev/sda1 /mnt/usb
-
 
 bat cache --build
