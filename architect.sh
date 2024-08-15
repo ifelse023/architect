@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync rustup clang
+sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync rustup clang libc++
 rustup default nightly
 sudo usermod -a -G video,audio,network,sys,wheel wasd
 rsync -avh ~/architect/dotfiles/home/ ~/
