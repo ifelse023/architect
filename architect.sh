@@ -19,12 +19,12 @@ sudo dosfslabel /dev/nvme0n1p1 BOOT
 sudo e2label /dev/nvme0n1p2 ROOT
 sudo mount -a
 sudo python architect/modify_files.py
-paru -Scc
-sudo pacman -Rns $(pacman -Qtdq)
-sudo journalctl --vacuum-size=1M
-chsh -s $(which fish)
+chsh -s $(which nu)
 python ~/architect/architect/manage_directories.py
+bat cache --build
 sudo mkdir -p /mnt/usb
 sudo mount /dev/sda1 /mnt/usb
-
-bat cache --build
+systemctl --user enable psd
+sudo pacman -Rns $(pacman -Qtdq)
+paru -Scc
+sudo journalctl --vacuum-size=1M

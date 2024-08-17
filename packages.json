@@ -80,17 +80,11 @@
     "nwg-look",
     "xorg-xwayland",
     "fish-git",
+    "nushell"
   ],
   "aur-packages": [
-
-    "tlp-git",
-    "wayland-protocols-git",
-    "wayland-git",
-    "sway-git",
-    "swaybg-git",
     "irqbalance-git",
-    "neovim-git",
-    "neovide-git",
+    "tlp-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",
