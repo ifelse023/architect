@@ -1,23 +1,30 @@
 #!/usr/bin/env python
 
-import os
-import sys
-import shutil
 import argparse
+import shutil
 import subprocess
+import sys
+from pathlib import Path
 
 
-def copy_template(src, dest):
+def copy_template(src: Path, dest: Path) -> bool:
     try:
         shutil.copytree(src, dest)
         print(f"Successfully copied {src} to {dest}")
-    except Exception as e:
-        print(f"Error copying template: {e}")
+    except FileNotFoundError as fnf_error:
+        print(f"File not found: {fnf_error}")
         return False
+    except PermissionError as perm_error:
+        print(f"Permission denied: {perm_error}")
+        return False
+    except shutil.Error as shutil_error:
+        print(f"Shutil error: {shutil_error}")
+        return False
+
     return True
 
 
-def initialize_git_repo(dest):
+def initialize_git_repo(dest: Path) -> None:
     try:
         subprocess.run(["git", "init"], cwd=dest, check=True)
         print(f"Initialized a new git repository in {dest}")
@@ -25,15 +32,19 @@ def initialize_git_repo(dest):
         print(f"Failed to initialize git repository: {e}")
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Create a new project from a template."
+        description="Create a new project from a template.",
     )
     parser.add_argument(
-        "language", type=str, help="The programming language of the template."
+        "language",
+        type=str,
+        help="The programming language of the template.",
     )
     parser.add_argument(
-        "destination", type=str, help="The destination directory for the new project."
+        "destination",
+        type=Path,
+        help="The destination directory for the new project.",
     )
     parser.add_argument(
         "--git",
@@ -42,20 +53,19 @@ def main():
     )
 
     args = parser.parse_args()
-    project_root = "/home/wasd/architect/scripts/gotta-go-fast"
-    src_path = os.path.join(project_root, args.language)
+    project_root = Path("/home/wasd/architect/scripts/gotta-go-fast")
+    src_path = project_root / args.language
 
-    if not os.path.exists(src_path):
+    if not src_path.exists():
         print(f"No template found for {args.language}")
         sys.exit(1)
 
-    if os.path.exists(args.destination):
+    if args.destination.exists():
         print(f"The destination directory {args.destination} already exists.")
         sys.exit(1)
 
-    if copy_template(src_path, args.destination):
-        if args.git:
-            initialize_git_repo(args.destination)
+    if copy_template(src_path, args.destination) and args.git:
+        initialize_git_repo(args.destination)
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 import subprocess
 
 
-def check_status_service(service_name):
+def check_status_service(service_name: str) -> str | None:
     try:
         result = subprocess.run(
             ["systemctl", "is-active", service_name],
@@ -12,17 +12,19 @@ def check_status_service(service_name):
 
         if result.returncode == 0:
             return "active"
-        else:
-            return "inactive"
+        return "inactive"
     except Exception as e:
         print(f"An error occurred: {e}")
         return "error"
 
 
-def enable_service(service_name):
+def enable_service(service_name: str) -> None:
     try:
         result = subprocess.run(
-            ["systemctl", "is-active", service_name], stdout=subprocess.PIPE, text=True
+            ["systemctl", "is-active", service_name],
+            stdout=subprocess.PIPE,
+            text=True,
+            check=False,
         )
         if result.stdout.strip() == "active":
             print(f"{service_name} already active")

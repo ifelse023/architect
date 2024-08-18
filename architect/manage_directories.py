@@ -1,8 +1,9 @@
-import shutil
 import os
+import shutil
+import sys
 
 
-def manage_directories():
+def manage_directories() -> None:
     dirs_to_keep = ["architect", "Downloads", "dev", "misc"]
     home_dir = "/home/wasd/"
 
@@ -24,7 +25,7 @@ def manage_directories():
 
     except Exception as e:
         print(f"An error occurred: {e}")
-        exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

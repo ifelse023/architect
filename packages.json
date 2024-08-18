@@ -1,6 +1,7 @@
 {
   "packages": [
     "npm",
+    "go",
     "brightnessctl",
     "clang",
     "fzf",
@@ -46,6 +47,7 @@
     "xdg-utils",
     "eza",
     "polkit",
+    "polkit-gnome",
     "git",
     "cliphist",
     "lazygit",
@@ -80,14 +82,17 @@
     "nwg-look",
     "xorg-xwayland",
     "fish-git",
-    "nushell"
+    "x86_energy_perf_policy",
+    "nushell",
+    "just"
   ],
   "aur-packages": [
     "irqbalance-git",
+    "xremap-wlroots-bin",
+    "greetd-git",
     "tlp-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
-    "dracula-gtk-theme",
-    "fisher"
+    "dracula-gtk-theme"
   ]
 }

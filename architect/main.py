@@ -1,10 +1,11 @@
-import subprocess
 import json
+import subprocess
+
 from systemd_manager import enable_service
 
 
-def install_packages():
-    with open("./packages.json", "r") as file:
+def install_packages() -> None:
+    with open("./packages.json") as file:
         data = json.load(file)
 
     official_packages = data["packages"]
@@ -16,17 +17,18 @@ def install_packages():
         "-S",
         "--needed",
         "--noconfirm",
-    ] + official_packages
-    aur_command = ["paru", "-S", "--needed",] + aur_packages
+        *official_packages,
+    ]
+    aur_command = ["paru", "-S", "--needed", *aur_packages]
 
     print("Installing official repository packages...")
-    subprocess.run(pacman_command)
+    subprocess.run(pacman_command, check=False)
 
     print("Installing AUR packages...")
-    subprocess.run(aur_command)
+    subprocess.run(aur_command, check=False)
 
 
-def main():
+def main() -> None:
     services = [
         "tlp",
         "thermald",

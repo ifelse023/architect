@@ -1,9 +1,12 @@
-from os import listdir, path as os_path
+from os import listdir
+from os import path as os_path
 
 
 def modify_kernel_config(
-    file_path, replacements, new_options="i915.enable_guc=3 enable_fbc=1 i915.enable_dc=0 nowatchdog mitigations=off nopti tsx=on"
-):
+    file_path,
+    replacements,
+    new_options: str = "i915.enable_guc=3 enable_fbc=1 i915.enable_dc=0 nowatchdog mitigations=off nopti tsx=on",
+) -> None:
     try:
         with open(file_path, "r+") as file:
             lines = file.readlines()
@@ -30,7 +33,7 @@ def modify_kernel_config(
         raise
 
 
-def main():
+def main() -> None:
     boot_entries_path = "/boot/loader/entries/"
     try:
         files = listdir(boot_entries_path)

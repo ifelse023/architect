@@ -1,0 +1,790 @@
+ls
+cd architect/
+ls
+bash later.sh
+ls
+sudo nvim /etc/makepkg.conf
+ls
+bash later.sh
+ls
+cd
+sway
+sudo pacman -S polkit-gnome
+paru -S fuzzel-git
+ls
+cd
+cd .config/
+nvim sway/config
+ls
+sl
+ls
+nvim
+ls
+cd
+ls
+cd
+ls
+cat firefox.sh
+bash firefox.sh
+reboot
+sway
+nvim
+nivm
+nvim
+vim
+neovide
+cd .config/
+ls
+neovide
+sudo pacman -Rns nwg-look 
+ls
+sudo pacman -Q
+font antialiasing linuxfont antialiasing linuxfont antialiasing linux
+ls
+rm firefox.sh
+ls
+la
+cd go
+ls
+cd pkg/
+ls
+cd sumdb/
+ls
+cd
+ls
+sudo pacman -S go
+ls
+pwd preview
+pwd 
+psd preview
+cd architect/
+ls
+cp dotfiles/user.js ~/.mozilla/firefox/0lukx3kz.default-nightly/
+ls
+cd
+ls architect/dotfiles/
+ls -a architect/dotfiles/
+cd architect/dotfiles/config
+ls
+cd environment.d/
+ls
+cat env.conf
+$XCURSOR_THEME
+$env SDL_VIDEODRIVER
+$envSDL_VIDEODRIVER
+$env.SDL_VIDEODRIVER
+$env
+$env | rg dsl
+$env | rg sdl
+$env | rg SDL
+$env | rg EDITOR
+SDL_VIDEODRIVER=waylandSDL_VIDEODRIVER=waylandSDL_VIDEODRIVER=waylandSDL_VIDEODRIVER=waylandSDL_VIDEODRIVER=wayland
+ls
+cd
+cd .config/
+ls
+cd environment.d/
+ls
+systemctl --user import-environment
+cat env.conf
+journalctl --user -xe
+nvim env.conf
+ls
+nvim env.conf
+ls
+printenv
+lls
+cd .config/
+ls
+cd environment.d/
+ls
+cat env.conf
+sudoedit /etc/environment
+sudo nvim /etc/environment
+sway
+$env.SDL_VIDEODRIVER
+$env SDL_VIDEODRIVER
+$env.SDL_VIDEODRIVER
+sudoedit /etc/environment
+sway
+nvim
+neovidew
+neovide
+printenv
+journalctl --user -xe
+journalctl -p err -b
+cd
+ls
+systemctl --status
+systemctl
+systemctl --failed
+systemctl --user --failed
+ls
+nvim .config/sway/
+cd
+nvim ~/.config/gtk-3.0/settings.ini
+nvim ~/.icons/default/index.theme
+gsettings
+cat ~/.config/gtk-3.0/settings.ini
+gsettings
+gsettings list-schemas
+ls
+rg curosr
+rg curor
+cat ~/.config/gtk-3.0/settings.ini
+rg cursor
+fd catppuccin-mocha-dark-cursors
+fd catppuccin-mocha-dark-cursors /
+cd /usr/share/icons/catppuccin-mocha-dark-cursors/
+ls
+cat ~/.config/gtk-3.0/settings.ini
+ls
+seat
+d
+cd
+seat seat0 xcursor_theme Catppuccin-Mocha-Dark-Cursors
+nvim .config/sway/config
+sudo pacman -S discord
+mkdir ~/.cache/starship<\n>starship init nu | save -f ~/.cache/starship/init.nu
+cd .config/
+nvim nushell/config.nu
+ls
+cd .config/
+ls
+cd nushell/
+ls
+zoxide init nushell | save -f ~/.cache/.zoxide.nu
+ls
+cd a
+cd .cache/
+ls
+la
+ls -a
+cd l
+nvim .zoxide.nu
+cdi
+cdi bat/
+cd
+ls
+cdi architect/
+cd architect/
+cd
+zi
+cdi
+sudo pacman -S vivid
+vivid generate catppuccin-mocha > ~/.config/nushell/ls_colors.txt
+cd .config/
+ls
+cd nushell/
+ls
+cat ls_colors.txt
+ls
+nvim config.nu
+ls
+la
+ls
+nvim
+z nu
+nvim config.nu
+ls
+cat nu
+ls
+sl
+ls
+eza
+sudo pacman -Syu && prau -Syu
+sudo pacman -Syu; prau -Syu
+sudo pacman -Syu; paru -Syu
+sudo pacman -S ttf-nerd-fonts-symbols-mono
+sudo pacman -S go
+poweroff
+sudo pacman -Syu; paru -Syu
+ls
+cd .config/
+ls
+la
+ls -a
+nvim .gtkrc-2.0
+cd .config/
+ls
+ls --all 
+rm -rf zellij/
+ls
+rm -rf wezterm/
+ls
+rm -rf asm-lsp/
+ls
+cd nvim
+ls
+cd lua/plugins/
+ls
+mv asm.lua asm.lua.bak
+ls
+nvim hard.lua
+ls
+nvim
+ls
+cd
+ls
+cd
+gsettings set org.gnome.desktop.interface cursor-theme 'catppuccin-mocha-dark-cursors'
+gsettings set org.gnome.desktop.interface cursor-theme
+gsettings set org.gnome.desktop.interface cursor-theme catppuccin-mocha-dark-cursors
+nvim ~/.local/share/icons
+sudo pacman -S lxappearance
+sudo pacman -Rns lxappearance
+nvim
+ls
+nvim ~/.local/share/icons/default/index.theme
+sway
+ls
+nvim
+vim
+neovide
+ls
+cd nu
+ls
+cd .config/
+cd fish
+ls
+cat config.fish
+eza -a | egrep '^\.'
+ls
+rg
+rg a
+ls
+date
+date humanize 
+la
+time
+date
+date now
+ls ...
+ls
+table
+table --list 
+ls
+nvim alias.nu
+ls
+cd ..
+cd kitty/
+nvim kitty.conf
+ls
+nvim
+ls
+sudo pacman -Syu; paru -Syu
+sudo pacman -Sc
+ls
+sls
+ls
+nvim
+nivm
+nvim
+cd /etc/
+ls
+cat tlp.conf.pacnew
+cd /etc/
+sudoedit /etc/environment
+cd nu
+nvim alias.nu
+cd
+cd /etc/
+ls
+se tlp.conf
+cd nu
+ls
+nvim alias.nu
+nvim config.nu
+cd /etc/
+ls
+lscpu
+cat tlp.conf.pacnew | wl-copy 
+tlp stat
+tlp-stat
+sudo tlp-stat
+sudo pacman -S smartmontools
+sudo tlp-stat
+tlp-stat -g
+sudo tlp-stat -g
+sudo pacman -S x86_energy_perf_policy
+nvim architect/packages.json
+x86_energy_perf_policy
+sudo x86_energy_perf_policy
+sudo x86_energy_perf_policy --help
+sudo x86_energy_perf_policy --epb 
+se tlp.conf
+sudo pacman -Syu; paru -Syu
+cd
+sudo cp -r /etc/tlp.conf ~/architect/dotfiles/etc/
+cd /etc/tlp.d/
+ls
+nvim 00-template.conf
+ls
+cd
+ls
+cd /e
+ls
+whoami
+getent group
+sudo usermod -a -G power,git,network,video,input,systemd-journal,seat wasd
+ls
+groups wasd
+cd
+paru -S greetd-git
+systemctl enable greetd.service
+sudoedit /etc/greetd/config.toml
+ls
+se /etc/pam.d/greetd
+paru -S  greetd-tuigreet-git 
+se /etc/greetd/config.toml
+ls
+cd
+ls
+se /etc/greetd/config.toml
+reboot
+ls
+sway
+l
+sls
+ls
+se /etc/greetd/config.toml
+ls
+se /etc/greetd/config.toml
+reboot
+ls
+ps
+btop
+paru -Rns greetd-tuigreet-git
+cd /etc/systemd/system/getty@tty1.service.d/
+ls
+cd /etc/systemd/system/
+ls
+cd getty.target.wants/
+ls
+nvim getty@tty1.service
+ls
+ll
+se getty@tty1.service
+se /usr/lib/systemd/system/getty@.service
+cd
+$env.TERM
+sway
+nvim
+sudo cp -r /etc/greetd ~/architect/dotfiles/etc/
+ls
+cd .config/
+cd fish
+ls
+rm fish_plugins
+ls
+rm -rf functions/
+ls
+cd conf.d/
+ls
+fish
+cd
+cd .config/
+cd fish
+ls
+cd conf.d/
+ls
+cd ..
+rm -rf conf.d/
+ls
+nvim architect/packages.json
+kitty -
+kitty -help
+kitty --help
+sudo pacman -Syu; paru -Syu
+glxinfo | grep "direct rendering"
+sudo pacman -S adriconf
+cd /boot/
+ls
+cd loader/
+ls
+cd entries/
+ls
+se 2024-08-17_04-50-27_linux-fallback.conf
+cd
+sudo pacman -Syu; paru -Syu
+nvmi
+nvim
+ls
+nvim
+nvin
+nvim
+nivm
+nvim
+niv
+ls
+s
+lls
+ls
+cd sway
+ls
+fd sway
+fd --hidden sway
+nvim .config/sway/config
+l
+ls
+cd fd -H sway
+ls
+cd .config/
+ls
+cd sway
+ls
+nvim catppuccin-mocha
+ncim
+nvim
+vim
+cd
+ls
+cd
+ls
+cd architect/
+ls
+cd scripts/
+ls
+cd gotta-go-fast/
+ls
+nvim gotta-go-fast.py
+ls
+cd c
+l;s
+ls
+nvim justfile
+cd ..
+ls
+cd ..
+ls
+bash create_symlinks.sh
+cat ssh.sh
+ls
+mkdir .scripts
+ls
+nvim create_symlinks.sh
+ls
+cat create_symlinks.sh
+cp gotta-go-fast/ ~/.scripts/
+cp -r gotta-go-fast/ ~/.scripts/
+ls
+bash create_symlinks.sh
+cd
+ls
+cd .scripts/
+ls
+ll
+cd ..
+cd /usr/local/
+ls
+cd
+cd scr
+ls
+cat create_symlinks.sh
+cd /usr/local/bin
+ls
+cd
+ls
+cd architect/
+sl
+ls
+cd scripts/
+ls
+bash create_symlinks.sh
+sudo bash create_symlinks.sh
+ls
+cat create_symlinks.sh
+ls
+la
+ls -a
+cd .scripts/
+ls
+cd gotta-go-fast/
+ls
+chmod +x gotta-go-fast.py
+ls
+bash create_symlinks.sh
+sudo bash create_symlinks.sh
+gotta-go-fast.py 
+gotta-go-fast.py c c
+ls
+cd c
+ls
+cd src/
+ls
+cd ..
+ls
+just
+paru -Syu just
+paru -Syu just-git
+sudo pacman -S just
+sudo pacman -Syu && prau -Syu
+sudo pacman -Syu; paru -Syu
+ls
+just
+paru -S neovim-git
+nvim --version
+paru -S neovim-git
+sudo pacman -Syu; paru -Syu
+nvim
+nivm
+nvim
+nivm
+ls
+nvim
+cd
+ls
+rm -rf c
+ls
+cd go
+sl
+ls
+cd pkg/
+ls
+cd mod/l
+ls
+cd mod/
+sl
+ls
+cd
+ls
+rm -rf go/
+ls
+paru -S walker-git
+paru -S walker
+ls
+ls -a
+cd
+ls
+nvim .config/nushell/env.nu
+walker 
+walker --help
+sudo pacman -S libgirepository
+sudo pacman -S meson ninja
+ls
+walker
+walker --modules applications,ssh
+walker
+walker --modules applications,Webseatch
+ls
+paru -Rns walker
+ls
+rm -rf .go/
+ll
+ls
+rm -rf .go
+sudo rm -rf .go
+ls
+ll
+ls
+cd dev/
+ls
+eza
+ls
+cd 
+cd .config/nu
+ls
+ll
+nvim config.nu
+ls
+cd dev/
+gotta-go-fast.py memory_leaker c
+gotta-go-fast.py c memory_leaker --git
+cd memory_leaker/
+ls
+cd src/
+ls
+..
+ls
+cd .config/
+ls
+nvim starship.toml
+ls
+cd
+ls
+cd dev/
+ls
+cd memory_leaker/
+ls
+..
+ls
+just
+la
+ls -a
+just
+vnim
+vim
+cd .config/
+ls
+cd
+cd .config/
+ls
+nvim neovide/config.toml
+ls
+cd go
+ls
+..
+ls
+rm -rf go/
+ls
+rm -rf walker/
+ls
+rm -rf Electron/
+ls
+cd sway/
+ls
+vim
+neovide
+nvim config
+cd
+cd mem
+vim
+paru -S xremap-wlroots-bin
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules
+sudo gpasswd -a wasd input
+lsmod | grep uinput
+sudo modprobe uinput
+lsmod | grep uinput
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules
+lsmod | grep uinput
+/etc/modules-load.d/uinput.conf
+se /etc/modules-load.d/uinput.conf
+se /etc/udev/rules.d/99-input.rules
+ls
+cd .config/
+ls
+cd xremap/
+ls
+xremap config.yml
+ls
+sudo xremap config.yml
+ls
+cd .config/
+ls
+cd xremap/
+RUST_LOG=debug xremap config.yml &
+paru -S pueue-git
+sudo pacman -S pune
+paru -S pueue
+systemctl --user enable pueued
+pueue 
+cd ..
+cd nushell
+ls
+nvim env.nu
+ls
+nvim task.nu
+nvim config.nu
+ls
+task
+task status
+pueue 
+btop
+task spawn vim
+task spawn neovide
+task spawn 
+task spawn --gelp
+task spawn --help 
+task spawn --immediate vim
+task spawn --immediate neovide
+task spawn <neovide>
+task spawn
+task spawn ls
+task spawn { ls }
+ls
+task spawn { neovide }
+vim
+task spawn { neovide }
+task status 
+task status 1
+task log
+task kill --all 
+btop
+task spawn {vim}
+btop
+task status 1
+task status 
+task log
+task status
+task clean 
+task status
+ls
+cd un
+cd nu
+ls
+task spawn { neovide }
+vim
+nvim alias.nu
+ls
+cd .config/
+ls
+cd xremap/
+task spawn { xremap config.yml}
+ls
+nvmi config.yml
+nvim config.yml
+ls
+task kill --all 
+task spawn { xremap config.yml}
+ls
+nvim config.yml
+nvim
+ls
+nvim config.yml
+ls
+cd .config/
+ls
+nvim sway/config
+lsw
+sway
+ls
+bto
+btop
+task kill --all 
+swat
+cd .config/
+nvim sway/config
+pueue status
+pueue log
+pueue start nvim
+pune start
+pueue start
+ls
+sway
+ls
+sl
+ls
+vim
+sudo pacman -Syu && prau -Syu
+sudo pacman -Syul prau -Syu
+sudo pacman -Syu; prau -Syu
+sudo pacman -Syu; paru  -Syu
+ls
+pueue
+pueue add nvim
+pueue start
+ls
+btop
+ls
+pueue
+pueue kill
+pueue
+pueue add sleep 10
+pueue start
+pueue log
+pueue start
+pueue 
+ls
+pueue add xremap /home/wasd/.config/xremap/config.yml
+pueue clean
+pueue
+pueue start
+pueue
+pueue add xremap /home/wasd/.config/xremap/config.yml
+ls
+pueue clean
+ls
+sway
+ls
+cd .config/
+ls

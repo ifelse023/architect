@@ -8,6 +8,9 @@ c-files := "$(fd -e c)"
 
 set shell := ["bash", "-cu"]
 
+run: build
+    ./build/bin/main
+
 prep:
     mkdir -p build/bin
 
@@ -16,9 +19,6 @@ build: prep
 
 release: prep
     {{cc}} {{c-flags}} {{release-flags}} {{includes}} -o build/bin/main {{c-files}}
-
-run: build
-    ./build/bin/main
 
 debug: build
   gdb ./build/bin/main

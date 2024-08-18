@@ -3,8 +3,7 @@ keymap:
     application:
       only:
         - neovide
-        - foot
-        - wezterm
+        - kitty
     remap:
       KEY_0: Shift-KEY_0
       Shift-KEY_0: KEY_0
