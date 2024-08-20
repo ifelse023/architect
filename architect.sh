@@ -24,6 +24,6 @@ echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rule
 paru -Scc
 sudo journalctl --vacuum-size=1M
 sudo usermod -aG video,audio,network,sys,git,wheel,input wasd
-sudo python ./architect/service_manager.py
+python ./architect/service_manager.py
 sudo python ./architect/create_symlinks.py
 sudo pacman -Rns $(pacman -Qtdq)
