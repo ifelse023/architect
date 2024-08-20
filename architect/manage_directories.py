@@ -12,7 +12,7 @@ logging.basicConfig(
 
 
 def manage_directories() -> None:
-    dirs_to_keep: set[str] = {"architect", "Downloads", "dev", "misc"}
+    dirs_to_keep: set[str] = {".", "architect", "Downloads", "dev", "misc"}
     home_dir = Path("/home/wasd/")
 
     try:
