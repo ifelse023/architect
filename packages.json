@@ -2,6 +2,8 @@
   "packages": [
     "npm",
     "go",
+    "meson",
+    "ninja",
     "brightnessctl",
     "clang",
     "fzf",
@@ -14,6 +16,7 @@
     "ttf-font-awesome",
     "ttf-jetbrains-mono-nerd",
     "ttf-nerd-fonts-symbols",
+    "ttf-nerd-fonts-symbols-mono",
     "freetype2",
     "noto-fonts",
     "noto-fonts-emoji",
@@ -65,11 +68,8 @@
     "wireless-regdb",
     "python-pynvim",
     "dbus-python",
-    "thunar",
     "gnome-keyring",
     "gvfs",
-    "thunar-archive-plugin",
-    "thunar-volman",
     "efitools",
     "dosfstools",
     "grim",
@@ -84,6 +84,7 @@
     "fish-git",
     "x86_energy_perf_policy",
     "nushell",
+    "uv",
     "just"
   ],
   "aur-packages": [
@@ -93,6 +94,9 @@
     "tlp-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
-    "dracula-gtk-theme"
+    "dracula-gtk-theme",
+    "greetd-git",
+    "pueue-git",
+    "xremap-wlroots-bin"
   ]
 }

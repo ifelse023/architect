@@ -2,7 +2,7 @@ palette = "catppuccin_mocha"
 
 add_newline = false
 command_timeout = 1000
-format = """$username$os$directory$git_branch$git_status$package$c$python$lua
+format = """$username$os$directory$git_branch$git_status$package$c$lua
 [[󰋕](bold green) ❯](lavender) """
 
 [os]
@@ -55,9 +55,6 @@ deleted = ' '
 [hg_branch]
 symbol = " "
 
-[java]
-symbol = " "
-
 [memory_usage]
 symbol = " "
 
@@ -79,20 +76,6 @@ version_format = "v${raw}"
 
 [rust]
 symbol = " "
-
-
-[helm]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
-[terraform]
-disabled = true
-
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

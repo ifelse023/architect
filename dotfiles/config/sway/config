@@ -1,3 +1,5 @@
+include catppuccin-mocha
+
 ### Variables
 # Logo key. Use Mod1 for Alt.
     set $mod Mod4
@@ -8,9 +10,9 @@
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term wezterm
-    for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 10
-    set $menu exec $term -a launcher -e sway-launcher-desktop
+    set $term kitty
+    set $menu exec fuzzel
+
 
 ### Output configuration
     output * bg ~/architect/wallpapers/2.png fill
@@ -42,7 +44,7 @@
 #
 # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec wezterm --class="termfloat"
+    bindsym $mod+Shift+Return exec kitty --class="termfloat"
 # Kill focused window
     bindsym $mod+q kill
 
@@ -200,24 +202,22 @@
     default_border pixel 1
     default_floating_border pixel 1
 
-    client.focused #4c7899 #285577 #ffffff #2e9ef4 #285577
-    client.focused_inactive #333333 #5f676a #ffffff #484e50 #5f676a
-    client.unfocused #333333 #222222 #888888 #292d2e #222222
-    client.urgent #2f343a #900000 #ffffff #900000 #900000
-    client.placeholder #000000 #0c0c0c #ffffff #000000 #0c0c0c
-    client.background #ffffff
+# target                 title     bg    text   indicator  border
+client.focused           $pink     $base $text  $rosewater $pink
+client.focused_inactive  $mauve    $base $text  $rosewater $mauve
+client.unfocused         $mauve    $base $text  $rosewater $mauve
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 # Assign workspaces
     assign [app_id="firefox"] 4
     for_window [app_id="firefox"] focus
 
-    assign [class="firefox"] 4
-    for_window [class="firefox"] focus
+    assign [app_id="neovide"] 1
+    for_window [app_id="neovide"] focus
 
-    assign [app_id=thunar] 3
-    for_window [app_id=thunar] focus
-
-    assign [class="discord"] 5
+    assign [app_id="discord"] 5
     for_window [class="discord"] focus
 
 
@@ -249,7 +249,7 @@
 
     exec_always  --no-startup-id  mako &
     exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
+    exec xremap /home/wasd/.config/xremap/config.yml
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && \

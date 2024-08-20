@@ -53,8 +53,12 @@ def main() -> None:
     )
 
     args = parser.parse_args()
-    project_root = Path("/home/wasd/architect/scripts/gotta-go-fast")
-    src_path = project_root / args.language
+    templates_root = Path.home() / ".scripts/gotta-go-fast"
+    src_path = templates_root / args.language
+
+    print(f"Templates root: {templates_root}")
+    print(f"Source path: {src_path}")
+    print(f"Source path exists: {src_path.exists()}")
 
     if not src_path.exists():
         print(f"No template found for {args.language}")

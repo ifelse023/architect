@@ -1,32 +1,41 @@
-import os
-import shutil
+import logging
 import sys
+from pathlib import Path
+from shutil import rmtree
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(levelname)s - %(message)s",
+    filename="../log/manage_directories.log",
+    filemode="w",
+)
 
 
 def manage_directories() -> None:
-    dirs_to_keep = ["architect", "Downloads", "dev", "misc"]
-    home_dir = "/home/wasd/"
+    dirs_to_keep: set[str] = {"architect", "Downloads", "dev", "misc"}
+    home_dir = Path("/home/wasd/")
 
     try:
-        existing_dirs = set(os.listdir(home_dir))
-        for item in existing_dirs:
-            item_path = os.path.join(home_dir, item)
-            if item.startswith(".") or not os.path.isdir(item_path):
-                continue
-            if item not in dirs_to_keep:
-                shutil.rmtree(item_path)
-                print(f"Deleted: {item_path}")
+        existing_dirs: set[str] = {
+            item.name
+            for item in home_dir.iterdir()
+            if item.is_dir() and not item.name.startswith(".")
+        }
+
+        for dir_name in existing_dirs - dirs_to_keep:
+            dir_path = home_dir / dir_name
+            rmtree(dir_path)
+            logging.info(f"Deleted directory: {dir_path}")
 
         for dir_name in dirs_to_keep:
-            dir_path = os.path.join(home_dir, dir_name)
-            if dir_name not in existing_dirs:
-                os.makedirs(dir_path, exist_ok=True)
-                print(f"Created: {dir_path}")
+            dir_path = home_dir / dir_name
+            if not dir_path.exists():
+                dir_path.mkdir(parents=True, exist_ok=True)
+                logging.info(f"Created directory: {dir_path}")
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    except Exception:
+        logging.exception("Failed")
         sys.exit(1)
 
 
-if __name__ == "__main__":
-    manage_directories()
+manage_directories()

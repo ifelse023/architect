@@ -788,3 +788,1195 @@ sway
 ls
 cd .config/
 ls
+cp -r nushell/ xremap/ nvim/ ~/architect/dotfiles/config/
+ls
+cd
+ls
+cd architect/
+ls
+l
+ls
+pacman -Qb
+pacman -Q
+pacman -Q | pol
+pacman -Q | rg pol
+nvim packages.json
+ls
+sudo pacman -S clang
+file clang
+file $(which clang)
+file $env.(which clang)
+file (which clang).path
+file (which clang) .path
+file (which clang).path
+file (which nvim).path
+file (... which nvim).path
+stat (which git).path
+stat (which git)
+stat (...which git)
+stat (... which git)
+ls
+which clang
+ls
+which clang
+file clang
+type clang
+describe clang
+type -a clang
+sudo pacman -S type
+which clang
+which -a clang
+which -h  clang
+which --all   clang
+file (... which nvim).path
+file (which nvim).path
+file which nvim.path
+file (which nvim).path
+which clang
+file /usr/bin/clang
+file (which clang-18).path
+file /usr/bin/clang-18
+readelf .comment /usr/bin/clang-18
+readelf -a .comment /usr/bin/clang-18
+readelf .note.gnu.property /usr/bin/clang-18
+readelf --section-headers .note.gnu.property /usr/bin/clang-18
+readelf -A .note.gnu.property /usr/bin/clang-18
+readelf -A /usr/bin/clang-18
+readelf -a
+readelf -a .note.gnu.property /usr/bin/clang-18
+readelf -a .note.gnu.property /usr/bin/sway
+lls
+cd
+ls
+btop
+cd /tmp
+ls
+fd -H .
+cd ..
+df -H /tmp/
+ls
+cd
+s
+ls
+nvim
+ee
+cd architect/
+cat architect/
+cat architect.sh
+sudo pacman -Rns $(pacman -Qtdq)
+sudo pacman -Rns (pacman -Qtdq)
+pacman -Qtdq
+sudo pacman -Rns libvterm
+sudo pacman -Rns tree-sitter-c<\n>tree-sitter-lua<\n>tree-sitter-markdown<\n>tree-sitter-query<\n>tree-sitter-vim<\n>tree-sitter-vimdoc
+ls
+cd .cache/
+ls
+rm -rf event-sound-cache.tdb.14b10facdd2546339c388d37c555a4e0.x86_64-pc-linux-gnu pip walker matplotlib/ go-build/
+cd
+ls
+nvim
+ls
+sudo pacman -Syu; paru  -Syu
+nvim
+ls
+cd architect/
+ls
+cd architect/
+cd ..
+cd scripts/
+ls
+nvim create_symlinks.sh
+ls
+cd
+ls
+lcd
+ls
+cd architect/
+ls
+nvim architect.sh
+ls
+nvim packages.json
+ls
+sudo pacman -S uv
+uv
+ls
+uv venv
+ls
+la
+rm .config.old
+ls
+mv .config dotfiles/
+ls
+la
+source .venv/bin/activate
+cat .venv/bin/activate
+ls
+la
+ls
+uv venv
+.venv/bin/activate.nu
+overlay use .venv/bin/activate.nu
+ls
+pytnon
+python
+python
+ls
+la
+ruff
+unuv pip install ruff
+uv pip install ruff
+ruff
+ruff check .
+nvim pyproject.toml
+ls
+ruff check .
+ls
+cd architect/
+ls
+nvim main.py
+ls
+..
+ls
+cd scripts/
+ls
+nvim gotta-go-fast.py
+nvim gotta-go-fast/gotta-go-fast.py
+chmod +x gotta-go-fast.py
+ls
+chmod +x  gotta-go-fast/gotta-go-fast.py
+ls
+cd gotta-go-fast/
+ls
+nvim gotta-go-fast/gotta-go-fast.py
+ls
+nvim gotta-go-fast.py
+ls
+./gotta-go-fast.py c c
+ls
+nvim gotta-go-fast.py
+uv pip install types-html5lib types-requests
+ls
+./gotta-go-fast.py c c
+ls
+nvim gotta-go-fast.py
+./gotta-go-fast.py c c
+ls
+./gotta-go-fast.py c zxc
+ls
+./gotta-go-fast.py zxc zxc
+pyton architect/scripts/gotta-go-fast/gotta-go-fast.py 
+pyhton architect/scripts/gotta-go-fast/gotta-go-fast.py 
+python architect/scripts/gotta-go-fast/gotta-go-fast.py 
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+ls
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+ls
+rm -rf c
+ls
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+rm -rf c
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+rm -rf c
+ls
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+ls
+cd c
+ls
+cd
+ls
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+rm -rf c
+ls
+python architect/scripts/gotta-go-fast/gotta-go-fast.py c c
+ls
+cd c
+ls
+cd
+ls
+rm -rf c
+ls
+nvim gotta-go-fast.py
+ls
+cp -r gotta-go-fast.py ~/.scripts/gotta-go-fast/
+nvim .scripts/gotta-go-fast/gotta-go-fast.py
+ls
+cd
+ls
+ls
+..
+s
+ls
+cat create_symlinks.sh
+cd /usr/local/bin
+ls
+cat gotta-go-fast.py
+cd
+ls
+gotta-go-fast.py c memory_leaker --git
+ls
+rm -rf memory_leaker/
+ls
+cd
+ls
+cd
+ls
+nvim .config/starship.toml
+ls
+cd architect/
+ls
+overlay use .venv/bin/activate.nu
+cd
+ls
+cd architect/
+ls
+cd architect/
+git status
+ls
+cd
+sl
+ls
+sudo pacman -S sysbench
+sysbench cpu --cpu-max-prime=2000 run
+cd
+ls
+sudo pacman -Syu; paru  -Syu
+ls
+nvim
+ls
+cd architect/
+ls
+cd architect/
+ls
+nvim systemd_manager.py
+ls
+vim modify_files.py
+ls
+nvim manage_directories.py
+ls
+nvim main.py
+python main.py
+..
+py architect/main.py
+sudo pacman -Rns nwg-look 
+ls
+git add .
+git status
+ls
+cd dotfiles/
+ls
+cd config/
+ls
+rm -rf nvim/
+sl
+..
+git add .
+git status
+git commit -m ":^"
+git push
+ls
+sudo pacman -Syu; paru  -Syu
+reboot
+ls
+sway
+ls
+cd /etc/greetd/
+ls
+sudoedit config.toml
+sudo pacman -Syu; paru  -Syu
+ls
+nvim
+ls
+cd architect/
+ls
+cd architect/
+ls
+vim
+ls
+cd .config/fish
+ls
+nvim config.fish
+ls
+cd
+ls
+cd .config/
+ls
+rm -rf fish/
+ls
+cd
+cd architect/
+ls
+cd architect/
+ls
+..
+ls
+cd dotfiles/
+ls
+rm -rf config/fish/
+ls
+cd config/
+ls
+rm -rf zellij/ asm-lsp/ 
+ls
+..
+ls
+cd home
+la
+...
+ls
+ls
+cd
+ls
+cd architect/
+ls
+vim
+cd config/
+ls
+cd 
+cd config
+ls
+cd hypr/
+sl
+ls
+cd scripts/
+ls
+cat portal
+cat portal.sh
+ls
+..
+ls
+rm -rf scripts/ walls/
+ls
+...
+ls
+cd architect/
+ls
+vim
+ls
+vim
+sudo pacman -S qemu-desktop
+sudo pacman -S libvirt
+grep -E '(vmx|svm)' /proc/cpuinfo
+sudo pacman -Syu qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+sudo systemctl enable libvirtd
+sudo usermod -a -G libvirt $(whoami)<\n>sudo usermod -a -G kvm $(whoami)<\n>
+sudo usermod -a -G libvirt (whoami)<\n>sudo usermod -a -G kvm (whoami)<\n>
+sudo usermod -a -G libvirt (whoami)<\n>sudo usermod -a -G kvm wasd
+sudo usermod -a -G libvirt<\n>sudo usermod -a -G kvm wasd
+sudo usermod -a -G libvirt wasd<\n>sudo usermod -a -G kvm wasd
+lsmod | grep kvm
+sync
+ls
+cd architect/
+pacman -Q
+ls
+vim packages.json
+sudo pacman -S ttf-nerd-fonts-symbols-mono
+sudo pacman -S expac
+expac --timefmt='%Y-%m-%d %H:%M:%S' '%l\t%n' | sort -n
+expac --timefmt='%Y-%m-%d %H:%M:%S' '%l\t%n' | sort -nr
+expac --timefmt='%Y-%m-%d %H:%M:%S' '%l\t%n' | sort -n
+expac --timefmt='%Y-%m-%d %H:%M:%S' '%l\t%n' | sort -nr
+grep '\[ALPM\] installed' /var/log/pacman.log | awk '{print $1 " " $2 " " $4}' | sort
+pacman -Q
+grep '\[ALPM\] installed' /var/log/pacman.log | awk '{ print substr($1, 2, length($1)-2) " " substr($2, 1, length($2)-1) " " $4 }' | while read date time pkg; do printf "%d %s\n" "$(date -d "$date $time" +%s)" "$pkg"; done | sort -n | awk '{print $2}'
+grep '\[ALPM\] installed' /var/log/pacman.log | awk '{ print substr($1, 2, length($1)-2) " " substr($2, 1, length($2)-1) " " $4 }' | while read date time pkg; do printf "%d %s\n" "$(date -d "$date $time" +%s)" "$pkg"; done | sort -n | awk '{print $2}'<\n>
+bash
+pacman -Q
+ls
+nvim later.sh
+ls
+nvim packages.json
+ls
+which nu
+chsh -s /usr/bin/nu
+ls
+ssh wasd@192.168.122.227
+ssh-copy-id  wasd@192.168.122.227
+<\n>ERROR: Offending RSA key in /home/wasd/.ssh/known_
+ssh-keygen -f /home/wasd/.ssh/known_hosts -R 192.168.122.227
+ssh-copy-id wasd@192.168.122.227
+ssh wasd@192.168.122.227
+ls
+kitten ssh wasd@192.168.122.227
+ls
+nvim architect.sh
+ls
+cd architect/
+ls
+cd architect/
+cat later.sh
+cat architect.sh
+pacman -Q
+pacman -Qk
+pacman -Qe
+pacman -Qe | rg psd
+pacman -Qe | rg power
+pacman -Qe | rg profile
+pacman -Qe | rg pue
+pacman tlp
+pacman -Q | rg scx
+pacman -Qeq
+cd architect/architect/
+ls
+py systemd_manager.py
+ls
+py systemd_manager.py
+pacman -Qeq
+pacman -Qe
+pacman -Qq
+py systemd_manager.py
+cd architect/architect/
+vim systemd_manager.py
+systemctl status --all
+systemctl is-active
+systemctl is-active psd
+systemctl is-active scx
+systemctl is-active psd
+systemctl --user is-active psd
+ls
+cd architect/architect/
+py systemd_manager.py
+ls
+cd architect/architect/
+py systemd_manager.py
+ls
+py systemd_manager.py
+ls
+py systemd_manager.py
+ls
+..
+sl
+ls
+cd architect/
+ls
+py systemd_manager.py
+ls
+py systemd_manager.py
+ls
+cat debug.log
+py systemd_manager.py && cat debug.log
+py systemd_manager.py; cat debug.log
+nvim systemd_manager.py
+poweroff
+sl
+ls
+cd architect/
+vim
+py architect/systemd_manager.py
+ls
+py architect/systemd_manager.py; cat debug.log
+systemctl is-active sshd
+systemctl disable sshd.service
+systemctl is-active sshd
+py architect/systemd_manager.py; cat debug.log
+sudo pacman -Qqqqq
+py architect/systemd_manager.py; cat debug.log
+systemctl disable sshd.service
+py architect/systemd_manager.py; cat debug.log
+ls architect/
+nvim .gitignore
+ls
+ls architect/
+nvim architect/main.py
+py architect/main.py
+ls
+vim
+py architect/main.py
+sudo pacman -Syu; paru  -Syu
+ls
+py architect/main.py
+paru -Syu
+py architect/main.py
+ls
+cat install_packages.log
+rm debug.log
+ls
+cd architect/
+ls
+nvim systemd_manager.py
+ls
+nvim systemd_manager.py
+ls
+nvim modify_files.py
+ls
+nvim manage_directories.py
+ls
+py manage_directories.py
+ls
+mkdir Desktop
+py manage_directories.py
+ls
+ls
+cat directory_management.log
+ls
+nvim manage_directories.py
+ls
+..
+ls
+nvim architect.sh
+ls
+cd
+ls
+sudo pacman -Syu; paru  -Syu
+paru -Syu; sudo pacman -Syu
+se /etc/pacman.conf
+sudo pacman -Syu; paru  -Syu
+nvim
+ls
+cd architect/
+ls
+cd architect/
+ls
+mv main.py install_packages.py
+ls
+..
+ls
+cd wallpapers/
+ls
+..
+ls
+tree
+ls -tree
+ls
+tree
+ls
+sudo pacman -S tree
+tree
+ls
+cd architect/
+ls
+nvim install_packages.py
+vim install_packages.py
+py architect/install_packages.log
+cd architect/
+ls
+cd architect/
+ls
+mv systemd_manager.py service_manager.py
+cd
+py architect/install_packages.py
+ls
+py architect/architect/install_packages.py
+cd architect/
+nvim packages.json
+ls
+paru -c
+paru -L
+sudo pacman -D
+sudo pacman -Syu
+sudo pacman -Syu --ignore uv 
+sudo pacman -Syu
+ls
+sudo pacman -Rns helix-git
+paru -Syu helix-git
+sudo pacman -S helix
+cd architect/
+ls
+cd architect/
+ls
+hx install_packages.py
+hx
+helix
+helix install_packages.py
+sudo pacman -Syu
+se /etc/pacman.conf
+cd architect/
+ls
+vim
+ls
+cd /boot/loader/entries/
+ls
+sudo cp 2024-08-17_04-50-27_linux 00.conf
+ls
+sudo cp 2024-08-17_04-50-27_linux.conf 00.conf
+ls
+cat 00.conf
+py ~/architect/architect/modify_files.py
+sudo py ~/architect/architect/modify_files.py
+sudo python ~/architect/architect/modify_files.py
+ls
+cat install_packages.log
+ls
+se 2024-08-17_04-50-27_linux.conf
+ls
+sudo 00.conf 33.conf
+sudo cp 00.conf 33.conf
+ls
+rm -rf 00.conf
+ls
+sudo rm 00.conf
+ls
+sudo python ~/architect/architect/modify_files.py
+ls
+cat install_packages.log
+sudo nvim 2024-08-17_04-50-27_linux.conf
+ls
+cd /boot/loader/entries/
+ls
+cat install_packages.log
+ls
+rm -rf 4ls
+ls
+cat 2024-08-17_04-50-27_linux.conf
+sudo python ~/architect/architect/modify_files.py
+cat 2024-08-17_04-50-27_linux.conf
+sudo nvim 2024-08-17_04-50-27_linux.conf
+se 2024-08-17_04-50-27_linux.conf
+ls
+cd
+ls
+rm install_packages.log
+ls
+cd architect/
+paru -Syu; sudo pacman -Syu
+ls
+cd architect/
+ls
+nvim modify_files.py
+ls
+sudo python service_manager.py
+pyu service_manager.py
+py service_manager.py
+ls
+nvim service_manager.py
+ls
+..
+ls
+pyton architect/service_manager.py
+python  architect/service_manager.py
+ls
+rm service_manager.log install_packages.log
+ls
+vim
+python  architect/service_manager.py
+ls
+mkdir log
+ls
+python  architect/service_manager.py
+ls
+rm -rf log/
+python  architect/service_manager.py
+mkdir log
+python  architect/service_manager.py
+ls
+cat log/
+ls
+cd log/
+ls
+cat service_manager.log
+..
+ls
+cd architect/
+ls
+rm *.log
+ls
+..
+ls
+cd architect/
+ls
+cat install_packages.py
+cat modify_files.py
+ls
+vimls
+cd __pycache__/
+ls
+..
+ls
+..
+ls
+sudo sysctl
+sudo sysctl -a
+sudo sysctl -a | rg miti
+sysbench cpu --cpu-max-prime=2000 run
+sudo sysctl kernel.split_lock_mitigate=0
+sysbench cpu --cpu-max-prime=2000 run
+sudo ksmctl --enable
+sudo pacman -S ksmctl
+cd /etc
+ls
+cd tmpfiles.d/
+ls
+sudo nvim thp.conf
+ls
+nvim optimize-interruptfreq.conf
+se optimize-interruptfreq.conf
+ls
+..
+ls
+sudo cp -r tmpfiles.d/ ~/architect/dotfiles/etc/ 
+cd ~/architect/dotfiles/etc/
+ls
+cd
+cd /etc
+ls
+cd
+ls
+cd
+s
+ls
+cd /etc/
+ls
+cd sysctl.d/
+ls
+cat 99-custom.conf
+ls
+cd
+ls
+nvim packages.json
+poweroff
+paru -Syu; sudo pacman -Syu
+cd architect/
+ls
+cat architect.sh
+groups wasd
+cd /var/lib/iwd/Magenta
+ls
+groups wasd
+getent group
+sudo usermod -aG sudo,video,audio,network,sys,git,wheel,seat,input wasd<\n>
+se /etc/sudoers
+nvim architect.sh
+sway
+paru -Syu; sudo pacman -Syu
+ls
+id
+se /etc/sudoers
+ls
+cd /etc/
+ls
+cd sudoers.d/
+ls
+cd sudoers.d/
+sudo -r 
+sway
+paru -Syu; sudo pacman -Syu
+ls
+cd architect/
+lsc
+ls
+cd dotfiles/
+ls
+sudo cp -r /etc/tlp.conf ~/architect/dotfiles/etc/
+cd etc/
+ls
+cd greetd/
+ls
+cat config.toml
+echo $env.XDG_SESSION_TYPE
+echo $env.XDG_SESSION_TYPE $env.XDG_SESSION_TYPE
+echo $env.XDG_SESSION_TYPE $env.XDG_SEAT
+echo $env.XDG_SESSION_TYPE $env.env.XDG_SESSION_TYPE
+echo $env.XDG_SESSION_TYPE $env.MOZ_ENABLE_WAYLAND
+lls
+ls
+cd
+ls
+cd architect/
+ls
+nvim
+nivm
+nvim
+ls
+cd scripts/
+ls
+/usr/local/bin/
+ls
+cd
+nvim create_symlinks.sh
+ls
+bash create_symlinks.sh
+nvim create_symlinks.sh
+ls
+..
+ls
+cd architect/
+ls
+nvim create_symlinks.py
+ls
+vnim create_symlinks.py
+vim
+ls
+py create_symlinks.py
+ls
+nvim create_symlinks.py
+py create_symlinks.py
+sudo python create_symlinks.py
+ls
+cd .scripts/
+ls
+ll
+cd /usr/local/bin
+ls
+rm gotta-go-fast.py
+sudo rm gotta-go-fast.py
+ls
+cd
+cd architect/
+ls
+cd architect/
+nvim create_symlinks.py
+ls
+py create_symlinks.py
+sudo python create_symlinks.py
+ls
+cd /usr/local/bin
+ls
+nvim create_symlinks.py
+ls
+p
+py create_symlinks.py
+cd .scripts/
+ls
+cd gotta-go-fast/
+ls
+..
+ls
+sudo python create_symlinks.py
+ls
+cd /usr/local/bin
+ls
+cd
+cd .scripts/
+ls
+cd gotta-go-fast/
+ls
+ll
+./gotta-go-fast.py
+ls
+cd .scripts/
+ls
+cd gotta-go-fast/
+ls
+./gotta-go-fast.py zxc zxc
+./gotta-go-fast.py zxc c
+ls
+./gotta-go-fast.py c c
+ls
+./gotta-go-fast.py c c
+ls
+pwd
+ls
+./gotta-go-fast.py c c
+ls
+chmod +x gotta-go-fast.py
+./gotta-go-fast.py c c
+ls
+./gotta-go-fast.py c py
+ls
+cd py
+ls
+..
+ls
+rm -rf py/
+ls
+nvim gotta-go-fast.py
+ls
+..
+ls
+cp -r gotta-go-fast/ ~/architect/scripts/
+cd
+ls
+cd architect/
+git status
+ls
+cd scripts/
+ls
+..
+cd architect/
+ls
+cd .scripts/
+ls
+cd gotta-go-fast/
+ls
+cp gotta-go-fast.py ../
+ls
+cd ..
+ls
+rm -rf gotta-go-fast/
+ls
+./gotta-go-fast.py c py
+ls
+cd
+ls
+cd architect/
+ls
+cd scripts/
+ls
+cd gotta-go-fast/
+ls
+mv c ../../
+ls
+..
+ls
+..
+ls
+mkdir templates
+ls
+mv c templates/
+ls
+cd .config/kitty/
+ls
+nvim kitty.conf
+nvim gotta-go-fast.py
+ls
+cd architect/
+ls
+nvim create_symlinks.py
+ls
+py create_symlinks.py
+sudo python create_symlinks.py
+cd /usr/local/bin
+ls
+..
+cd
+ls
+cd .scripts/
+ls
+cd
+cd architect/
+ls
+sudo python create_symlinks.py
+nvim create_symlinks.py
+ls
+sudo python create_symlinks.py
+gotta-go-fast.py 
+ls
+py create_symlinks.py
+cat create_symlinks.sh | wl-copy 
+cat create_symlinks.py| wl-copy 
+vim
+py create_symlinks.py
+ls
+py create_symlinks.py
+ls
+cd .config/
+ls
+cd
+cd .scripts/
+ls
+rm ssh.sh create_symlinks.sh
+ls
+..
+ls
+cd architect/
+ls
+cd
+cd architect/
+ls
+cd architect/
+ls
+rg LOGGING
+rg DEBUG
+rg .log
+rg ".log"
+cat create_symlinks.py
+rg filename=
+vim
+ls
+py create_symlinks.py
+ls
+cat create_symlinks.log
+rm create_symlinks.log
+ls
+nvim create_symlinks.py
+ls
+cd /
+cd
+cd /usr/local/bin
+ls
+sudo rm gotta-go-fast.py
+ls
+py create_symlinks.py
+ls
+cat ../log/create_symlinks.log
+ls
+sudo python create_symlinks.py
+cat ../log/create_symlinks.log
+cd
+ls
+cat create_symlinks.py | wl-copy 
+ls
+..
+ls
+cat architect.sh
+sudo usermod -aG sudo,video,audio,network,sys,git,wheel,seat,input wasd
+sudo usermod -aG video,audio,network,sys,git,wheel,seat,input wasd
+ls
+groups wasd
+ls
+cat architect.sh
+ls
+curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
+tar xvf cachyos-repo.tar.xz && cd cachyos-repo
+tar xvf cachyos-repo.tar.xz; cd cachyos-repo
+ls
+sudo ./cachyos-repo.sh
+cat /etc/pacman.conf
+ls
+cat /etc/pacman.d/
+cat /etc/pacman.d/cachyos-v4-mirrorlist
+ls
+sudo pacman -S cachyos-rate-mirrors
+cachyos-rate-mirrors 
+sudo cachyos-rate-mirrors 
+ls
+cat cachyos-repo.sh
+ls
+nvim cachyos-repo.sh
+ls
+sudo ./cachyos-repo.sh
+ls
+nvim cachyos-repo.sh
+cat /etc/pacman.d/cachyos-mirrorlist
+cd /etc/
+ls
+cd pacman.d/
+ls
+nvim architect.sh
+cat cachyos-v4-mirrorlist
+ls
+cd architect/
+ls
+cd ..
+s
+ls
+cd architect/
+ls
+cd
+cd
+ls
+rm -rf cachyos-repo/ cachyos-repo.tar.xz
+ls
+cd architect/
+ls
+nvim .gitignore
+git status
+ls
+nvim packages.json
+ls
+ls -a
+ll
+cd scripts/
+ls
+cat ssh.sh
+chmod 700 ~/.ssh
+ll
+ls
+cd architect/
+cd scripts/
+ls
+bash ssh.sh
+ls
+cd misc/
+ls
+cd misc/
+ls
+cd books/
+ls
+..
+ls
+rm post.sh firefox.sh
+ls
+bash ssh.sh
+la
+ls -a
+ls
+cd usb
+ls
+..
+ls
+ls
+cd /mnt/
+ls
+cd usb/
+ls
+sudo mount /dev/sda1 /mnt/usb/
+ls
+cd usb/
+ls
+..
+ls
+rm -rf usb/
+ls
+la
+d
+cd
+ls
+la
+mv .ssh/ .ssh.bak
+la
+cd
+ls
+sudo umount /mnt/usb
+ls
+lsblk
+cd architect/
+ls
+cd scripts/
+ls
+bash ssh.sh
+la
+cd .ssh
+ls
+ll
+..
+ls
+..
+ls
+cd wasd/
+ls
+ls
+rm create_symlinks.sh
+ls
+qla
+la
+lss
+ls
+date
+date now
+ls
+nvim ssh.sh
+..
+vim
+cd misc/
+ls
+cat post
+ls
+cat post.sh
+ls
+nvim firefox.sh
+ls
+cat post.sh
+ls
+sudo mount /dev/sda1 /mnt/usb/
+ls
+cd /mnt/usb/
+ls
+rm post.sh firefox.sh
+ls
+cp ~/misc/firefox.sh .
+ls
+la
+ls
+ls
+cd /etc/
+ls
+..
+cd home
+ls
+cd
+ls
+cd architect/
+cd dotfiles/
+ls
+cd home
+ls
+la
+ls
+la
+ls
+..
+ls
+cd config
+ls
+cd .config/
