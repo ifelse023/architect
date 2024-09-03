@@ -4,7 +4,7 @@ import subprocess
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)s - %(message)s",
-    filename="../log/service_manager.log",
+    filename="./log/service_manager.log",
     filemode="w",
 )
 

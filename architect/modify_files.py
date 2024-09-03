@@ -4,7 +4,7 @@ from pathlib import Path
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)s - %(message)s",
-    filename="../log/modify_files.log",
+    filename="./log/modify_files.log",
     filemode="w",
 )
 

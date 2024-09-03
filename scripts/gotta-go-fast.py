@@ -53,7 +53,7 @@ def main() -> None:
     )
 
     args = parser.parse_args()
-    templates_root = Path.home() / ".scripts/gotta-go-fast"
+    templates_root = Path.home() / "architect/templates"
     src_path = templates_root / args.language
 
     print(f"Templates root: {templates_root}")

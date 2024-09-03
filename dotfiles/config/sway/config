@@ -1,5 +1,8 @@
 include catppuccin-mocha
+set $cursor_theme catppuccin-mocha-dark-cursors
+set $cursor_size 24
 
+seat seat0 xcursor_theme $cursor_theme $cursor_size
 ### Variables
 # Logo key. Use Mod1 for Alt.
     set $mod Mod4
@@ -10,7 +13,7 @@ include catppuccin-mocha
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term kitty
+    set $term wezterm
     set $menu exec fuzzel
 
 
@@ -32,19 +35,19 @@ include catppuccin-mocha
     }
 ### Input configuration
 
-    input "type:keyboard" {
-    xkb_layout de
-    xkb_options caps:escape
-    xkb_variant us
-    }
-
+    # input "type:keyboard" {
+    # xkb_layout de
+    # xkb_options caps:escape
+    # xkb_variant us
+    # }
+    #
 ### Key bindings
 #
 # Basics:
 #
 # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec kitty --class="termfloat"
+    bindsym $mod+Shift+Return exec wezterm --class="termfloat"
 # Kill focused window
     bindsym $mod+q kill
 
@@ -122,7 +125,7 @@ include catppuccin-mocha
 
     workspace 1 output eDP-1
     workspace 2 output eDP-1
-    workspace 3 output eDP-1
+    workspace 3 output eDP-
     workspace 4 output HDMI-A-1
     workspace 5 output HDMI-A-1
     workspace 6 output HDMI-A-1
@@ -144,11 +147,6 @@ include catppuccin-mocha
 # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
-# Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
-
-# Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
 
 # Move focus to the parent container
     bindsym $mod+a focus parent
@@ -190,6 +188,10 @@ include catppuccin-mocha
     }
     bindsym $mod+r mode "resize"
 
+    bindsym $mod+Tab exec swayr switch-to-urgent-or-lru-window
+    bindsym $mod+Space       exec swayr switch-window
+    bindsym $mod+c           exec swayr execute-swaymsg-command
+
 
 # Gaps and border adjustments
     gaps inner 2
@@ -202,15 +204,14 @@ include catppuccin-mocha
     default_border pixel 1
     default_floating_border pixel 1
 
-# target                 title     bg    text   indicator  border
-client.focused           $pink     $base $text  $rosewater $pink
-client.focused_inactive  $mauve    $base $text  $rosewater $mauve
-client.unfocused         $mauve    $base $text  $rosewater $mauve
-client.urgent            $peach    $base $peach $overlay0  $peach
-client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
-client.background        $base
+client.focused           $mauve    $base $text  $lavender $mauve
+client.focused_inactive  $mantle       $base $text  $mantle $mantle
+client.unfocused         $mantle        $base $text  $mantle $mantle
+client.urgent            $peach        $base $peach $overlay0  $peach
+client.placeholder       $base     $base $text  $overlay0  $overlay0
+client.background        $base# Assign workspaces
 
-# Assign workspaces
+
     assign [app_id="firefox"] 4
     for_window [app_id="firefox"] focus
 
@@ -247,10 +248,14 @@ client.background        $base
     for_window [app_id="firefox"] inhibit_idle fullscreen
 
 
-    exec_always  --no-startup-id  mako &
+    exec_always  --no-startup-id  mako
+    exec_always swayrd
+
     exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    exec xremap /home/wasd/.config/xremap/config.yml
+    exec xremap --device /dev/input/event9 /home/wasd/.config/xremap/config.yml
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && \
       dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+    exec --no-startup-id swaymsg "exec sleep 1; workspace 2; exec wezterm"

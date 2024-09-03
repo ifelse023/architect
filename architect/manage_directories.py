@@ -6,7 +6,7 @@ from shutil import rmtree
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)s - %(message)s",
-    filename="../log/manage_directories.log",
+    filename="./log/manage_directories.log",
     filemode="w",
 )
 

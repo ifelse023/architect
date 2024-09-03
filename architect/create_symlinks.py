@@ -1,3 +1,4 @@
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -8,13 +9,28 @@ def copy_scripts() -> list[str]:
     dest_dir = Path("/home/wasd/.scripts")
     dest_dir.mkdir(parents=True, exist_ok=True)
     copied_files: list[str] = []
+
     for file in source_dir.iterdir():
         if file.is_file():
-            dest_file = dest_dir / file.name
-            shutil.copy2(file, dest_file)
-            copied_files.append(file.name)
-            print(f"Copied: {file.name}")
+            try:
+                dest_file = dest_dir / file.name
+                shutil.copy2(file, dest_file)
+                copied_files.append(file.name)
+                print(f"Copied: {file.name}")
+            except (OSError, shutil.Error) as e:
+                print(f"Error copying {file.name}: {e}", file=sys.stderr)
+
     return copied_files
+
+
+def make_files_executable(directory: str) -> None:
+    for root, _, files in os.walk(directory):
+        for file in files:
+            file_path = Path(root) / file
+            try:
+                file_path.chmod(0o755)
+            except OSError as e:
+                print(f"Error making {file_path} executable: {e}", file=sys.stderr)
 
 
 def create_symlinks(script_dir: Path, link_dir: Path) -> None:
@@ -35,12 +51,17 @@ def create_symlinks(script_dir: Path, link_dir: Path) -> None:
 
 
 def main(script_dir_path: str, link_dir_path: str) -> None:
-    copied: list[str] = copy_scripts()
-    print(f"Files copied: {len(copied)}")
+    try:
+        make_files_executable("/home/wasd/.scripts")
+    except OSError as e:
+        print(f"Error making files executable: {e}", file=sys.stderr)
 
     script_dir = Path(script_dir_path)
     link_dir = Path(link_dir_path)
-    create_symlinks(script_dir, link_dir)
+    try:
+        create_symlinks(script_dir, link_dir)
+    except OSError as e:
+        print(f"Error creating symlinks: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

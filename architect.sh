@@ -5,8 +5,9 @@ sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector 
 rustup default nightly
 rsync -avh ~/architect/dotfiles/home/ ~/
 curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
-tar xvf cachyos-repo.tar.xz
-sudo ./cachyos-repo/cachyos-repo.sh
+tar xvf cachyos-repo.tar.xz && cd cachyos-repo
+sudo ./cachyos-repo.sh
+cd .
 sudo pacman -S paru-bin
 paru -S alhp-keyring alhp-mirrorlist
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/

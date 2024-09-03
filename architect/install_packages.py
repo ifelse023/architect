@@ -6,7 +6,7 @@ from pathlib import Path
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(levelname)s - %(message)s",
-    filename="../log/install_packages.log",
+    filename="./log/install_packages.log",
     filemode="w",
 )
 
