@@ -1,7 +1,6 @@
 {
   "packages": [
     "npm",
-    "go",
     "meson",
     "ninja",
     "brightnessctl",
@@ -90,13 +89,12 @@
   "aur-packages": [
     "irqbalance-git",
     "xremap-wlroots-bin",
-    "greetd-git",
     "tlp-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",
     "greetd-git",
     "pueue-git",
-    "swayr"
+    "swayr-git"
   ]
 }
