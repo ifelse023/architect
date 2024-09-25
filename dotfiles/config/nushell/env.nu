@@ -1,6 +1,7 @@
 # Nushell Environment Config File
 #
-# version = "0.96.1"
+# version = "0.98.1"
+
 def create_left_prompt [] {
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
         null => $env.PWD
@@ -10,7 +11,7 @@ def create_left_prompt [] {
 
     let path_color = (if (is-admin) { ansi red_bold } else { ansi green_bold })
     let separator_color = (if (is-admin) { ansi light_red_bold } else { ansi light_green_bold })
-    let path_segment = $"($path_color)($dir)"
+    let path_segment = $"($path_color)($dir)(ansi reset)"
 
     $path_segment | str replace --all (char path_sep) $"($separator_color)(char path_sep)($path_color)"
 }
@@ -71,8 +72,7 @@ $env.ENV_CONVERSIONS = {
         to_string: { |v| $v | path expand --no-symlink | str join (char esep) }
     }
 }
-$env.LS_COLORS = (open ~/.config/nushell/ls_colors.txt)
-$env.RIPGREP_CONFIG_PATH = /home/wasd/.config/.ripgreprc
+
 # Directories to search for scripts when calling source or use
 # The default for this is $nu.default-config-dir/scripts
 $env.NU_LIB_DIRS = [
@@ -99,5 +99,3 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
-#
-$env.GOPATH = /home/wasd/.go

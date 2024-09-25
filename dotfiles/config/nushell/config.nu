@@ -1,13 +1,3 @@
-# Nushell Config File
-#
-# version = "0.96.1"
-
-# External completer example
-# let carapace_completer = {|spans|
-#     carapace $spans.0 nushell ...$spans | from json
-# }
-
-# The default config record. This is where much of your global configuration is setup.
 $env.config = {
     show_banner: false # true or false to enable or disable the welcome banner at startup
 
@@ -21,7 +11,7 @@ $env.config = {
     }
 
     table: {
-        mode:  compact # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+        mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
         index_mode: always # "always" show indexes, "never" show indexes, "auto" = show indexes when a table has "index" column
         show_empty: true # show 'empty list' and 'empty record' placeholders for command output
         padding: { left: 1, right: 1 } # a left right padding of each column in a table
@@ -35,6 +25,22 @@ $env.config = {
     }
 
     error_style: "fancy" # "fancy" or "plain" for screen reader-friendly error messages
+
+    # Whether an error message should be printed if an error of a certain kind is triggered.
+    display_errors: {
+        exit_code: false # assume the external command prints an error message
+        # Core dump errors are always printed, and SIGPIPE never triggers an error.
+        # The setting below controls message printing for termination by all other signals.
+        termination_signal: true
+    }
+
+    # datetime_format determines what a datetime rendered in the shell would look like.
+    # Behavior without this configuration point will be to "humanize" the datetime display,
+    # showing something like "a day ago."
+    datetime_format: {
+        # normal: '%a, %d %b %Y %H:%M:%S %z'    # shows up in displays of variables or other datetime's outside of tables
+        # table: '%m/%d/%y %I:%M:%S%p'          # generally shows up in tabular outputs such as ls. commenting this out will change it to the default human readable datetime format
+    }
 
     explore: {
         status_bar_background: { fg: "#1D1F21", bg: "#C4C9C6" },
@@ -92,7 +98,6 @@ $env.config = {
         vi_normal: underscore # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
     }
 
-    use_grid_icons: true
     footer_mode: 25 # always, never, number_of_rows, auto
     float_precision: 2 # the precision for displaying floats in tables
     buffer_editor: null # command that will be used to edit the current line buffer with ctrl+o, if unset fallback to $env.EDITOR and $env.VISUAL
@@ -120,7 +125,7 @@ $env.config = {
         # 633;B - Mark prompt end
         # 633;C - Mark pre-execution
         # 633;D;exit - Mark execution finished with exit code
-        # 633;E - NOT IMPLEMENTED - Explicitly set the command line with an optional nonce
+        # 633;E - Explicitly set the command line with an optional nonce
         # 633;P;Cwd=<path> - Mark the current working directory and communicate it to the terminal
         # and also helps with the run recent menu in vscode
         osc633: true
@@ -128,11 +133,11 @@ $env.config = {
         reset_application_mode: true
     }
     render_right_prompt_on_last_line: false # true or false to enable or disable right prompt to be rendered on last line of the prompt.
-    use_kitty_protocol: true # enables keyboard enhancement protocol implemented by kitty console, only if your terminal support this.
+    use_kitty_protocol: false # enables keyboard enhancement protocol implemented by kitty console, only if your terminal support this.
     highlight_resolved_externals: false # true enables highlighting of external commands in the repl resolved by which.
     recursion_limit: 50 # the maximum number of times nushell allows recursion before stopping it
 
-    plugins: {} # Per-plugin configuration. See httpsalias://www.nushell.sh/contributor-book/plugins.html#configuration.
+    plugins: {} # Per-plugin configuration. See https://www.nushell.sh/contributor-book/plugins.html#configuration.
 
     plugin_gc: {
         # Configuration for plugin garbage collection
@@ -614,7 +619,7 @@ $env.config = {
             modifier: control
             keycode: char_k
             mode: emacs
-            event: { edit: cuttoend }
+            event: { edit: cuttolineend }
         }
         {
             name: cut_line_from_start
@@ -719,8 +724,6 @@ $env.config = {
         }
         # The following bindings with `*system` events require that Nushell has
         # been compiled with the `system-clipboard` feature.
-        # This should be the case for Windows, macOS, and most Linux distributions
-        # Not available for example on Android (termux)
         # If you want to use the system clipboard for visual selection or to
         # paste directly, uncomment the respective lines and replace the version
         # using the internal clipboard.

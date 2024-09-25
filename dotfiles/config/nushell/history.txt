@@ -1980,3 +1980,309 @@ ls
 cd config
 ls
 cd .config/
+ls
+cd architect/
+ls
+pyton later.sh
+ls
+cd architect/
+ls
+nvim later.sh
+ls
+bash later.sh
+ls
+cd..
+cd ..
+cd .config/
+cd nu
+ls
+cd nushell/
+ls
+nvim env.nu
+cd architect/
+ls
+..
+ls
+cd
+cd architect/
+cat later.sh
+starship init nu | save -f ~/.cache/starship/init.nu<\n>
+zoxide init nushell | save -f ~/.cache/.zoxide.nu<\n>
+cd
+ls
+cd .config/
+ls
+cd nushell/
+ls
+nvim config.nu
+ls
+nvim
+vim
+sudo pacman -S neovide
+vim
+nvim
+cd /etc/
+nvim tlp.conf
+sudoedit tlp.conf
+sudo nvim tlp.conf
+cat tlp.conf
+ls
+cd .config/
+ls
+cd 
+cd .config/
+ls
+cat environment.d/env.conf
+sudo nvim /etc/environment
+ls
+cd
+cd architect/dotfiles/
+ls
+cd
+cd dot
+nvim .cache/.zoxide.nu
+cd dot
+ls
+cp user.js ~/.mozilla/firefox/5cdatxx2.default-nightly/
+erorrs
+journalctl -p err -b
+ls
+cd
+ls
+nvim
+nvim c.c
+cd .config/
+sl
+ls
+cd nvim
+nvim
+nvim c.c
+cd
+cd .config/
+cd sway/
+nvim config
+poweroff
+sudo pacman -S discord
+sudo pacman -Syu
+paru -Syu
+nvim
+cd .config/
+cd vnvim
+cd nvim
+nvim
+nvim
+ls
+nvim
+nvim .config/foot/foot.ini
+ls
+cd .config/
+nvim starship.toml
+nvim fuzzel/fuzzel.ini
+ls
+lsl
+btop
+bvtop
+btop
+poweroff
+ls
+cd Downloads/
+ls
+python eduroam-linux-Ostfalia-Hochschule.py
+nmcli
+sway
+cd Downloads/
+ls
+python eduroam-linux-Ostfalia-Hochschule.py
+journalctl -p err -b
+nmcli
+nmcli device wifi connect eduroam
+reboot
+nmcli device wifi connect eduroam
+python Downloads/eduroam-linux-Ostfalia-Hochschule.py
+acpi
+sudo pacman -Syu acpi
+acpi
+cd .config/
+rg wez
++
+nvim fuzzel/fuzzel.ini
+rg wez
+poweroff
+nmcli
+nmcli device wifi connect eduroam
+nmcli device wifi connect WIFI@DB
+ip addr
+ip link
+ip link -i
+ip addr -a0
+ip link -a
+route -n
+git clone https://github.com/Eliya-G/coffee-o-clock.git
+ls
+cd coffee-o-clock/
+ls
+python app.py
+ls
+cd coffee-o-clock/
+ls
+cat app.py
+ls
+mv coffee-o-clock/ dev/
+ls
+brightnessctl 
+ls
+cd misc/books/
+ls
+firefox-nightly computer-archi.pdf
+cd bo
+ls
+firefox-nightly arm.pdf
+paru -S google-chrome
+poweroff
+sudo pacman -Syu; paru  -Syu
+ls
+cd Downloads/
+ls
+firefox-nightly Wahl-der-Studienrichtung-Bachelor-Informatik-PO2010_13_18-_Version-2019-10-30.pdf
+paru -S google-chrome
+btop
+poweroff
+sudo pacman -Syu; paru  -Syu
+poweroff
+nmcli device wifi connect WIFI@DB
+route -n
+nmcli
+poweroff
+nmcli device wifi connect eduroam
+cd Downloads/
+ls
+rm Wahl-der-Studienrichtung-Bachelor-Informatik-PO2010_13_18-_Version-2019-10-30.pdf eduroam-linux-Ostfalia-Hochschule.py
+cd
+cd .config/
+rg xre
+xremap --device /dev/input/event9 /home/wasd/.config/xremap/config.yml
+sudo gpasswd -a wasd input<\n>echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules
+cd .config/
+cd
+cd nvim
+cd
+cd .config/
+nvim xremap/config.yml
+reboot
+xremap --device /dev/input/event9 /home/wasd/.config/xremap/config.yml
+sudo xremap --device /dev/input/event9 /home/wasd/.config/xremap/config.yml
+nvim .config/xremap/config.yml
+cd
+xremap .config/xremap/config.yml
+nvim .config/xremap/config.yml
+nvim .config/sway/config
+sway
+acpi
+poweroff
+sudo pacman -S thunderbird
+poweroff
+ls
+nmcli device wifi connect eduroam
+ls
+acpi
+sway
+ls
+cd .config/
+ls
+rm -rf wezterm/
+rm -rf kitty/
+ls
+rm -rf hypr/
+sudo pacman -S thunderbird
+poweroff
+nmcli device wifi rescan
+nmcli device wifi list
+cd Downloads/
+ls
+cd
+cd bu
+cd misc/books/
+ls
+cat books.sh
+firefox-nightly  arm.pdf
+cd phil/
+s
+ls
+cd ..
+ls
+cd alg
+ls
+..
+ls
+lls
+ls
+firefox-nightly computer-archi.pdf
+poweroff
+nmcli device wifi list
+cd boo
+ls
+acpi
+poweroff
+sudo pacman -Syu; paru  -Syu
+poweroff
+nmcli device wifi connect WIFI@DB
+swaY
+SWAY
+nmcli device wifi connect WIFI@DB
+route -n 
+ls
+cd .config/
+ls
+cd architect/
+ls
+cd dotfiles/
+ls
+cd config/
+ls
+rm -rf kitty/ 
+ls
+cp -r sway foot/ fuzzel/ ~/architect/dotfiles/config/
+cd
+sudo cp -r /etc/environment /etc/
+sudo cp -r /etc/environment ~/architect/dotfiles/etc/
+ls
+sway
+ls
+cd config/
+ls
+cd
+cd swa
+ls
+nvim config
+sway
+ls
+cd swa
+ls
+nvim ocn
+xremap .config/xremap/config.yml
+groups wasd
+lsmod | grep uinput
+sudo nvim /etc/modules-load.d/uinput.conf
+reboot
+poweroff
+nmcli device wifi connect eduroam
+nvim
+poweroff
+nmcli device wifi connect eduroam
+poweroff
+nmcli device wifi connect WIFI@DB
+poweroff
+sudo pacman -Syu; paru  -Syu
+ls
+cd architect/
+ls
+nvim architect.sh
+git checkout -cd
+cd
+git status
+cd architect/
+git status
+cd .config/
+nvim
+ls

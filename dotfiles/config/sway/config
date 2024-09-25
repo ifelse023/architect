@@ -13,7 +13,7 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term wezterm
+    set $term foot
     set $menu exec fuzzel
 
 
@@ -35,19 +35,19 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
     }
 ### Input configuration
 
-    # input "type:keyboard" {
-    # xkb_layout de
-    # xkb_options caps:escape
-    # xkb_variant us
-    # }
-    #
+    input "type:keyboard" {
+    xkb_layout de
+    xkb_options caps:escape
+    xkb_variant us
+    }
+
 ### Key bindings
 #
 # Basics:
 #
 # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec wezterm --class="termfloat"
+    bindsym $mod+Shift+Return exec foot --class="termfloat"
 # Kill focused window
     bindsym $mod+q kill
 
@@ -252,10 +252,10 @@ client.background        $base# Assign workspaces
     exec_always swayrd
 
     exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    exec xremap --device /dev/input/event9 /home/wasd/.config/xremap/config.yml
+    exec xremap /home/wasd/.config/xremap/config.yml
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && \
       dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
-    exec --no-startup-id swaymsg "exec sleep 1; workspace 2; exec wezterm"
+    exec --no-startup-id swaymsg "exec sleep 1; workspace 2; exec foot"
