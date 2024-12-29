@@ -2286,3 +2286,110 @@ git status
 cd .config/
 nvim
 ls
+cd .config/
+ls
+rm -rf sway/ swayr/ swaylock/
+ls
+rm -rf micro/ alacritty/
+ls
+rm -rf wofi/
+ls
+sudo pacman -S fuzzel
+l
+cd .config/
+cd
+cd architect/
+sl
+ls
+cat ssh.sh
+cat later.sh
+ls
+cat later.sh
+zoxide init nushell | save -f ~/.cache/.zoxide.nu<\n>mkdir ~/.cache/starship<\n>starship init nu | save -f ~/.cache/starship/init.nu
+ls
+cd
+ls
+cd .config/
+ls
+cd .config/
+cd nushell/
+ls
+nvim env.nu
+ls
+cd .config/
+cd nushell/
+ls
+nvim task.nu
+ls
+cd architect/
+ls
+nvim later.sh
+ls
+nvim ssh.sh
+bash ssh.sh
+cd /mnt/usb/
+ls
+cat firefox.sh
+nvim firefox.sh
+ls
+bash firefox.sh
+ls
+cd
+nvim
+vnim
+nvim
+cd architect/
+ls
+cd dotfiles/
+ls
+cp user.js ~/.mozilla/firefox/xml0teu0.default-nightly/
+btio
+btoip
+btop
+poweroff
+ls
+cd
+paru -S boosteroid
+btop
+ghostty
+btop
+nvim
+cd /etc/
+ls
+cd udev/
+ls
+cat udev.conf
+..
+ls
+cd NetworkManager/
+ls
+cat NetworkManager.conf
+cd conf.d/
+ls
+..
+...
+ls
+cd
+ls
+cd .config/
+ls
+cd .nvi
+ls
+cd nvim
+ls
+git add .
+git commit -m ":^"
+git push
+cd
+ls
+cd
+ls
+rm -rf architect/
+git clone git@github.com:ifelse023/architect.git
+ls
+cd architect/
+ls
+nvim packages.json
+ls
+cd .config/
+ls

@@ -26,6 +26,3 @@ else
 fi
 
 cp -r "$mount_point"/* ~/misc/
-
-sudo umount "$mount_point"
-echo "USB drive unmounted."

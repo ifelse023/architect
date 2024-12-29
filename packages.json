@@ -80,10 +80,13 @@
     "profile-sync-daemon",
     "nwg-look",
     "xorg-xwayland",
+    "scx-scheds",
     "fish",
     "x86_energy_perf_policy",
     "nushell",
     "uv",
+    "foot",
+    "neovim-git",
     "just"
   ],
   "aur-packages": [
@@ -94,7 +97,6 @@
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",
     "greetd-git",
-    "pueue-git",
     "swayr-git"
   ]
 }
