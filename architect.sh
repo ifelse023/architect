@@ -5,10 +5,6 @@ mkdir -p ~/.scripts
 sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync rustup clang libc++
 rustup default stable
 rsync -avh ~/architect/dotfiles/home/ ~/
-curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
-tar xvf cachyos-repo.tar.xz && cd cachyos-repo
-sudo ./cachyos-repo.sh
-cd ..
 sudo pacman -S paru-bin
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 rsync -avh ~/architect/dotfiles/config/ ~/.config
