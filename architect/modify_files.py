@@ -72,7 +72,7 @@ def main(boot_entries_path: Path = Path("/boot/loader/entries/")) -> None:
             ("vmlinuz-linux", "vmlinuz-linux-cachyos"),
             ("initramfs-linux.img", "initramfs-linux-cachyos.img"),
         ]
-        # modify_kernel_config(file_path, replacements)
+        modify_kernel_config(file_path, replacements)
     except Exception:
         logging.exception("error")
 
