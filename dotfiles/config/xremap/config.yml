@@ -3,7 +3,7 @@ keymap:
     application:
       only:
         - neovide
-        - foot
+        - ghostty
     remap:
       KEY_0: Shift-KEY_0
       Shift-KEY_0: KEY_0

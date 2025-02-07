@@ -26,4 +26,6 @@ sudo journalctl --vacuum-size=1M
 sudo usermod -aG video,audio,network,sys,git,wheel,input wasd
 python ./architect/service_manager.py
 sudo python ./architect/create_symlinks.py
+bash ./ssh.sh
+nu ./nu-settings.nu
 sudo pacman -Rns $(pacman -Qtdq)

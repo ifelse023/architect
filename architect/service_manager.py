@@ -15,9 +15,7 @@ def check_if_service_installed() -> bool:
         "thermald",
         "irqbalance",
         "scx",
-        "greetd",
         "profile-sync-daemon",
-        "pueue",
     ]
 
     try:
@@ -45,9 +43,9 @@ def check_if_service_installed() -> bool:
     return True
 
 
-services = ["tlp", "thermald", "irqbalance", "scx", "greetd"]
+services = ["tlp", "thermald", "irqbalance", "scx"]
 
-user_services = ["psd", "pueued"]
+user_services = ["psd"]
 
 
 def check_status_service() -> dict:
