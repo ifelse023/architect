@@ -17,7 +17,7 @@ python ./architect/install_packages.py
 sudo dosfslabel /dev/nvme0n1p1 BOOT
 sudo e2label /dev/nvme0n1p2 ROOT
 sudo mount -a
-sudo python ./architect/modify_files.py
+# sudo python ./architect/modify_files.py
 chsh -s /usr/bin/nu
 python ./architect/manage_directories.py
 bat cache --build
