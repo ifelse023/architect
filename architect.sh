@@ -3,13 +3,13 @@ set -e
 mkdir -p log
 mkdir -p ~/.scripts
 sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync rustup clang libc++
-rustup default stable
+rustup default nightly
 rsync -avh ~/architect/dotfiles/home/ ~/
 curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
-sudo pacman -S paru-bin
+sudo pacman -S paru-bin --noconfirm
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 rsync -avh ~/architect/dotfiles/config/ ~/.config
 sudo pacman -Syu
@@ -28,4 +28,5 @@ python ./architect/service_manager.py
 sudo python ./architect/create_symlinks.py
 bash ./ssh.sh
 nu ./nu-settings.nu
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules
 sudo pacman -Rns $(pacman -Qtdq)
