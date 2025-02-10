@@ -15,5 +15,5 @@ command = "agreety --cmd /usr/bin/nu"
 user = "greeter"
 
 [initial_session]
-command = "/usr/bin/nu"
+command = "uwsm start default"
 user = "wasd"

@@ -13,8 +13,8 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term ghostty
-    set $menu exec fuzzel
+    set $term uwsm app --  ghostty
+    set $menu exec fuzzel --launch-prefix="uwsm app -- "
 
 
 ### Output configuration
@@ -47,7 +47,7 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 #
 # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec ghostty --class="termfloat"
+    bindsym $mod+Shift+Return exec  $term --class="termfloat"
 # Kill focused window
     bindsym $mod+q kill
 
@@ -65,14 +65,14 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
     bindsym $mod+Shift+c reload
 
 
-    bindsym Print exec lameshot gui
+    bindsym Print exec uwsm app -- flameshot gui
 
 
-    bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
-    bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+    bindsym XF86MonBrightnessDown exec uwsm app -- brightnessctl set 10%-
+    bindsym XF86MonBrightnessUp exec uwsm app -- brightnessctl set +10%
 
 # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec uwsm app -- swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 # Moving around:
 #
 # Move your focus around
@@ -248,14 +248,15 @@ client.background        $base# Assign workspaces
     for_window [app_id="firefox"] inhibit_idle fullscreen
 
 
-    exec_always  --no-startup-id  mako
-    exec_always swayrd
+    exec_always  --no-startup-id uwsm app -- mako
+    exec_always uwsm app -- swayrd
 
-    exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    exec xremap /home/wasd/.config/xremap/config.yml
+    exec uwsm app -- /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+    exec uwsm app -- xremap /home/wasd/.config/xremap/config.yml
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && \
       dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
-    exec --no-startup-id swaymsg "exec sleep 1; workspace 2; exec ghostty"
+    exec uwsm finalize
+    exec --no-startup-id swaymsg "exec sleep 1; workspace 2; exec $term"

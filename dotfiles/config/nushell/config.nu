@@ -760,7 +760,6 @@ $env.config = {
 }
 use ~/.cache/starship/init.nu
 use ./task.nu
-source ./login.nu
 source ~/.cache/.zoxide.nu
 source ./alias.nu
 

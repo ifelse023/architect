@@ -15,6 +15,7 @@ def check_if_service_installed() -> bool:
         "thermald",
         "irqbalance",
         "scx",
+        "greetd",
         "profile-sync-daemon",
     ]
 
@@ -43,7 +44,7 @@ def check_if_service_installed() -> bool:
     return True
 
 
-services = ["tlp", "thermald", "irqbalance", "scx"]
+services = ["tlp", "thermald", "irqbalance", "scx", "greetd"]
 
 user_services = ["psd"]
 
@@ -66,8 +67,9 @@ def check_status_service() -> dict:
             )
             service_status[service] = result.stdout.strip() == "active"
             logging.debug(
-                f"Service {service} status: {'active' if service_status[service]
-                else 'inactive'}",
+                f"Service {service} status: {
+                    'active' if service_status[service] else 'inactive'
+                }",
             )
 
     except subprocess.SubprocessError:

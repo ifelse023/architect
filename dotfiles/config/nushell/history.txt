@@ -2393,3 +2393,680 @@ nvim packages.json
 ls
 cd .config/
 ls
+cd /etc/
+ls
+cd
+ls
+cd /mnt/usb/
+ls
+cd /boot/
+ls
+cd EFI/
+ls
+cd BOOT/
+ls
+...
+ls
+sudoedit limine.conf
+sudo nvim limine.conf
+cd
+cd /etc/
+ls
+sudo pacman -S scx-scheds-git
+cd /dev/
+cd
+cd /etc/
+cd default/
+ls
+sudo nvim scx
+ls
+cd
+cd /mnt/usb/
+ls
+cd Downloads/
+cd
+cd architect/
+ls
+cd architect/
+ls
+cd
+ls
+cd architect/
+ls
+cd dotfiles/
+cp user.js ~/.mozilla/firefox/2utuwmom.default-nightly/
+cd
+ls
+reboot
+cd etc/
+cd /etc/
+cd default/
+ls
+nvim scx
+scx_rusty --help
+scx_rusty --help | rg perf
+sudoedit scx
+sudo pacman -S realtime-privileges
+sudo gpasswd -a wasd realtime
+cd
+ls
+cd /etc/
+ls
+cd udev/
+ls
+cat udev.conf
+cd rules.d/
+ls
+cat 99-input.rules
+sudoedit 99-input.rules
+ls
+..
+ls
+cd tmpfiles.d/
+ls
+cat optimize-interruptfreq.conf
+ls
+cat thp.conf
+nvim thp-shrinker.conf
+sudoedit thp-shrinker.conf
+ls
+sudoedit disable-zswap.conf
+ls
+ls /dev/zram*
+cat /proc/swaps
+cat /sys/block/zram0/disksize<\n>cat /sys/block/zram0/mem_used_total
+cat /sys/module/zswap/parameters/enabled
+ls
+nvim coredump.conf
+sudoedit coredump.conf
+sl
+ls
+cd ..
+ls
+cd
+journalctl -b -1
+journalctl -b -p err
+errors
+limine
+lsblk
+mount | grep /boot
+sudo limine bios-install /dev/nvme0n1
+ls
+cd /boot/
+ls
+cd EFI/
+ls
+cd BOOT/
+ls
+cat BOOTIA32.EFI
+cd
+ls
+cd /
+ls
+sudo fd limine-bios.sys /
+cd /usr/share/limine/
+ls
+sudo cp /usr/share/limine/limine.sys /boot/
+ls
+sudo cp /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
+sudo cp /usr/share/limine/limine-bios.sys /boot/
+cd
+sudo mkinitcpio -P
+reboot
+ls
+cd /etc/
+ls
+cd greetd/
+ls
+cat config.toml
+:w
+cd
+sudo pacman -S greetd
+systemctl enable greetd.service
+cd .config/
+cd hypr/
+nvim
+ls
+nvim
+nvi
+nvim
+cd
+reboot
+ls
+uwsm start 
+btop
+cd .config/
+ls
+cd uwsm/
+ls
+nvim default-id
+ls
+cd
+ls
+xremap .config/xremap/config.yml
+cd .config/
+ls
+cd
+cd /etc/
+sudoedit greetd/config.toml
+reboot
+cd dev/
+nvim bug.sh
+bash bug.sh
+sudo bash bug.sh
+sudo pacman -S inix
+sudo pacman -S inxi
+sudo bash bug.sh
+ls
+cat cachyos-bugreport.log
+sudo bash bug.sh
+nvim cachyos-bugreport.log
+$(zgrep -iE 'CONFIG_(GENERIC_CPU(=| is)|X86_64_VERSION|MZEN|MBULLDOZER|MPILEDRIVER|MSTREAMROLLER|MEXCAVATOR|MBOBCAT|MJAGUAR|MK10|MK8SSE3|MATOM|MGOLDMONTPLUS|MSKYLAKE2|MIVYBRIDGE|MICELAKE|MNATIVE_INTEL|MNATIVE_AMD)' /proc/config.gz)
+bash
+ls
+nvim kernel.sh
+bash kernel.sh
+paru -Rns nwg-look
+ls
+sudo pacman -S hyprutils
+ls
+cd Downloads/
+ls
+cd
+ls
+cd .config/
+sudo pacman -S flameblast
+sudo pacman -S flameshot
+flameshow
+flameshow guio
+flameshow gui
+flameshot gui
+bash
+nvim
+btop
+paru -S flameshot-git
+pkill hyprland
+pkill -9 hyprland
+ls
+cd .config/
+nvim hypr/hyprland.conf
+ls
+cd hypr/
+ls
+cat keybindings.conf
+cp -r ~/architect/dotfiles/config/hypr/keybindings.conf .
+cd .config/
+paru -S flameshot-git
+nvim
+ls
+sudo pacman -S yazi
+yazi
+rm -rf architect/
+git clone git@github.com:ifelse023/architect.git
+cd architect/
+ls
+nvim packages.json
+python architect/service_manager.py
+mkdir /log
+ls
+mkdir log
+ls
+python architect/service_manager.py
+cat log/service_manager.log
+cd dotfiles/
+cd etc/
+ls
+sudo cp /etc/greetd/ . 
+sudo cp e /etc/greetd/ . 
+sudo cp -r /etc/greetd/ . 
+ls
+cd
+ls
+errors
+journalctl -b -p err
+lsusb -t
+lsusb -v
+lsusb -t
+journalctl -b -p err
+lsusb -t
+fastfetch
+sudo pacman -S fastfetch
+fastfetch
+journalctl -b -p err
+cd /etc/
+nvim tlp.conf
+sudo pacman -S acpid
+acpid
+cat /sys/class/power_supply/BAT0/capacity
+systemctl status tlp.service
+systemctl enable tlp
+systemctl status tlp.service
+journalctl -xe tlp
+journalctl -xe /usr/bin/alsactl
+journalctl -xe
+journalctl -xe | rg error
+journalctl -xe | rg fail
+ls
+cd
+ls
+poweroff
+paru -Syu; sudo pacman -Syu
+clipse -h
+echo $env.EDITOR
+cd .config/
+echo $env.NU_PLUGIN_DIRS
+ls
+uswm app 
+uwsm app
+uwsm app start
+uwsm app ghostty
+uwsm app -- ghostty
+time uwsm app -- ghostty
+time ghostty
+uwsm app -- ghostty
+time uwsm app -- ghostty
+sudo pacman -S discord
+btop
+nvim
+fumon
+uuctl
+cd .config/
+uwsm app -- /usr/lib/xdg-desktop-portal-hyprland
+/usr/lib/xdg-desktop-portal-hyprland
+dbus-update-activation-environment --all
+nvim
+btio
+btop
+ls
+nvim
+ls
+cd dev/
+git clone https://github.com/philj56/tofi.git
+cd tofi/
+ls
+sudo pacman -S meson scdoc wayland-protocols --needed
+sudo pacman -S freetype2 harfbuzz cairo pango wayland libxkbcommon --needed
+s
+ls
+nvim meson.build
+cat meson_options.txt
+cat meson.build | wl-copy 
+nvim meson.build
+meson setup build<\n>ninja -C build install<\n>
+ls
+.//home/wasd/dev/tofi/share/bash-completion/completions/tofi-drun
+./home/wasd/dev/tofi/share/bash-completion/completions/tofi-drun
+cd build/
+ls
+cd bin/
+ls
+cd bin/
+ls
+nvim .cache/.zoxide.nu
+cd bin/
+ls
+cd dev/tofi/
+ls
+cd dev/tofi/
+ls
+cd bin/
+sl
+ls
+./tofi-drun
+..
+ls
+..
+ls
+cd src/
+ls
+nvim main.c
+....
+ls
+rm -rf dev/tofi/
+ls
+paru -S zig-nightly-bin zls-nightly-bin
+xremap .config/xremap/config.yml
+ls -l $XDG_RUNTIME_DIR/hypr/.hyprland_socket
+hyprctl monitors
+bash
+ls
+bash
+ls -ld $env.XDG_RUNTIME_DIR/hypr
+ls -ld $env.XDG_RUNTIME_DIR
+cd /run/user/1000/hype
+cd /run/user/1000/hypr
+ls
+la
+ls 882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1739126262_795880997/
+ls -a 882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1739126262_795880997/
+echo $env.HYPRLAND_INSTANCE_SIGNATURE
+cd
+xremap .config/xremap/config.yml
+cat /cargo/registry/src/index.crates.io-6f17d22bba15001f/hyprland-0.3.13/src/data/regular.rs
+ls
+xremap .config/xremap/config.yml
+HYPRLAND_SOCKET=/run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1739126262_795880997/.socket.sock xremap config.yml
+HYPRLAND_SOCKET=/run/user/1000/hypr/882f7ad7d2bbfc7440d0ccaef93b1cdd78e8e3ff_1739126262_795880997/.socket.sock xremap .config/xremap/config.yml
+journalctl -xe | grep hyprland
+hyprctl
+xremap .config/xremap/config.yml
+cd /cargo/
+cd .config/
+cd sway/
+ls
+cat config
+xremap .config/xremap/config.yml
+paru -Rns xremap-hypr-bin
+cargo install xremap --features hypr
+xremap .config/xremap/config.yml
+cd .config/
+cd
+cd .cargo/
+ls
+cd bin/
+ls
+la
+./xremap
+./xremap .config/xremap/config.yml
+./xremap ~/.config/xremap/config.yml
+cargo remove xremap --features hypr
+cargo remove xremap
+cd
+cargo uninstall xremap
+paru -S xremap-hypr-bin
+sudo xremap .config/xremap/config.yml
+paru -S hyprland-git
+paru -S aquamarine-git  hyprland-git
+sudo pacman -R aquamarine 
+sudo pacman -R hyprland aquamarine 
+paru -S hyprland-git
+sudo pacman -R hyprgraphics?
+sudo pacman -R hyprgraphics
+sudo pacman -R  hyprpaper hyprgraphics
+paru -S hyprland-git hyprpaper-git
+sudo pacman -R hyprland-qtutils
+paru -S hyprland-git hyprpaper-git
+paru -S hyprland-git
+paru -S hyprland-git hyprpaper-git
+sudo pacman -S hyprland hyprpaper
+ls
+hyprland
+sudo pacman -S hyprland hyprpaper
+Hyprland
+sudo pacman -S hyprgraphics
+sudo pacman -Rns hyprland
+sudo pacman -S hyprland
+Hyprland
+sudo pacman -S sway
+btop
+btop --utf-force
+ls
+cd dev/
+zig init-exe hey
+ls
+zig 
+zig init
+ls
+cd src/
+ls
+nvim main.zig
+zig run
+l
+ls
+..
+zig run
+ls
+zig build
+zig run
+zig build run
+zig build test
+ls
+./zig-out/bin/dev
+nvim
+zig build test
+sudo pacman -S keyd
+cd
+cd .cargo/
+cd
+cd .config/
+ls
+cat xremap/
+cat xremap/config.yml
+keyd-application-mapper
+mkdir -p ~/.config/keyd/
+cd .config/
+ls
+cd
+cd .config/
+mkdir keyd
+cd keyd/
+ls
+cd .cache/
+ls
+rm -rf .zoxide.nu
+cd
+cd architect/
+ls
+bash nu-settings.nu
+cat nu-settings.nu
+zoxide init nushell | save -f ~/.cache/.zoxide.nu
+nvim .cache/.zoxide.nu
+nvim ~/.config/keyd/app.conf
+usermod -aG keyd wasd
+sudo usermod -aG keyd wasd
+keyd-application-mapper
+sway
+ls
+keyd-application-mapper
+keyd-application-mapper -d
+ls
+keyd-application-mapper
+1nvim
+nvim
+neovide
+sudo pacman -S neovide
+vim
+systemctl enable keyd
+sudo pacman -Rns hyprland 
+sudo pacman -Rns hyprland-share-picker 
+paru -Rns hyprlang-git
+paru -Rnshyprpaper hyprlang-git
+paru -Rns hyprpaper hyprlang-git
+paru -Rns hyprlang hyprpaper hyprlang-git
+sudo pacman -Rns hyprlang
+sudo pacman -Rns xdg-desktop-portal-hyprland
+ls
+paru -Rns  hyprlang-git
+sudo pacman -Rns hyprpaper 
+paru -Rns  hyprlang-git
+ls
+cd architect/
+ls
+nvim packages.json
+ls
+python architect/install_packages.py
+nvim packages.json
+python architect/install_packages.py
+ls
+sudo pacman -Rns sway
+keyd-application-mapper
+Hyprland
+sudo pacman -S sway
+keyd-application-mapper
+systemctl stop keyd
+keyd-application-mapper
+systemctl status keyd
+keyd-application-mapper
+paru -S xremap-wlroots-bin
+paru -R xremap-hypr-bin
+paru -S xremap-wlroots-bin
+sway
+sudo pacman -S swaybg swayr
+sudo pacman -S swaybg 
+sudo pacman -Rns hyprland 
+sudo pacman -S xorg-xwayland
+cd
+paru -S swayr
+nvim .cache/.zoxide.nu
+ls
+sway
+cd
+ls
+cd s
+ls
+cd dev/src/
+d
+cd
+cd src
+nvim .cache/.zoxide.nu
+cd src
+ls
+cd architect/
+ls
+cd
+ls
+cd architect/
+ls
+journalctl -b -p err
+ls
+uwsm
+uwsm -h
+uwsm start -h
+uwsm start -D
+uwsm start 
+uwsm start n
+uwsm start -n
+sudoedit /etc/greetd/config.toml
+cd /etc/
+sudo rg hypr
+sudo rg sway
+cd
+ls
+cd .cache/
+cd
+rg hypr
+cd .config/
+rg hypr
+nvim uwsm/
+ls
+cd
+btop
+btop --utf-force
+cd .config/
+nvim uwsm/default-id
+nvim /etc/greetd/config.toml
+sudoedit /etc/greetd/config.toml
+reboot
+uwsm -h
+uwsm check
+uwsm check -h
+uwsm check is-active
+uwsm check is-active -h
+uwsm check is-active sway
+uwsm check is-active sway.desktop
+uwsm check is-active sway -v
+ls
+cd
+cd .config/
+nvim
+ls
+sudoedit /etc/greetd/config.toml
+cd
+reboot
+ls
+cd /etc/
+sudoedit /etc/greetd/config.toml
+reboot
+ls
+bto
+btop
+uwsm select
+cd /etc/
+ls
+cd
+cd .config/
+ls
+cd .config/
+nvim /etc/greetd/config.toml
+uwsm start -h
+sudoedit /etc/greetd/config.toml
+sudo pacman -S sway
+sudo pacman -R hyprpaper 
+sudo pacman -S hyprcursor-util 
+uwsm start -h
+cd /usr/share/wayland-sessions/
+ls
+cat sway.desktop
+sudoedit /etc/greetd/config.toml
+ls
+Hyprland
+systemctl
+cd .config/
+nvim nushell/
+btop
+cd .config/
+cd fuzzel/
+ls
+nvim fuzzel.ini
+uwsm app -- brightnessctl set 10%-
+nvim sway/config
+ls
+nvi
+nvim
+cd .config/
+cd sway/config.d/*
+cd sway/config.d
+cd /etc/sway/config.d
+ls
+cat 50-systemd-user.conf
+nvim sway/config
+ls
+sudoedit /etc/greetd/config.toml
+ls
+cd
+ls
+echo $env.SWAYSOCK
+echo $env.DISPLAY
+cat /etc/sway/config.d/50-systemd-user.conf
+echo $env.XDG_CURRENT_DESKTOP
+bash
+uwsm finalize
+uwsm check is-active sway -v
+uwsm select
+sway
+uwsm start default
+systemctl --user status wayland-wm@sway.desktop.service
+journalctl --user -xeu wayland-wm@sway.desktop.service
+sudoedit /etc/greetd/config.toml
+ls
+cd .config/
+nvim sway/config
+reboot
+uwsm check is-active sway -v
+echo $env.XDG_CURRENT_DESKTOP
+journalctl --user -xeu wayland-wm@sway.desktop.service
+echo $env.XCURSOR_THEME
+ls
+nvim
+cd architect/
+sudoedit /etc/greetd/config.toml
+ls
+cd dotfiles/
+ls
+sudo cp -r /etc/greetd/config.toml etc/
+cd etc
+ls
+cat greetd/config.toml
+rm greetd/config.toml.pacnew
+ls
+cat config.toml
+cat greetd/config.toml
+rm greetd/config.toml
+ls
+cat config.toml
+mv config.toml greetd/
+ls
+..
+ls
+cd config/
+ls
