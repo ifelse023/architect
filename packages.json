@@ -66,8 +66,6 @@
     "gvfs",
     "efitools",
     "dosfstools",
-    "grim",
-    "slurp",
     "dust",
     "procs",
     "zoxide",
@@ -89,10 +87,10 @@
     "libnewt",
     "greetd",
     "sway",
+    "scx-scheds-git",
     "swaybg"
   ],
   "aur-packages": [
-    "scx-scheds-git",
     "clipse-bin",
     "flameshot-git",
     "dracula-icons-git",
