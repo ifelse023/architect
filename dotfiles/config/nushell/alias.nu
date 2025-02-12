@@ -7,6 +7,7 @@ alias vim = neovide
 alias cp = cp --recursive --verbose --progress
 alias cat = bat --theme="Catppuccin Mocha" --style=plain 
 alias errors = journalctl -p err..alert -b
+alias d = cd
 alias .... = cd ../../..
 alias ..... = cd ../../../..
 alias .. = cd ..

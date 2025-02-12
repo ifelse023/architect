@@ -3070,3 +3070,537 @@ ls
 ls
 cd config/
 ls
+cd /mnt/usb/
+ks
+ls
+bash firefox.sh
+ls
+cd
+ls
+cd architect/
+ls
+cp dotfiles/user.js ~/.mozilla/firefox/dydxbun2.default-nightly/
+ls
+cd
+ls
+nvim
+ls
+poweroff
+cd .config/
+ls
+cd /etc/sway/config.d
+...
+sudoedit /etc/greetd/config.toml
+nvim uwsm/default-id
+ls
+systemctl enable greetd.service
+uwsm check is-active sway -v
+uwsm 
+uwsm -h
+uwsm start default
+nvim
+paru -S zig-nightly-bin zls-nightly-bin
+sudo pacman -S picotool
+sudo pacman -S picotools
+ls
+cd .cache/
+ls
+nvim .cache/.zoxide.nu
+cd
+nvim .cache/.zoxide.nu
+ls
+cd .cache/
+cd
+cd .config/
+ls
+cd .config/
+ls
+cd
+ls
+sudo mount /dev/sda1 /mnt/usb/
+mv user_configuration.json user_credentials.json /mnt/usb/
+sudo mv user_configuration.json user_credentials.json /mnt/usb/
+cd
+sudo umount /mnt/usb
+ls
+cd
+ls
+cd .config/
+ls
+cd nushell/
+ls
+cd .config/
+ls
+dc
+cd .c
+ls
+cd
+cd .cache
+ls
+nvim .zoxide.nu
+cd
+ls
+cd nu
+ls
+nvim config
+cat .cache/.zoxide.nu
+cat .cache/.zoxide.nu | wl-copy 
+ls
+ls
+zoxide_
+nvim .cache/.zoxide.nu
+ls
+cd /
+nvim config.nu
+nvim .config/nushell/config.nu
+cd .cache
+cd
+cd .config/
+cd nu
+ls
+dc 
+cd nu
+ls
+paru -S carapac-bin
+paru -S carapace-bin
+ls
+sudo pacman -R fish-git 
+ls
+fish
+cd
+ls
+cd .config/
+ls
+rm -rf fish/
+ls
+sudo pacman -S fish-git
+ls
+picotool
+picotools
+paru -S picotool
+ls
+cd .config/
+l
+ls_colors
+ls
+cd /home/wasd/.config/nushell
+ls
+cat ls_colors.txt 
+ls
+nvim config.nu 
+ls
+picotool 
+man picotoolERR
+nvim catppuccin_macchiato.nu
+cd /home/wasd/.config/nushell
+ls
+nvim catppuccin_macchiato.nu
+ls
+mv catppuccin_macchiato.nu catppuccin_mocha.nu
+ls
+ls -a
+ls
+cd /home/wasd/.config/nushell
+ls
+rm ls_colors.txt
+cd
+ls
+cd .config/
+ls
+cd /home/wasd/.config/nushell
+ls
+cat login.nu 
+rm login.nu
+ls
+cat catppuccin_mocha.nu 
+rg scheme
+rg color
+sudo pacman -S vivid
+ls
+cd /home/wasd/.config/nushell
+ls
+nvim
+vivid
+ls
+vivid generate catppuccin-mocha > ~/.config/nushell/ls_colors.txt
+bash
+ls
+cd
+ls
+cd /home/wasd/.config/nushell
+ls
+cat ls_colors.txt 
+ls
+nvim history.txt
+ls
+cd /home/wasd/.config/nushell
+ls
+cat ls_colors.txt 
+nvim config.nu
+nvim env.nu
+ls
+sudo pacman -Rns vivid
+cd
+ls
+rm -rf architect/
+git clone git@github.com:ifelse023/architect.git
+cd architect/
+pacman -Qq
+pacman -Q
+pacman -Q | sdk
+pacman -Q | rg sdk
+ls
+cd architect/
+nvim packages.json
+ls
+cat nu-settings.nu 
+ls
+cd
+cd /home/wasd/.config/nushell
+ls
+cat task.nu 
+ls
+rm task.nu
+nvim 
+cd /home/wasd/.config/nushell
+ls
+mkdir theme
+mv catppuccin_mocha.nu ls_colors.txt theme/
+ls
+nvim
+ls
+cd architect/dotfiles/config
+cat nushell/config.nu
+ls
+greet 
+greet as
+greet asas
+greet "asas"
+greet 1asas
+greet 1
+copycat 
+ls
+la
+cpcat .gitconfig
+la
+cpcat .gitconfig
+nun
+cpcat .gitconfig
+nvim config.nu 
+ls
+cpcat .gitconfig
+ls
+cpcat .gitconfig
+ls
+cat nushell/config.nu
+cat .config/nushell/alias.nu 
+cat architect/architect/create_symlinks.py 
+somename 
+somename journalctl
+somename journalctl asd
+journalctl
+ls
+somename journalctl asd
+ls
+somename journalctl asd
+somename journalctl
+somename journalctl as
+somename journalctl a
+somename journalctl
+anu
+somename journalctl
+journalctl | system
+journalctl | rg system
+somename journalctl
+somename journalctl systm
+somename journalctl syst
+somename journalctl system
+somename journalctl fail
+journalctl -b | rg system
+somename journalctl -b fail
+exec_grep 
+exec_grep journalctl
+exec_grep journalctl -b 
+exec_grep journalctl -b asd
+exec_grep "journalctl -b" asd
+exec_grep "journalctl -b" "asd"
+exec_grep "ls -la" ".txt"  
+exec_grep "journalctl -b -p err" "err"  
+journalctl -b -p err | rg err
+exec_grep "journalctl -b -p err" err
+bash -c "journalctl "
+exec_grep "journalctl -b -p err" err
+bash -c "journalctl "
+exec_grep "journalctl -b -p err" err
+filter_rg journaldctl
+filter_rg journaldctl err
+filter_rg "journaldctl" err
+filter_rg "journaldctl" "err"
+filter_rg journalctl err
+filter_rg journalctl -b err
+filter_rg "journalctl -b" err
+ls
+nvim functions.nu
+ls
+cd
+ls
+cat a.out 
+sl
+ll
+ls
+rm a.out
+ls
+nvim
+ls
+cd .config/
+cd /home/wasd/architect
+ls
+cd architet
+ls
+cd architect
+ls
+cat manage_directories.py 
+ls
+cd /home/wasd/architect/architect
+ls
+cd
+nvim starship.toml 
+ls
+cd /home/wasd/.config/nushell
+nvim starship.toml 
+ls
+cd /home/wasd/.config
+cd /home/wasd/dev
+cd
+nvim
+ls
+cd
+ls
+cp architect/ dotfiles
+ls
+cd dotfiles
+ls
+cd
+cd /home/wasd/dotfiles
+ls
+cat pyproject.toml 
+ls
+cd /home/wasd/.config/nushell
+ls
+nvim config.nu 
+ls
+cd /home/wasd/misc
+ls
+mkdir theme
+rm -rf theme/
+ls
+cd
+ls
+cd /home/wasd/dev
+ls
+cd
+ls
+cd .config/
+nvim nushell/config.nu 
+ls
+cd
+sl
+ls
+cd /home/wasd/dotfiles
+ls
+mv dotfiles/ config
+ls
+cat pyproject.toml 
+sudo pacman -S chezmoi
+chezmoi doctor 
+la
+rm -rf .git/
+ls
+chezmoi init
+ls
+la
+ls
+chezmoi init
+ls
+la
+chezmoi add ~/.config/sway/
+cd .local
+ls
+cd share
+ls
+cd chezmai
+ls
+cd chezmoi
+ls
+cd dot_config
+ls
+cd sway
+ls
+cd
+chezmoi edit
+ls
+chezmoi edit
+chezmoi add ~/.config/ghostty
+ls
+chezmoi edit
+chezmoi -v apply
+ls
+chezmoi edit
+chezmoi -v apply
+ls
+cd
+ls
+cd /home/wasd/dotfiles
+ls
+cd
+cd /home/wasd/.local/share/chezmoi/dot_config
+ls
+ll
+ls -a
+ls
+ll
+ls --full-paths 
+ls --all 
+find . -type l -ls
+readlink -f 
+readlink
+ls | where type == symlink
+cd /etc
+ls | where type == symlink
+cd .config/
+ls | where type == symlink
+..
+ls | where type == symlink
+cd asets
+ls
+cd assets
+ls
+cat assets/
+cd assets/
+ls
+cd
+ls
+la
+ll
+cd /home/wasd/.local/share/chezmoi/dot_config/sway
+ls
+ll
+ls | where type == symlink
+..
+chezmoi status
+chezmoi edit ghostty/config
+cd
+chezmoi edit ghostty/config
+chezmoi edit 
+chezmoi edit ghostty
+ls
+btop
+ls
+btop
+ls
+btop
+ls
+btop
+watch sensors
+sensors
+ls
+btop
+chezmoi add ~/.config/ghostty/config
+chezmoi edit ghostty/config
+chezmoi edit ghostty/
+chezmoi edit ghostty
+chezmoi edit 
+ls
+cd /home/wasd/.local/share/chezmoi
+ls
+cd dot_config
+btop
+git commit -m "first commit"
+git add .
+git commit -m "first commit"
+git status
+git remote add origin git@github.com:ifelse023/dotfiles.git
+git status
+git push -u origin main
+chezmoi diff
+btop
+ls
+chezmoi edit ghostty
+chezmoi edit ghostty/
+chezmoi edit ghostty/config
+chezmoi edit dot_config
+chezmoi edit dot_config/
+chezmoi edit dot_config/ghostty
+chezmoi apply
+chezmoi help
+chezmoi managed
+chezmoi .config/sway/config
+chezmoi edit .config/sway/config
+chezmoi managed
+chezmoi edit .config/sway/config
+cd
+chezmoi edit .config/sway/config
+chezmoi edit .config/ghostty/config
+chezmoi apply
+ls
+ls
+chezmoi edit .config/ghostty/config
+chezmoi apply
+ls
+chezmoi edit .config/ghostty/config
+ls
+chezmoi -v apply
+ls
+ls
+cd /home/wasd/dotfiles
+ls
+cd
+ls
+chezmoi edit --apply ~/.config/ghostty/config
+ls
+ls
+ghostty +show-config 
+chezmoi edit --apply ~/.config/ghostty/config
+ls
+cd /home/wasd/dotfiles
+ls
+git init # initialize repository if needed
+git submodule add https://github.com/anishathalye/dotbot
+git config -f .gitmodules submodule.dotbot.ignore dirty # ignore dirty commits in the submodule
+cp dotbot/tools/git-submodule/install .
+touch install.conf.yaml
+ls
+cd install
+ls
+cat install 
+git diff
+git status
+z .bashrc
+cd /home/wasd/.config/nushell
+ls
+nvim alias.nu 
+cd
+d .local/
+d .cargo/
+cd
+cd /home/wasd/dev
+ls
+mkdir theme
+d theme/
+ls
+..
+ls
+rm -rf theme/
+ls
+cd
+ls
+rm -rf dotfiles/
+cd /home/wasd/architect
+ls
+d architect/
+ls
+..
+d dotfiles/
+ls
+d config/
+ls
