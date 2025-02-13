@@ -4,12 +4,13 @@ mkdir -p log
 mkdir -p ~/.scripts
 sudo pacman -S --needed --noconfirm wget curl base-devel mold sccache reflector python python-requests ccache lld rsync rustup clang libc++
 rustup default nightly
-chezmoi init --apply ifelse023
 curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
 sudo pacman -S paru-bin --noconfirm
+chezmoi init --apply ifelse023
+sleep 10
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 sudo pacman -Syu
 python ./architect/install_packages.py

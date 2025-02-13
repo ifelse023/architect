@@ -88,11 +88,11 @@
     "greetd",
     "scx-scheds-git",
     "swaybg",
-    "chezmoi",
     "wlroots-git"
   ],
   "aur-packages": [
     "sway-git",
+    "xremap-wlroots-bin",
     "clipse-bin",
     "picotool",
     "carapace-bin",
