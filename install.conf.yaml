@@ -4,16 +4,18 @@
       relink: true
       force: true
 
-- create: ["~/test"]
-
 - clean:
     ~/:
       force: true
+
     ~/.config:
       force: true
       recursive: true
 
 - link:
+    "~/.cargo/config.toml": "dotfiles/home/cargo/config.toml"
+    "~/.gdbinit": "dotfiles/home/gdbinit"
+    "~/.gitconfig": "dotfiles/home/gitconfig"
     "~/.config/bat/themes/Catppuccin Mocha.tmTheme": "dotfiles/config/bat/themes/Catppuccin Mocha.tmTheme"
 
     "~/.config/btop/btop.conf": "dotfiles/config/btop/btop.conf"
@@ -42,7 +44,7 @@
 
     "~/.config/psd/psd.conf": "dotfiles/config/psd/psd.conf"
 
-    "~/.config/ripgrep/ripgreprc": "dotfiles/config/ripgrep/ripgreprc"
+    "~/.config/ripgrep/config": "dotfiles/config/ripgrep/config"
 
     "~/.config/starship.toml": "dotfiles/config/starship.toml"
 
