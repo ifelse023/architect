@@ -9,8 +9,8 @@ tar xvf cachyos-repo.tar.xz && cd cachyos-repo
 sudo ./cachyos-repo.sh
 cd ..
 sudo pacman -S paru-bin --noconfirm
-chezmoi init --apply ifelse023
-sleep 10
+bash ./install
+sleep 5
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 sudo pacman -Syu
 python ./architect/install_packages.py
@@ -25,7 +25,6 @@ paru -Scc
 sudo journalctl --vacuum-size=1M
 sudo usermod -aG video,audio,network,sys,git,wheel,input wasd
 python ./architect/service_manager.py
-sudo python ./architect/create_symlinks.py
 bash ./ssh.sh
 nu ./nu-settings.nu
 echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules

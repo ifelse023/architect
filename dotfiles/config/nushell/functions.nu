@@ -1,5 +1,5 @@
 def cpcat [file] {
-  cat $file | wl-copy
+  open --raw $file | wl-copy
   echo $"Copied contents of ($file) to clipboard."
 }
 def filter_rg [

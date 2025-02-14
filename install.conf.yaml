@@ -1,0 +1,58 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- create: ["~/test"]
+
+- clean:
+    ~/:
+      force: true
+    ~/.config:
+      force: true
+      recursive: true
+
+- link:
+    "~/.config/bat/themes/Catppuccin Mocha.tmTheme": "dotfiles/config/bat/themes/Catppuccin Mocha.tmTheme"
+
+    "~/.config/btop/btop.conf": "dotfiles/config/btop/btop.conf"
+    "~/.config/btop/themes/tok.theme": "dotfiles/config/btop/themes/tok.theme"
+
+    "~/.config/environment.d/env.conf": "dotfiles/config/environment.d/env.conf"
+
+    "~/.config/fd/ignore": "dotfiles/config/fd/ignore"
+
+    "~/.config/fuzzel/fuzzel.ini": "dotfiles/config/fuzzel/fuzzel.ini"
+
+    "~/.config/ghostty/config": "dotfiles/config/ghostty/config"
+
+    "~/.config/mako/config": "dotfiles/config/mako/config"
+
+    "~/.config/neovide/config.toml": "dotfiles/config/neovide/config.toml"
+
+    "~/.config/nushell/alias.nu": "dotfiles/config/nushell/alias.nu"
+    "~/.config/nushell/config.nu": "dotfiles/config/nushell/config.nu"
+    "~/.config/nushell/env.nu": "dotfiles/config/nushell/env.nu"
+    "~/.config/nushell/functions.nu": "dotfiles/config/nushell/functions.nu"
+    "~/.config/nushell/theme/catppuccin_mocha.nu": "dotfiles/config/nushell/theme/catppuccin_mocha.nu"
+    "~/.config/nushell/theme/ls_colors.txt": "dotfiles/config/nushell/theme/ls_colors.txt"
+
+    "~/.config/paru/paru.conf": "dotfiles/config/paru/paru.conf"
+
+    "~/.config/psd/psd.conf": "dotfiles/config/psd/psd.conf"
+
+    "~/.config/ripgrep/ripgreprc": "dotfiles/config/ripgrep/ripgreprc"
+
+    "~/.config/starship.toml": "dotfiles/config/starship.toml"
+
+    "~/.config/sway/catppuccin-mocha": "dotfiles/config/sway/catppuccin-mocha"
+    "~/.config/sway/config": "dotfiles/config/sway/config"
+
+    "~/.config/swayr/config.toml": "dotfiles/config/swayr/config.toml"
+
+    "~/.config/xdg-desktop-portal/portals.conf": "dotfiles/config/xdg-desktop-portal/portals.conf"
+    "~/.config/uwsm/default-id": "/home/wasd/architect/dotfiles/config/uwsm/default-id"
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

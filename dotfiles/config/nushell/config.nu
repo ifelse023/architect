@@ -27,7 +27,6 @@ let external_completer = {|spans|
 
     match $spans.0 {
         __zoxide_z | __zoxide_zi => $zoxide_completer
-        cat => fish_completer
         _ => $carapace_completer
     } | do $in $spans
 }
@@ -112,8 +111,8 @@ $env.config = {
 
     cursor_shape: {
         emacs: line # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (line is the default)
-        vi_insert: block # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (block is the default)
-        vi_normal: underscore # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
+        vi_insert: line # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (block is the default)
+        vi_normal: block # block, underscore, line, blink_block, blink_underscore, blink_line, inherit to skip setting cursor shape (underscore is the default)
     }
 
     footer_mode: 25 # always, never, number_of_rows, auto

@@ -252,7 +252,7 @@ client.background        $base# Assign workspaces
     exec_always uwsm app -- swayrd
 
     exec uwsm app -- /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-    exec uwsm app -- xremap /home/wasd/.config/xremap/config.yml
+    # exec uwsm app -- xremap /home/wasd/.config/xremap/config.yml
     include @sysconfdir@/sway/config.d/*
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && \

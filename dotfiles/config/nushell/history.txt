@@ -3604,3 +3604,998 @@ d dotfiles/
 ls
 d config/
 ls
+rsync -avh ~/architect/dotfiles/config/ ~/.config
+ls
+chezmoi diff
+chezmoi apply
+ls
+sudo pacman -S xorg-xwayland
+cd architect/
+nvim packages.json 
+ls
+cd
+ls
+vnim
+xremap /home/wasd/.config/xremap/config.yml<\n>
+groups<\n>
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules
+lsmod | grep uinput
+cat /etc/udev/rules.d/99-input.rules
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/99-input.rules
+ls
+nvim
+ls
+cd
+ls
+cd architect/
+ls
+python architect/manage_directories.py 
+mkdir ../log
+python architect/manage_directories.py 
+..
+ls
+mv log/ architect/
+cd architect/
+python architect/manage_directories.py 
+cd
+ls
+cd architect/
+ls
+nvim architect.sh 
+ls
+sudo mount /dev/sda1 /mnt/usb/
+cd /mnt/usb/
+ls
+cd
+ls
+sudo umount /mnt/usb
+cd architect/
+ls
+nvim architect.sh 
+ls
+cd
+zls help
+zls --help
+paru -S ghostty-git 
+fd pico.h
+fd pico.h /etc/
+fd --full-path  pico.h /etc/
+cd /etc/
+fd pico.h
+fd --max-depth  pico.h
+fd -p pico.h
+paru -S pico-sdk 
+cd
+cd dev/
+ls
+git clone https://github.com/playday3008/ZigPicoCMake.git
+cd ZigPicoCMake/
+ls
+echo PICO_SDK_PATH
+echo $ENV.PICO_SDK_PATH
+echo $env.PICO_SDK_PATH
+cd /usr/share/pico-sdk
+ls
+cd
+ls
+git clone https://github.com/raspberrypi/pico-sdk.git
+ls
+mv pico-sdk/ .pico-sdk
+ls
+la
+nvim cmake/pico-sdk-import.cmake 
+ls
+sudo pacman -S zig
+ls
+echo $env.PICO_SDK_PATH
+cd /usr/share/pico-sdk
+ls
+$env.PICO_SDK_PATH = ~/.pico-sdk
+$env.PICO_SDK_PATH = /home/wasd//.pico-sdk
+$env.PICO_SDK_PATH = /home/wasd/.pico-sdk
+$env.PICO_SDK_PATH = "/home/wasd/.pico-sdk"
+echo $env.PICO_SDK_PATH
+cd /home/wasd/.pico-sdk
+ls
+cd
+ls
+cd pico
+z pic
+ls
+nvim
+ls
+cd
+ls
+z cma
+ls
+nvim
+/usr/bin/zig translate-c --zig-lib-dir /usr/lib/zig --global-cache-dir /home/wasd/.cache/zls -lc --listen=- -I /usr/local/include -I /usr/include/x86_64-linux-gnu -I /usr/include /home/wasd/.cache/zls/cimport.h<\n>
+btop
+z cma
+nvim
+echo $env.PICO_SDK_PATH
+z .bashrc
+z cma
+nvim
+nvim
+zig translate-c 
+zig translate-c header.g
+zig translate-c header.h
+zig translate-c header.h \<\n>  -I /usr/local/include \<\n>  -I /usr/include/x86_64-linux-gnu \<\n>  -I /usr/include \<\n>  -I /usr/include/libadwaita-1 \<\n>  -I /usr/include/gtk-4.0 \<\n>  -I /usr/include/pango-1.0 \<\n>  -I /usr/include/harfbuzz \<\n>  -I /usr/include/gdk-pixbuf-2.0 \<\n>  -I /usr/include/cairo \<\n>  -I /usr/include/freetype2 \<\n>  -I /usr/include/graphene-1.0 \<\n>  -I /usr/lib/graphene-1.0/include \<\n>  -I /usr/include/glib-2.0 \<\n>  -I /usr/lib/glib-2.0/include \<\n>  -I /usr/include/libmount \<\n>  -I /usr/include/blkid \<\n>  -I /usr/include/sysprof-6 \<\n>  -I /usr/include/libpng16 \<\n>  -I /usr/include/pixman-1 \<\n>  -I /usr/include/fribidi \<\n>  -I /usr/include/appstream \<\n>  -I /home/techatrix/repos/Crates/cross/x86_64/usr/include \<\n>  -I /home/techatrix/repos/Crates/cross/aarch64/usr/include \<\n>  -I /home/wasd/.pico-sdk/include<\n>
+bash
+ls
+bear 
+zig cc -MJ
+zig cc -MJ build
+ls
+cd .pico-sdk/
+sudo pacman -S tree
+tree
+fd pico.h
+zig translate-c header.h -I src/boards/include/boards/
+zig translate-c header.h -I src/boards/include/boards
+zig translate-c header.h -I src/boards/include/
+zig translate-c header.h -I src/boards/include
+pwd
+fd pico.h --full-path 
+fd pico.h --absolute-path 
+zig translate-c header.h -I /home/wasd/.pico-sdk/src/boards/include/boards
+zig translate-c header.h -I /home/wasd/.pico-sdk/src/boards/include
+zig translate-c header.h -I /home/wasd/.pico-sdk/src/boards/include/boards/pico.h
+git clone https://github.com/raspberrypi/pico-sdk.git
+ls
+fd pico.h --absolute-path 
+fd pico.h 
+pwd
+zig translate-c /home/wasd/pico-sdk/src/boards/include/boards/pico.h -I /home/wasd/pico-sdk -I /usr/local/include -I /usr/include/x86_64-linux-gnu
+ls
+zig translate-c pico-sdk/src/boards/include/boards/pico.h
+ls
+$env.PICO_SDK_PATH = "/home/wasd/dev/ZigPicoCMake/pico-sdk"
+nvim
+ls
+zig translate-c pico-sdk/src/boards/include/boards/pico.h
+fd pico.h 
+zig translate-c pico-sdk/src/common/pico_base_headers/include/pico.h
+fd pico/assert.h
+fd assert.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico/assert.h
+ls
+nvim 
+fd assert.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico/assert.h
+zig translate-c pico-sdk/src/common/pico_base_headers/include/pico.h
+fd assert.h
+cat pico-sdk/src/common/pico_base_headers/include/pico.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h<\n>
+nvim pico-sdk/src/common/pico_base_headers/include/pico/assert.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h<\n>
+cat pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+ls
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h<\n>
+nvim pico-sdk/src/common/pico_base_headers/include/pico/assert.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h<\n>
+nvim /usr/include/assert.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico.h
+fd assert.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico.h
+fd assert.h
+nvim
+ls
+nvim
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+z cma
+fd assert.h --absolute-path | wl-copy 
+z cma
+fd version.h
+fd version.h --absolute-path | wl-copy 
+fd version.h --absolute-path
+nvim pico-sdk/src/common/pico_base_headers/include/pico.h
+ls
+zig build -Dboard=pico2_w
+fd version.h --absolute-path
+ls
+cd build/
+fd version.h --absolute-path
+nvim
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+..
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+fd version.h --absolute-path
+cd build/
+fd version.h --absolute-path
+..
+ls
+z cma
+fd config.h
+fd config.h --absolute-path 
+fd config_autogen
+fd config_autogen --absolute-path 
+fd pico_config_extra_headers.h
+cd build/
+fd pico_config_extra_headers.h
+..
+ls
+fd pico_config_extra_headers.h
+cd build/
+fd pico_config_extra_headers.h
+cd /home/wasd/dev/ZigPicoCMake/pico-sdk/bazel/
+ls
+cd config/
+ls
+pwd
+ls
+cat BUILD.bazel | wl-copy 
+bazel query 'labels(srcs, //src/boards:default)'
+sudo pacman -S bazel
+bazel query 'labels(srcs, //src/boards:default)'
+bazel --version
+nvim /home/wasd/dev/ZigPicoCMake/pico-sdk/.bazelversion
+bazel query 'labels(srcs, //src/boards:default)'
+ls
+.....
+]cd ZigPicoCMake/
+ls
+cd ZigPicoCMake/
+bazel query 'labels(srcs, //src/boards:default)'
+ls
+cd pico-sdk/
+bazel query 'labels(srcs, //src/boards:default)'
+bazel query 'labels(hdrs, //src/boards:default)'<\n>
+bazel query --output=build //src/boards:default<\n>
+cat /home/wasd/dev/ZigPicoCMake/pico-sdk/src/boards/BUILD.bazel
+bazel query --output=build //src/boards:pico2_w
+bazel query 'labels(hdrs, //src/boards:pico2_w)'<\n>
+bazel build //... --experimental_generate_json_compile_commands
+ls
+bazel run //:dump_compilation_database > compile_commands.json<\n>
+cat /home/wasd/dev/ZigPicoCMake/pico-sdk/BUILD.bazel
+paru -S bazel-compilation-database
+cd
+paru -S bazel-compilation-database
+bazel build --config=gnu //bcc:bazel-compile-commands
+cd pico-sdk/
+z sdk
+cd
+ls
+z /home/wasd/dev/ZigPicoCMake/pico-sdk
+ls
+bazel build --config=gnu //bcc:bazel-compile-commands
+cd
+git clone https://github.com/kiron1/bazel-compile-commands.git
+cd bazel-compile-commands/
+bazel build --config=gnu //bcc:bazel-compile-commands
+nvim /home/wasd/bazel-compile-commands/.bazelversion
+bazel build --config=gnu //bcc:bazel-compile-commands
+bazel build --config=gnu //bcc:bazel-compile-commands --allow_yanked_versions
+bazel build --config=gnu --allow_yanked_versions //bcc:bazel-compile-commands
+bazel build --allow_yanked_versions --config=gnu  //bcc:bazel-compile-commands
+bazel build --config=gnu --allow_yanked_versions //bcc:bazel-compile-commands<\n>
+bazel --allow_yanked_versions build --config=gnu //bcc:bazel-compile-commands<\n>
+bazel --allow_yanked_versions build --config=gnu //bcc:bazel-compile-commands<\n>ls
+..
+ls
+rm -rf bazel-compile-commands/
+ls
+cd
+ls
+cd sdk
+z sdk
+cd
+z /home/wasd/dev/ZigPicoCMake/pico-sdk
+ls
+sudo pacman -S bear
+bear -- bazel build //...
+bazel query 'labels(hdrs, //src/boards:pico2_w)'<\n>
+bear -- bazel build //... --strategy=CppCompile=standalone<\n>
+cd //src/boards:0xcb_helios_generated_includes/pico_config_platform_headers.h
+bazel build //src/boards:pico2_w
+ls
+nvim
+..
+nvim
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+fd pico_config_extra_headers.h
+z /home/wasd/dev/ZigPicoCMake/pico-sdk
+fd pico_config_extra_headers.h
+ls
+cd bazel/
+ls
+cd include/
+ls
+cd pico/
+ls
+cat config_autogen.h 
+...
+ls
+fd pico_config_extra_headers.h
+..
+ls
+ll
+cd /home/wasd/.cache/bazel/_baz   ...<\n>                                         el_wasd/7193ca5b8f0b8c3d1b25<\n>                                         f89bc64971a9/execroot/_main/<\n>                                         bazel-out
+ll
+cd /home/wasd/.cache/bazel/_bazel_wasd/7193ca5b8f0b8c3d1b25f89bc64971a9/execroot/_main/bazel-out
+ls
+fd pico_config_extra_headers.h
+cd /home/wasd/.cache/bazel/_bazel_wasd/7193ca5b8f0b8c3d1b25f89bc64971a9/execroot/_main/bazel-out
+ls
+fd pico_config_extra_headers.h
+cd k8-fastbuild/
+ls
+..
+ls
+..
+fd pico_config_extra_headers.h
+cd
+ls
+cd .cache
+find 
+sudo fd pico_config_extra_headers.h /
+sudo fd pico.h /
+sudo fd pico_config_extra_headers.h --hidden 
+sudo fd pico_config_extra_headers.h --hidden  /
+nvim
+fd pico_config_extra_headers.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+ls
+..
+ls
+rm -rf ZigPicoCMake/
+sudo pacman -Rns bazel 
+l
+sls
+ls
+cd
+la
+ls
+cd dev/
+ls
+git clone https://github.com/playday3008/ZigPicoCMake.git
+cd ZigPicoCMake/
+ls
+cd
+ls
+paru -S visual-studio-code-bin 
+cd
+sudo pacman -S xorg-xwayland
+reboot
+ls
+cd dev/
+ls
+cd hey/
+ls
+cd build/
+cmake -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake -G Ninja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..
+ls
+bear -- ninja
+sudo pacman -S ninja
+bear -- ninja
+ls
+cat compile_commands.json 
+ls
+cp compile_commands.json ../
+cd ..
+ls
+nvim
+sudo pacman -S arm-none-eabi-gcc
+sudo pacman -S arm-none-eabi-binutils arm-none-eabi-gcc arm-none-eabi-gdb arm-none-eabi-newlib
+nvim
+cd
+cd .config/
+cd nvim
+ls
+cd hey/
+ls
+cd dev/hey/
+nvim
+nvim
+ls
+cd 
+ls
+cd dev/
+cd ZigPicoCMake/
+ls
+cd
+cd dev/ZigPicoCMake/
+git submodule add https://github.com/raspberrypi/pico-sdk.git pico-sdk
+git submodule update --init
+ls
+nvim CMakeLists.txt 
+ls
+$env.PICO_SDK_PATH = "/home/wasd/dev/ZigPicoCMake/pico-sdk"
+ls
+zig build -Dboard=pico2_w
+ls
+cd src/
+cd ..
+ls
+cd pico-sdk/
+nvim
+..
+ls
+nvim
+ls
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico/assert.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim /home/wasd/.pico-sdk/toolchain/13_3_Rel1/arm-none-eabi/include/_ansi.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim pico-sdk/src/common/pico_base_headers/include/pico.h
+zig translate-c -I pico-sdk/src/common/pico_base_headers/include pico-sdk/src/common/pico_base_headers/include/pico.h
+nvim /home/wasd/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h
+ls
+..
+ls
+cd ZigPicoCMake/
+ls
+cd .pico-sdk/
+ls
+cd .pico-sdk/
+ls
+cd .pico-sdk/
+fd printf.h
+fd stdlib.h
+ls
+cd .pico-sdk/
+ls
+cd
+z /home/wasd/dev/ZigPicoCMake/pico-sdk
+ls
+..
+ls
+..
+ls
+rm -rf ZigPicoCMake/
+ls
+,,
+..
+ls
+la
+ls
+cd dev/
+ls
+cd hey/
+ls
+cd build/
+ninja
+cd
+cd dev/
+ls
+git clone https://github.com/playday3008/ZigPicoCMake.git
+cd ZigPicoCMake/
+nvim
+ls
+zig build -Dboard=pico2_w
+cd nvim
+cd
+ls
+cd .config/
+cd nvim
+ls
+paru -S zig-nightly-bin
+nvim
+ls
+cd lua/plugins/
+ls
+mv zig.lua.bak zig.lua
+nvim
+mov,
+nvim
+ls
+cd .local/
+ls
+cd share/
+ls
+cd nvim
+ls
+cd mason/
+ls
+cd bin/
+ls
+..
+ls
+..
+ls
+rm -rf mason/
+ls
+nvim build.zig 
+cd
+z /home/wasd/dev/ZigPicoCMake
+ls
+which zls
+nvim
+ls
+nvim
+ls
+zig build -Dboard=pico2_w
+nvim zig.lua 
+nvim
+z z
+ls
+zig build -Dboard=pico2_w
+ls
+zig build clean
+..
+ls
+rm -rf ZigPicoCMake/
+cd .cache/
+ls
+rm -rf zig/ zls/ bazel/
+ls
+git clone https://github.com/playday3008/ZigPicoCMake.git
+cd ZigPicoCMake/
+ls
+zig build -Dboard=pico2_w
+zig build-lib ZigPicoCMake Debug thumb-freestanding-eabi
+nvim
+ls
+cd
+ls
+zig build -Dboard=pico2_w
+nvim
+ls
+ls
+cd build/
+ls
+cd pico2_w/
+ls
+picotool info -a
+ls
+picotool load ZigPicoCMake.uf2
+cd ..
+ls
+..
+z z
+zig build -Dboard=pico2_w
+picotool info -a
+picotool load ZigPicoCMake.uf2
+ls
+cd build/
+picotool load ZigPicoCMake.uf2
+ls
+cd pico2_w/
+picotool load ZigPicoCMake.uf2
+picotool info -a
+picotool reboot
+nvim
+git diff
+ls
+git diff
+sudo pacman -S less
+git diff
+nvim
+ls
+ls
+zig build -Dboard=pico2_w
+ls
+cd pico2_w/
+z zi
+ls
+vim
+sudo pacman -S neovide
+ls
+vim
+ls
+picotool load ZigPicoCMake.uf2 -xf
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+picotool load build/pico2_w/ZigPicoCMake.uf2 -xf
+zig build -Dboard=pico2_w
+byop
+btop
+ls
+cd ..
+ls
+paru -Syu
+sudo pacman -Syu
+zig init
+ls
+rm -r  build.zig src/ build.zig.zon
+ls
+mkdir zig
+cd zig/
+l
+sls
+zig init
+ls
+cd zig/
+c z
+z z
+ls
+..
+cd zig/
+ls
+zig build run
+zig build test
+zig build run
+zig build test
+zig build run
+zig build test
+zig build run
+poweroff
+paru -Syu
+sudo pacman -Syu
+reboot
+ls
+cd dev/
+ls
+git clone https://codeberg.org/ziglings/exercises.git ziglings
+cd ziglings/
+..
+ls
+cd ziglings/
+ls
+zig build
+ls
+nvim
+cd ziglings/
+z /home/wasd/dev/ziglings
+ls
+zig build
+nvim exercises/001_hello.zig
+z /home/wasd/dev/ZigPicoCMake
+cd ..
+cd ziglings/
+zig run exercises/001_hello.zig
+cd
+cd Downloads/
+ls
+rm -rf spmc016a.zip
+ls
+unzip RST_LAB_1.zip 
+ls
+cd RST_LAB_1/
+ls
+git init
+ls
+nvim
+picotool reboot
+picotool reboot -u
+picotool reboot --help
+picotool help reboot
+picotool -u reboot
+picotool reboot --u
+picotool reboot -u
+picotool help reboot
+picotool reboot -u
+picotool reboot -uf
+picotool reboot -u -f
+picotool 
+picotool info
+picotool erase
+lsblk
+ls
+la
+open --raw .gitconfig
+open --raw .gitconfig | wl-copy 
+ls
+chezmoi diff
+ls
+cpcat .gitconfig
+cpcat .bashrc
+chezmoi help
+chezmoi edit
+chezmoi edit --apply
+chezmoi apply
+cd
+d
+cd
+chezmoi cd help
+chezmoi cd --help
+chezmoi edit --help
+nvim
+chezmoi apply
+edit_config 
+chezmoi apply edit
+ls
+chezmoi 
+nvim 
+ls
+nvim
+cm
+chezmoi apply 
+cm
+chezmoi apply 
+cm
+ls
+cd
+chezmoi apply 
+ls
+tree
+chezmoi managed
+chezmoi unmanage
+chezmoi unmanage .config/btop/btop.log 
+chezmoi unmanage ~/.config/btop/btop.log 
+ls
+cd
+cd architect/
+cd dotfiles/config/
+ls
+chezmoi managed
+chezmoi managed | wl-copy 
+cd xsettingsd/
+ls
+cat xsettingsd.conf 
+..
+ls
+cat xdg-desktop-portal/portals.conf 
+ls
+chezmoi manage ~/.config/xdg-desktop-portal/portals.conf
+ls
+cat tealdeer/config.toml
+chezmoi manage ~/.config/tealdeer/config.toml 
+cat user-dirs.conf 
+ls
+cat user-dirs.dirs 
+chezmoi manage ~/.config/user-dirs.dirs 
+ls
+cat environment.d/env.conf 
+chezmoi manage ~/.config/environment.d/env.conf 
+ls
+git status
+cd
+ls
+poweroff
+lsblk
+sudo pacman -S libnewt 
+sudo pacman -S libnotify 
+sudo pacman -Syu
+ls
+nvim
+ls
+z nvim
+ls
+cd
+cd .cache/
+cd
+cd .config/
+ls
+cd nvim
+nvim
+ls
+cd
+ls
+cd
+ls
+sudoedit /etc/greetd/config.toml
+ls
+nvim
+ls
+cat /etc/greetd/config.toml 
+fd
+fd l
+fdk
+fd k
+fd -u …
+fd -u … a
+fd -u as … 
+fd -u as
+fd -u 
+z /home/wasd/dev/ziglings
+ls
+zig build
+cd
+cd ziglings/
+z /home/wasd/dev/ziglings
+vim
+vim
+zig build
+ls
+cd .config/
+cd nvim
+sudoedit /etc/greetd/config.toml
+nvim
+vim
+zig build
+zig run exercises/012_while2.zig 
+zig build
+zig run exercises/012_while2.zig 
+nvim
+ls
+sway
+xremap
+xremap --help
+btop
+ls
+cd nvim
+ls
+z /home/wasd/dev/ziglings
+zig build
+vim
+zig build
+zig run exercises/013_while3.zig 
+zig build
+zig run exercises/016_for2.zig 
+zig run exercises/015_for2.zig 
+zig run exercises/015_for.zig 
+zig run exercises/016_for2.zig 
+zig build
+vim
+nvim
+zed 
+z /home/wasd/dev/ziglings
+vim
+sudo pacman -S zed
+paru -Syu  zed-preview-bin 
+ls
+zeditor .
+zig build
+vim
+btop
+sudo pacman -S neovim
+cd .config/
+mv nvim nvim.bak
+vim
+vim exercises/009_if.zig
+mv nvim.bak/ nvim
+vim
+z nvim
+nvim
+cd
+z zigl
+zig build
+vim
+zig build
+zig run exercises/025_errors5.zig 
+cd .config/
+cd nvim
+vim
+z zigl
+vim
+z zigl
+vim
+zig build
+nvim
+zig build
+vim
+zig build
+paru -S  seer-gdb-git 
+paru -S seer-gdb
+zig build
+zig run exercises/036_enums2.zig 
+zig build
+zig run exercises/044_quiz5.zig 
+zig build
+zig run exercises/046_optionals2.zig 
+zig build
+zig run exercises/050_no_value.zig 
+ls
+sudo pacman -S discord
+poweroff
+cat /etc/greetd/config.toml 
+paru -Syu; sudo pacman -Syu
+paru -Rns zed-preview-bin 
+sudo pacman -Syu
+reboot
+ls
+z zigl
+nvim
+vim
+zig build
+nvim
+cd
+cd .config/
+nvim sway/config
+chezmoi doctor
+cd
+git add .
+chezmoi apply 
+cd
+cd .config/
+nvim sway/config
+cd
+paru -Rns xremap-wlroots-bin 
+chezmoi edit --apply dot_config/nushell/config.nu 
+git add .
+chezmoi -v apply
+chezmoi --apply
+chezmoi apply
+ls
+nvim 
+cd
+z nvim
+ls
+nvim
+ls
+cd lua/plugins/
+nvim
+sudo pacman -S find
+nvim
+nvim chezmoi.lua
+ls
+rm chezmoi.lua
+chezmoi edit --apply ~/.config/nushell/alias.nu 
+apply
+ls
+git diff
+ls
+ccd
+cd
+cd architect/
+ls
+cd dotfiles/
+ls
+cd config/
+ls
+pwd
+la
+ls
+chezmoi managed
+ls
+cp -r ~/.config/{bat,btop,environment.d,fd,foot,fuzzel,ghostty,gtk-3.0,hypr,mako,neovide,nushell,paru,psd,ripgrep,sway,swayr,tealdeer,xdg-desktop-portal,xremap,xsettingsd,starship.toml,user-dirs.conf,user-dirs.dirs} /home/wasd/architect/dotfiles/config/
+cp -r ~/.config/{bat,btop,environment.d,fd,foot,fuzzel,ghostty,gtk-3.0,hypr,mako,neovide,nushell,paru,psd,ripgrep,sway,swayr,xdg-desktop-portal,xremap,xsettingsd,starship.toml,user-dirs.conf,user-dirs.dirs} /home/wasd/architect/dotfiles/config/
+cp -r ~/.config/{bat,btop,environment.d,fd,foot,fuzzel,ghostty,hypr,mako,neovide,nushell,paru,psd,ripgrep,sway,swayr,xdg-desktop-portal,starship.toml} /home/wasd/architect/dotfiles/config/
+ls
+cd
+cd .config/
+ll
+ls
+cd sway
+ls
+ll
+nvim config 
+..
+ls
+..
+ls
+nvim install.conf.yaml 
+./install
+cd .config/
+ls
+ll
+cd tealdeer
+ls
+..
+ls
+rm test/
+ls
+cd .config/
+ll
+cd
+ls
+cd architect/
+ls
+nvim install 
+ls
+nvim install.conf.yaml 
+ls
+ll
+ls
+cd .config/
+ls
+cd .config/
+ll
+cd mako
+ls
+ll
+nvim config 
+nvim
+..
+find ~/.config -maxdepth 1 -type l -exec rm {} \;

@@ -1,4 +1,4 @@
-font-size = 16
+font-size = 15
 gtk-single-instance = true
 keybind = clear
 keybind = ctrl+shift+c=copy_to_clipboard
@@ -18,7 +18,6 @@ keybind = ctrl+shift+physical:seven=goto_tab:7
 keybind = ctrl+shift+physical:six=goto_tab:6
 keybind = ctrl+shift+physical:three=goto_tab:3
 keybind = ctrl+shift+physical:two=goto_tab:2
-keybind = ctrl+shift+physical:zero=goto_tab:10
 keybind = ctrl+shift+q=close_surface
 keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+v=paste_from_clipboard

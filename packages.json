@@ -77,7 +77,7 @@
     "x86_energy_perf_policy",
     "nushell",
     "uv",
-    "neovim",
+    "neovim-git",
     "just",
     "ghostty",
     "util-linux",
@@ -88,11 +88,11 @@
     "greetd",
     "scx-scheds-git",
     "swaybg",
-    "wlroots-git"
+    "wlroots-git",
+    "xorg-xwayland"
   ],
   "aur-packages": [
     "sway-git",
-    "xremap-wlroots-bin",
     "clipse-bin",
     "picotool",
     "carapace-bin",
