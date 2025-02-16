@@ -4,3 +4,5 @@ $env.CARAPACE_BRIDGES = 'fish' # optional
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
 $env.PATH = ($env.PATH | uniq)
+
+$env.PATH = ($env.PATH | split row (char esep) | append "~/.bin")
