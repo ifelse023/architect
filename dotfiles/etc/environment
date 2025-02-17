@@ -3,6 +3,5 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
-EDITOR=nvim
-VISUAL=nvim
-
+EDITOR=helix
+VISUAL=helix

@@ -1,6 +1,5 @@
 {
   "packages": [
-    "npm",
     "brightnessctl",
     "clang",
     "fzf",
@@ -40,6 +39,7 @@
     "openssh",
     "libnotify",
     "mako",
+    "inxi",
     "wireplumber",
     "xdg-user-dirs",
     "xdg-utils",
@@ -59,7 +59,6 @@
     "firefox-nightly",
     "wireless-regdb",
     "fuzzel",
-    "python-pynvim",
     "dbus-python",
     "gnome-keyring",
     "gvfs",
@@ -75,8 +74,6 @@
     "fish-git",
     "x86_energy_perf_policy",
     "nushell",
-    "uv",
-    "neovim-git",
     "just",
     "ghostty",
     "util-linux",
@@ -88,10 +85,13 @@
     "scx-scheds-git",
     "swaybg",
     "wlroots-git",
-    "xorg-xwayland"
+    "xorg-xwayland",
+    "helix",
+    "zellij"
   ],
   "aur-packages": [
     "sway-git",
+    "swayr",
     "clipse-bin",
     "picotool",
     "carapace-bin",

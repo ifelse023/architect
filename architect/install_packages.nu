@@ -1,9 +1,9 @@
 #!/usr/bin/env nu
-
+ 
 def install_packages [] {
     let config_path = $"($env.HOME)/architect/packages.json"
     let package_data = (open $config_path)
-    
+   
     let official_packages = $package_data.packages
     let aur_packages = $package_data."aur-packages"
     

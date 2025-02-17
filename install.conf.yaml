@@ -17,6 +17,7 @@
 - clean:
     ~/:
       force: true
+      recursive: true
 
     ~/.config:
       force: true
@@ -46,11 +47,16 @@
     "~/.config/neovide/config.toml": "dotfiles/config/neovide/config.toml"
 
     "~/.config/nushell/alias.nu": "dotfiles/config/nushell/alias.nu"
+    "~/.config/nushell/zellij.nu": "dotfiles/config/nushell/zellij.nu"
     "~/.config/nushell/config.nu": "dotfiles/config/nushell/config.nu"
     "~/.config/nushell/env.nu": "dotfiles/config/nushell/env.nu"
     "~/.config/nushell/functions.nu": "dotfiles/config/nushell/functions.nu"
     "~/.config/nushell/theme/catppuccin_mocha.nu": "dotfiles/config/nushell/theme/catppuccin_mocha.nu"
     "~/.config/nushell/theme/ls_colors.txt": "dotfiles/config/nushell/theme/ls_colors.txt"
+
+    "~/.config/zellij/config.kdl": "dotfiles/config/zellij/config.kdl"
+    "~/.config/zellij/layouts/default-layout.kdl": "dotfiles/config/zellij/layouts/default-layout.kdl"
+    "~/.config/zellij/layouts/default-layout.swap.kdl": "dotfiles/config/zellij/layouts/default-layout.swap.kdl"
 
     "~/.config/paru/paru.conf": "dotfiles/config/paru/paru.conf"
 
@@ -67,6 +73,12 @@
 
     "~/.config/xdg-desktop-portal/portals.conf": "dotfiles/config/xdg-desktop-portal/portals.conf"
     "~/.config/uwsm/default-id": "/home/wasd/architect/dotfiles/config/uwsm/default-id"
+
+    "~/.config/helix/languages.toml": "/home/wasd/architect/dotfiles/config/helix/languages.toml"
+    "~/.config/helix/languages.toml": "/home/wasd/architect/dotfiles/config/helix/languages.toml"
+    "~/.config/helix/themes/theme.toml": "/home/wasd/architect/dotfiles/config/helix/themes/theme.toml"
+
+
 
 - shell:
     - ls scripts | each { |file| chmod +x $file.name }

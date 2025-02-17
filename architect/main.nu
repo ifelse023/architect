@@ -42,6 +42,8 @@ def main [] {
     ^zoxide init nushell | save -f ~/.cache/.zoxide.nu
     mkdir ~/.cache/starship
     ^starship init nu | save -f ~/.cache/starship/init.nu
+    
+    ^sudo cp ./dotfiles/limine.conf /boot
 
     let orphaned = (^pacman -Qtdq | lines)
     if not ($orphaned | is-empty) {

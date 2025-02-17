@@ -1,4 +1,4 @@
-font-size = 15
+font-size = 16
 gtk-single-instance = true
 keybind = clear
 keybind = ctrl+shift+c=copy_to_clipboard
