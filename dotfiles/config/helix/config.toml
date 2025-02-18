@@ -22,7 +22,3 @@ hidden = false
 [editor.indent-guides]
 render = true
 character = "▏"
-
-
-[keys.normal]
-esc = ["collapse_selection", "keep_primary_selection"]

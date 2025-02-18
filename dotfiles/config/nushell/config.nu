@@ -27,7 +27,6 @@ let external_completer = {|spans|
 
     match $spans.0 {
         __zoxide_z | __zoxide_zi => $zoxide_completer
-        zellij => $fish_completer
         _ => $carapace_completer
     } | do $in $spans
 }
@@ -263,9 +262,8 @@ $env.config = {
 
 }
 use ~/.cache/starship/init.nu
-source ./zellij.nu
 source ~/.cache/.zoxide.nu
-source ./alias.nu
-source ./functions.nu
+source ~/architect/dotfiles/config/nushell/alias.nu
+source ~/architect/dotfiles/config/nushell/functions.nu
+source ~/architect/dotfiles/config/nushell/theme/catppuccin_mocha.nu
 source ~/.cache/carapace/init.nu
-source ./theme/catppuccin_mocha.nu

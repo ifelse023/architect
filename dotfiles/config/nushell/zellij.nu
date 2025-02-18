@@ -7,10 +7,16 @@ let in_zellij = (try { $env.ZELLIJ } catch { '' })
 if ($in_zellij | is-empty) {
     # Check number of existing sessions
     let existing_sessions = (zellij list-sessions | lines | length)
-    
-    # Start Zellij only if we have less than 3 sessions
-    if $existing_sessions < 3 {
-        zellij
+     if $existing_sessions < 3 {
+        let session_name = if $existing_sessions == 0 {
+            'x'
+        } else if $existing_sessions == 1 {
+            'y'
+        } else {
+            'z'
+        }
+        
+        zellij -s $session_name
         
         # Handle auto-exit behavior
         let auto_exit = (try { $env.ZELLIJ_AUTO_EXIT } catch { 'false' }) == 'true'

@@ -86,8 +86,7 @@
     "swaybg",
     "wlroots-git",
     "xorg-xwayland",
-    "helix",
-    "zellij"
+    "helix"
   ],
   "aur-packages": [
     "sway-git",

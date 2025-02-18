@@ -16,3 +16,8 @@ def filter_rg [
         $command_result.stderr
     ] | str join "\n" | rg $pattern ...$rg_args
 }
+
+def z-kill [] {
+    ^zellij kill-all-sessions -y
+    ^zellij delete-all-sessions -y
+    }

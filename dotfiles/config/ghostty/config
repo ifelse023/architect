@@ -1,31 +1,45 @@
+#=== General Settings ===
 font-size = 16
-gtk-single-instance = true
-keybind = clear
-keybind = ctrl+shift+c=copy_to_clipboard
-keybind = ctrl+shift+end=scroll_to_bottom
-keybind = ctrl+shift+home=scroll_to_top
-keybind = ctrl+shift+j=scroll_page_lines:1
-keybind = ctrl+shift+k=scroll_page_lines:-1
-keybind = ctrl+shift+physical:eight=goto_tab:8
-keybind = ctrl+shift+physical:five=goto_tab:5
-keybind = ctrl+shift+physical:four=goto_tab:4
-keybind = ctrl+shift+physical:kp_add=increase_font_size:1
-keybind = ctrl+shift+physical:kp_enter=reset_font_size
-keybind = ctrl+shift+physical:kp_subtract=decrease_font_size:1
-keybind = ctrl+shift+physical:nine=goto_tab:9
-keybind = ctrl+shift+physical:one=goto_tab:1
-keybind = ctrl+shift+physical:seven=goto_tab:7
-keybind = ctrl+shift+physical:six=goto_tab:6
-keybind = ctrl+shift+physical:three=goto_tab:3
-keybind = ctrl+shift+physical:two=goto_tab:2
-keybind = ctrl+shift+q=close_surface
-keybind = ctrl+shift+t=new_tab
-keybind = ctrl+shift+v=paste_from_clipboard
-keybind = ctrl+shift+x=jump_to_prompt:2
-keybind = ctrl+shift+z=jump_to_prompt:-2
-keybind = ctrl+physical:tab=next_tab
-keybind = ctrl+shift+physical:tab=previous_tab
 theme = light:catppuccin-mocha,dark:catppuccin-mocha
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
+
+#=== Keybindings ===
+
+#-- General --
+keybind = clear
+
+#-- Clipboard --
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+
+#-- Scrolling --
+keybind = ctrl+shift+end=scroll_to_bottom
+keybind = ctrl+shift+home=scroll_to_top
+keybind = ctrl+shift+j=scroll_page_lines:1
+keybind = ctrl+shift+k=scroll_page_lines:-1
+
+#-- Tab Navigation --
+keybind = ctrl+physical:tab=next_tab
+keybind = ctrl+shift+physical:tab=previous_tab
+keybind = ctrl+shift+physical:one=goto_tab:1
+keybind = ctrl+shift+physical:two=goto_tab:2
+keybind = ctrl+shift+physical:three=goto_tab:3
+keybind = ctrl+shift+physical:four=goto_tab:4
+keybind = ctrl+shift+physical:five=goto_tab:5
+keybind = ctrl+shift+physical:six=goto_tab:6
+keybind = ctrl+shift+t=new_tab
+
+#-- Font Size Adjustments --
+keybind = ctrl+shift+physical:kp_add=increase_font_size:1
+keybind = ctrl+shift+physical:kp_subtract=decrease_font_size:1
+keybind = ctrl+shift+physical:kp_enter=reset_font_size
+
+#-- Miscellaneous --
+keybind = ctrl+shift+q=close_surface
+keybind = ctrl+shift+x=jump_to_prompt:2
+keybind = ctrl+shift+z=jump_to_prompt:-2
+
+#-- Splitting --
+keybind = cmd+shift+d=new_split:right
