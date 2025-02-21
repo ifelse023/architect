@@ -215,9 +215,6 @@ client.background        $base# Assign workspaces
     assign [app_id="firefox"] 4
     for_window [app_id="firefox"] focus
 
-    assign [app_id="neovide"] 1
-    for_window [app_id="neovide"] focus
-
     assign [app_id="discord"] 5
     for_window [class="discord"] focus
 

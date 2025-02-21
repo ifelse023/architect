@@ -1,10 +1,10 @@
 #=== General Settings ===
 font-size = 16
-theme = light:catppuccin-mocha,dark:catppuccin-mocha
+theme = tokyo-custom
 window-decoration = false
-window-padding-x = 12
-window-padding-y = 12
-
+window-padding-x = 6
+window-padding-y = 8
+gtk-single-instance = true
 #=== Keybindings ===
 
 #-- General --
@@ -42,4 +42,4 @@ keybind = ctrl+shift+x=jump_to_prompt:2
 keybind = ctrl+shift+z=jump_to_prompt:-2
 
 #-- Splitting --
-keybind = cmd+shift+d=new_split:right
+keybind = cmd+shift+n=new_split:right

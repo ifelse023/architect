@@ -2,16 +2,16 @@
 
 def main [] {
     
-    ^rustup default nightly
+   ^rustup default nightly
 
     ^curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
     ^tar xvf cachyos-repo.tar.xz
-    ^sudo bash cachyos-repo/cachyos-repo.sh
-
-    ^sudo pacman -S paru-bin --noconfirm
-
+    cd cachyos-repo
+    ^sudo bash cachyos-repo.sh
+    cd ..
+    ^sudo pacman -S paru-bin nushell --noconfirm
+    ^chsh -s /usr/bin/nu
     ^bash ./install
-
     sleep 5sec
 
     ^sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
@@ -25,9 +25,6 @@ def main [] {
 
     ^sudo mount -a
 
-    ^chsh -s /usr/bin/nu
-
-    ^bat cache --build
 
     ^paru -Scc
 
@@ -42,6 +39,9 @@ def main [] {
     ^zoxide init nushell | save -f ~/.cache/.zoxide.nu
     mkdir ~/.cache/starship
     ^starship init nu | save -f ~/.cache/starship/init.nu
+    mkdir ~/.cache/carapace
+    carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+
     
     ^sudo cp ./dotfiles/limine.conf /boot
 

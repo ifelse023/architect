@@ -5,8 +5,9 @@ maximized = true
 no-multigrid = false
 tabs = true
 theme = "auto"
+neovim-bin = "/usr/bin/nvim"
 title-hidden = true
-vsync = true
+vsync = false
 wsl = false
 
 [font]

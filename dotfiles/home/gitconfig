@@ -4,7 +4,7 @@
 [color]
   ui = auto
 [core]
-	editor = helix
+	editor = nvim
 	preloadIndex = true
 [alias]
 	co = checkout

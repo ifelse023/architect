@@ -1,4 +1,4 @@
-theme = "theme"
+theme = "tokyonight"
 
 [editor]
 line-number = "relative"
@@ -22,3 +22,6 @@ hidden = false
 [editor.indent-guides]
 render = true
 character = "▏"
+
+[keys.normal]
+s = "goto_word"

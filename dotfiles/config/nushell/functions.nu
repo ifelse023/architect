@@ -17,7 +17,10 @@ def filter_rg [
     ] | str join "\n" | rg $pattern ...$rg_args
 }
 
-def z-kill [] {
-    ^zellij kill-all-sessions -y
-    ^zellij delete-all-sessions -y
-    }
+def e [xyz: string] {
+    fd $xyz -X nvim
+}
+
+def e-pattern [pattern]  {
+    ^fd -g $pattern -X nvim
+}

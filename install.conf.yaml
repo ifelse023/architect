@@ -7,8 +7,6 @@
 - create:
     ~/.ssh:
       mode: 0700
-    ~/.bin:
-      mode: 0755
     ~/misc:
       mode: 0755
     ~/dev:
@@ -23,11 +21,9 @@
       recursive: true
 
 - link:
-    "~/.bin/gotta-go-fast": "scripts/gotta-go-fast.py"
     "~/.cargo/config.toml": "dotfiles/home/cargo/config.toml"
     "~/.gdbinit": "dotfiles/home/gdbinit"
     "~/.gitconfig": "dotfiles/home/gitconfig"
-    "~/.config/bat/themes/Catppuccin Mocha.tmTheme": "dotfiles/config/bat/themes/Catppuccin Mocha.tmTheme"
     "~/.config/tlrc/config.toml": "dotfiles/config/tlrc/config.toml"
 
     "~/.config/btop/btop.conf": "dotfiles/config/btop/btop.conf"
@@ -62,12 +58,6 @@
 
     "~/.config/xdg-desktop-portal/portals.conf": "dotfiles/config/xdg-desktop-portal/portals.conf"
     "~/.config/uwsm/default-id": "/home/wasd/architect/dotfiles/config/uwsm/default-id"
-
-    "~/.config/helix/languages.toml": "/home/wasd/architect/dotfiles/config/helix/languages.toml"
-    "~/.config/helix/languages.toml": "/home/wasd/architect/dotfiles/config/helix/languages.toml"
-    "~/.config/helix/themes/theme.toml": "/home/wasd/architect/dotfiles/config/helix/themes/theme.toml"
-
-
 
 - shell:
     - ls scripts | each { |file| chmod +x $file.name }

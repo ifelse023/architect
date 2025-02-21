@@ -1,6 +1,7 @@
 {
   "packages": [
     "brightnessctl",
+    "neovim-git",
     "clang",
     "fzf",
     "gdb",
@@ -73,7 +74,6 @@
     "nwg-look",
     "fish-git",
     "x86_energy_perf_policy",
-    "nushell",
     "just",
     "ghostty",
     "util-linux",
@@ -86,7 +86,8 @@
     "swaybg",
     "wlroots-git",
     "xorg-xwayland",
-    "helix"
+    "zsh-completions",
+    "vivid"
   ],
   "aur-packages": [
     "sway-git",
