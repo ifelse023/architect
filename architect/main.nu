@@ -7,12 +7,12 @@ def main [] {
     cd cachyos-repo
     ^sudo bash cachyos-repo.sh
     cd ..
-    ^sudo pacman -S paru-bin nushell --noconfirm
+    ^sudo pacman -S paru-bin chezmoi nushell --noconfirm
     ^chsh -s /usr/bin/nu
 
-    ^bash ~/architect/architect/usb.nu
-    chezmoi init --apply --ssh ifelse023
-    sleep 5sec
+    nu ~/architect/architect/usb.nu
+    chezmoi init --apply --ssh ifelse023 -v
+    sleep 3sec
 
     ^sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
 
