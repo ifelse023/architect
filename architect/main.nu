@@ -2,8 +2,6 @@
 
 def main [] {
     
-   ^rustup default nightly
-
     ^curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
     ^tar xvf cachyos-repo.tar.xz
     cd cachyos-repo
@@ -11,10 +9,12 @@ def main [] {
     cd ..
     ^sudo pacman -S paru-bin nushell --noconfirm
     ^chsh -s /usr/bin/nu
-    ^bash ./install
+
+    ^bash ~/architect/architect/usb.nu
+    chezmoi init --apply --ssh ifelse023
     sleep 5sec
 
-    ^sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
+    ^sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
 
     ^sudo pacman -Syu
 
@@ -34,7 +34,6 @@ def main [] {
 
     ^nu ~/architect/architect/service_manager.nu
 
-    ^bash ~/architect/architect/usb.nu
 
     ^zoxide init nushell | save -f ~/.cache/.zoxide.nu
     mkdir ~/.cache/starship
@@ -43,7 +42,7 @@ def main [] {
     carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
 
     
-    ^sudo cp ./dotfiles/limine.conf /boot
+    ^sudo cp ./config-files/limine.conf /boot
 
     let orphaned = (^pacman -Qtdq | lines)
     if not ($orphaned | is-empty) {
