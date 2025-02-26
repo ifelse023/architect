@@ -5,7 +5,6 @@ curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
 tar xvf cachyos-repo.tar.xz
 sudo bash cachyos-repo/cachyos-repo.sh
 sudo pacman -S paru-bin --noconfirm
-bash ./install
 sleep 5
 sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/dotfiles/etc/ /etc/
 sudo pacman -Syu
