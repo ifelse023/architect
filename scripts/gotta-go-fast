@@ -47,7 +47,7 @@ def main() -> None:
         help="The destination directory for the new project.",
     )
     parser.add_argument(
-        "--git",
+        "--nogit",
         action="store_true",
         help="Initialize git repository in the new project directory",
     )
@@ -68,7 +68,7 @@ def main() -> None:
         print(f"The destination directory {args.destination} already exists.")
         sys.exit(1)
 
-    if copy_template(src_path, args.destination) and args.git:
+    if copy_template(src_path, args.destination) and not args.nogit:
         initialize_git_repo(args.destination)
 
 

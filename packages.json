@@ -1,8 +1,10 @@
 {
   "packages": [
     "brightnessctl",
+    "valgrind",
     "neovim-git",
     "clang",
+    "bear",
     "fzf",
     "gdb",
     "llvm",
@@ -95,11 +97,10 @@
     "clipse-bin",
     "picotool",
     "carapace-bin",
-    "zig-nightly-bin",
-    "zls-nightly-bin",
     "flameshot-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
-    "dracula-gtk-theme"
+    "dracula-gtk-theme",
+    "betterbird-bin"
   ]
 }

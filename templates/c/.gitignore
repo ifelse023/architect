@@ -1,5 +1,5 @@
 .direnv/
-target
+build
 result
 .obsidian/
 .vscode
@@ -57,3 +57,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+compile_commands.json
