@@ -1,5 +1,5 @@
 cc := "clang"
-c-flags := "-Wall -Wextra -Wpedantic -Werror"
+c-flags := "-Wall -Wextra -Wpedantic -Werror -std=c23"
 release-flags := "-O3 -march=native"
 debug-flags := "-g -O0"
 includes := "-I./include"

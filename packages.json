@@ -60,7 +60,6 @@
     "fwupd",
     "hyperfine",
     "linux-cachyos",
-    "firefox-nightly",
     "wireless-regdb",
     "fuzzel",
     "dbus-python",
@@ -91,13 +90,17 @@
     "hyprpaper",
     "xdg-desktop-portal-hyprland",
     "hyprcursor",
-    "hyprpolkitagent"
+    "hyprpolkitagent",
+    "glow",
+    "flameshot-git"
   ],
   "aur-packages": [
+    "profile-sync-daemon-floorp",
     "clipse-bin",
+    "floorp-bin",
+    "moar",
     "picotool",
     "carapace-bin",
-    "flameshot-git",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme",

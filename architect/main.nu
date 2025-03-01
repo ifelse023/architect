@@ -11,7 +11,7 @@ def main [] {
     ^chsh -s /usr/bin/nu
 
     nu ~/architect/architect/usb.nu
-    chezmoi init --apply --ssh ifelse023 -v
+    chezmoi init --apply --verbose --ssh git@github.com:ifelse023/dotfiles.git
     sleep 3sec
 
     ^sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
@@ -44,8 +44,11 @@ def main [] {
     
     ^sudo cp ./config-files/limine.conf /boot
 
+    mkdir ~/dev
+
     let orphaned = (^pacman -Qtdq | lines)
     if not ($orphaned | is-empty) {
         ^sudo pacman -Rns ...$orphaned
     }
+
 }
