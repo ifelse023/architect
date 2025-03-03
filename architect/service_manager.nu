@@ -1,9 +1,7 @@
 def main [] {
     let services = [
         [name type pkg_pattern];
-        [tlp system tlp]
         [thermald system thermald]
-        [irqbalance system irqbalance]
         [scx system scx-scheds-git]
         [greetd system greetd]
         [psd user profile-sync-daemon]
