@@ -32,8 +32,6 @@ def main [] {
     mkdir ~/.cache/carapace
     carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
     
-    ^sudo cp ./config-files/limine.conf /boot
-
     let orphaned = (^pacman -Qtdq | lines)
     if not ($orphaned | is-empty) {
         ^sudo pacman -Rns ...$orphaned
