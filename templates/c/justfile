@@ -12,6 +12,8 @@ run: build
 build: prep
     {{cc}} {{c-flags}} {{debug-flags}} {{includes}} -o build/bin/main {{c-files}}
 
+build-leak: prep
+    {{cc}} {{c-flags}} -fsanitize=address {{debug-flags}} {{includes}} -o build/bin/main {{c-files}}
 prep:
     mkdir -p build/bin
 
@@ -31,5 +33,5 @@ relaxed: prep
 format:
     clang-format -i {{c-files}}
 
-valgrind: build
+valgrind: build-leak
     valgrind ./build/bin/main

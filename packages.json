@@ -8,6 +8,7 @@
     "bear",
     "fzf",
     "gdb",
+    "lldb",
     "llvm",
     "rsync",
     "iproute2",
@@ -92,7 +93,7 @@
     "hyprcursor",
     "hyprpolkitagent",
     "glow",
-    "flameshot-git"
+    "flameshot"
   ],
   "aur-packages": [
     "profile-sync-daemon-floorp",
@@ -103,7 +104,6 @@
     "carapace-bin",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
-    "dracula-gtk-theme",
-    "betterbird-bin"
+    "dracula-gtk-theme"
   ]
 }
