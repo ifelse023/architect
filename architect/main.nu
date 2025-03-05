@@ -2,7 +2,7 @@
 
 def main [] {
     
-    ^sudo pacman -S mold lld libc++ paru-bin chezmoi nushell --noconfirm
+    ^sudo pacman -S mold lld libc++ paru-bin chezmoi nushell
     ^chsh -s /usr/bin/nu
 
     nu ~/architect/architect/usb.nu
