@@ -1,6 +1,7 @@
 {
   "packages": [
     "brightnessctl",
+    "npm",
     "valgrind",
     "neovim-git",
     "neovide",
@@ -96,9 +97,11 @@
     "flameshot"
   ],
   "aur-packages": [
-    "profile-sync-daemon-floorp",
-    "clipse-bin",
     "floorp-bin",
+    "profile-sync-daemon-floorp",
+  ],
+  "later-packages": [
+    "clipse-bin",
     "moar",
     "picotool",
     "carapace-bin",

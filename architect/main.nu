@@ -44,8 +44,6 @@ def main [] {
     
     ^sudo cp ./config-files/limine.conf /boot
 
-    mkdir ~/dev
-
     let orphaned = (^pacman -Qtdq | lines)
     if not ($orphaned | is-empty) {
         ^sudo pacman -Rns ...$orphaned
