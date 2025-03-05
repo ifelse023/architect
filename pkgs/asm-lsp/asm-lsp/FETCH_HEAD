@@ -1,0 +1,170 @@
+431fd1f1a71fdc87b87ca772b3c607c46cac39ca	not-for-merge	branch 'Svarshick/master' of https://github.com/bergercookie/asm-lsp
+40570e9852a0c410d95cacf4e1a083cab83f14ac	not-for-merge	branch 'add_select_target' of https://github.com/bergercookie/asm-lsp
+b1360ae3455e5f147500de971c67b39c50826627	not-for-merge	branch 'avr' of https://github.com/bergercookie/asm-lsp
+32912c6b702d8da5c7cc127f7a5bbcfe3d40ef94	not-for-merge	branch 'master' of https://github.com/bergercookie/asm-lsp
+8f3405e1dbcebe771785ac4cf4597a0f21599533	not-for-merge	branch 'misc-changes' of https://github.com/bergercookie/asm-lsp
+3c51f99eeedd2f781108f91100eca7bc157527e9	not-for-merge	branch 'tmp-add-pre-commit-config' of https://github.com/bergercookie/asm-lsp
+e99874ff892cf73f302668c956ecb24e4eca1d5f	not-for-merge	branch 'tmp-call-workflow' of https://github.com/bergercookie/asm-lsp
+0052a6b72ef76b7c4c97f99b570076f1d1740796	not-for-merge	'refs/pull/100/head' of https://github.com/bergercookie/asm-lsp
+33a5d69d09bd3fd3190daaec475b7bce0a0d21f3	not-for-merge	'refs/pull/102/head' of https://github.com/bergercookie/asm-lsp
+80d6176d6da425735e09214ef53b559cc8e63fb8	not-for-merge	'refs/pull/103/head' of https://github.com/bergercookie/asm-lsp
+50f72934a83da95e34900ca512acdbd5f6bebc61	not-for-merge	'refs/pull/105/head' of https://github.com/bergercookie/asm-lsp
+e12a65dfcee98a50597b9b284dcbdd7b14d6338a	not-for-merge	'refs/pull/107/head' of https://github.com/bergercookie/asm-lsp
+3466b0d8394765931ffd7f249b53d4c16b92f005	not-for-merge	'refs/pull/108/head' of https://github.com/bergercookie/asm-lsp
+17274223109ac113d7f98f6d15fdaa3471218269	not-for-merge	'refs/pull/109/head' of https://github.com/bergercookie/asm-lsp
+a17c844a627f64b3eb9da11fba59f27d9866499e	not-for-merge	'refs/pull/110/head' of https://github.com/bergercookie/asm-lsp
+2a6d6f7ab03437ca67916e4660caa421c7f957a4	not-for-merge	'refs/pull/111/head' of https://github.com/bergercookie/asm-lsp
+e14b95b34f688c4800f2a95298063669401c1f93	not-for-merge	'refs/pull/113/head' of https://github.com/bergercookie/asm-lsp
+4d3ae93d5889f7d8ffe4cce24ef938d3d6d557b3	not-for-merge	'refs/pull/114/head' of https://github.com/bergercookie/asm-lsp
+e9ed4dd9ed03302e5b620bf84c80c15bebb47fd4	not-for-merge	'refs/pull/116/head' of https://github.com/bergercookie/asm-lsp
+a11c633998074cda86f829580e2ea42ccf26ace9	not-for-merge	'refs/pull/117/head' of https://github.com/bergercookie/asm-lsp
+787d6018333fbb967500d588deaca7b00c69531e	not-for-merge	'refs/pull/118/head' of https://github.com/bergercookie/asm-lsp
+bb9de0719ca069dc657c450121f0e709148b2f2a	not-for-merge	'refs/pull/119/head' of https://github.com/bergercookie/asm-lsp
+ed6d51b341f35b2cd2dbb7d99fd0442309e968eb	not-for-merge	'refs/pull/120/head' of https://github.com/bergercookie/asm-lsp
+ca86285b5d14a588c5880132d1a87e18ba3cd1ab	not-for-merge	'refs/pull/121/head' of https://github.com/bergercookie/asm-lsp
+5a22613324b299bb23fc5ca439a3214a883e0c1c	not-for-merge	'refs/pull/122/head' of https://github.com/bergercookie/asm-lsp
+fa3eca87d238edcba120a858c7b85e571a7c8de2	not-for-merge	'refs/pull/123/head' of https://github.com/bergercookie/asm-lsp
+6e84014e2fc2b048c53eafb9473ba7c778e86b15	not-for-merge	'refs/pull/124/head' of https://github.com/bergercookie/asm-lsp
+279b5ca071cbf53233c4908ff0f51da0212a3a91	not-for-merge	'refs/pull/125/head' of https://github.com/bergercookie/asm-lsp
+7cd8f7349ad14ff28f172a4f3357a1f07c193cad	not-for-merge	'refs/pull/126/head' of https://github.com/bergercookie/asm-lsp
+244db06338210bc9efe1d12c05c715edf1f8bfc8	not-for-merge	'refs/pull/128/head' of https://github.com/bergercookie/asm-lsp
+4305eec850bbf813cdec0a63ebbf296ea35f53b7	not-for-merge	'refs/pull/129/head' of https://github.com/bergercookie/asm-lsp
+7c8574f2e208c1e1287a1fd18fa90ae5e94dd204	not-for-merge	'refs/pull/130/head' of https://github.com/bergercookie/asm-lsp
+b8333797d5e0cd2c829365489433034fec780b3e	not-for-merge	'refs/pull/131/head' of https://github.com/bergercookie/asm-lsp
+aca6559a597a858710af7a4cc0acb6b998935a82	not-for-merge	'refs/pull/132/head' of https://github.com/bergercookie/asm-lsp
+862176493a4adacca7d3ba439451e6b63173faf0	not-for-merge	'refs/pull/133/head' of https://github.com/bergercookie/asm-lsp
+881621650041952600fef96c9953612e213ec8c0	not-for-merge	'refs/pull/135/head' of https://github.com/bergercookie/asm-lsp
+5513826c2bf7b34b622669c47963ba66dd0f73b2	not-for-merge	'refs/pull/137/head' of https://github.com/bergercookie/asm-lsp
+449ad8c33d783e5ed1d11bcabe91b201c51ecc73	not-for-merge	'refs/pull/139/head' of https://github.com/bergercookie/asm-lsp
+00ccd636630ea4157573e089c2713f1398ad1d7d	not-for-merge	'refs/pull/14/head' of https://github.com/bergercookie/asm-lsp
+5d54f6f77748b7d902f86b3191c1e4aaa2a0cf1a	not-for-merge	'refs/pull/140/head' of https://github.com/bergercookie/asm-lsp
+e50b570d8832f95f13875ddca9f969b7c8547879	not-for-merge	'refs/pull/141/head' of https://github.com/bergercookie/asm-lsp
+17a24011004d3ebb070b4d3909fb4df0820a631d	not-for-merge	'refs/pull/141/merge' of https://github.com/bergercookie/asm-lsp
+49cede9879a19893fe9cf89090d868878fde75cf	not-for-merge	'refs/pull/142/head' of https://github.com/bergercookie/asm-lsp
+9441c434bc83212d96ce74b88b0078717451f380	not-for-merge	'refs/pull/143/head' of https://github.com/bergercookie/asm-lsp
+78718f2e53f32fa8ac5f92997f813912328a9512	not-for-merge	'refs/pull/144/head' of https://github.com/bergercookie/asm-lsp
+bdecdeaeb2b227aa6096b01164d9397306fa3af1	not-for-merge	'refs/pull/145/head' of https://github.com/bergercookie/asm-lsp
+35d724e0336821ed89298860af5845fb0bdd6ccd	not-for-merge	'refs/pull/146/head' of https://github.com/bergercookie/asm-lsp
+d4a503a5a25da0dcd5e5a24f3a8ad910a071fecd	not-for-merge	'refs/pull/149/head' of https://github.com/bergercookie/asm-lsp
+5bdb02dcb977f305738cdeabdd8c774702729b40	not-for-merge	'refs/pull/150/head' of https://github.com/bergercookie/asm-lsp
+fe56738e2e28de0b7489de823a3ff3ec5f72dc6f	not-for-merge	'refs/pull/151/head' of https://github.com/bergercookie/asm-lsp
+ea951014f044c0221fda5265345e6331c07735e8	not-for-merge	'refs/pull/152/head' of https://github.com/bergercookie/asm-lsp
+a79173ef8ea8092094c463749c468ac1436bcfc8	not-for-merge	'refs/pull/156/head' of https://github.com/bergercookie/asm-lsp
+f4672893cef6fac053361858bad71455fd5bdb14	not-for-merge	'refs/pull/157/head' of https://github.com/bergercookie/asm-lsp
+a7134fb43d36f1ccb3257879033d295c5335625b	not-for-merge	'refs/pull/158/head' of https://github.com/bergercookie/asm-lsp
+81637486f90c63e838924acc6ac5c495305a1d08	not-for-merge	'refs/pull/159/head' of https://github.com/bergercookie/asm-lsp
+f97473960272a1456490c788fe37526876a6214f	not-for-merge	'refs/pull/16/head' of https://github.com/bergercookie/asm-lsp
+78988205f155c868db47488b507bb3ad3c8de755	not-for-merge	'refs/pull/160/head' of https://github.com/bergercookie/asm-lsp
+359b0d77da77120aa13081fd61a4058d720f9590	not-for-merge	'refs/pull/162/head' of https://github.com/bergercookie/asm-lsp
+02ac534b5839f3ef1e6c840aee5ff0c5c2bfe7f9	not-for-merge	'refs/pull/163/head' of https://github.com/bergercookie/asm-lsp
+9587163f16684fd653f290a7ae981b179b7fc934	not-for-merge	'refs/pull/164/head' of https://github.com/bergercookie/asm-lsp
+c09f834b2ac1bf690b9d47cd7e137e3642d41414	not-for-merge	'refs/pull/166/head' of https://github.com/bergercookie/asm-lsp
+57c930c243e82c241ee735186fe486ecd853398c	not-for-merge	'refs/pull/168/head' of https://github.com/bergercookie/asm-lsp
+5380b38d1b1e72d2c37a91a3e7fb1959c0474a07	not-for-merge	'refs/pull/172/head' of https://github.com/bergercookie/asm-lsp
+4aff7f4e6d4e6fc545716511e233d48ec8aad6b8	not-for-merge	'refs/pull/175/head' of https://github.com/bergercookie/asm-lsp
+6245bb50fbf9667ab115e2ca2416247076858654	not-for-merge	'refs/pull/176/head' of https://github.com/bergercookie/asm-lsp
+e10b1aacb2f3aa66da8f68b1d9a210121fc4d1c3	not-for-merge	'refs/pull/177/head' of https://github.com/bergercookie/asm-lsp
+9faae908fe9f73c917e8a70ffc18d1a52ec07e06	not-for-merge	'refs/pull/179/head' of https://github.com/bergercookie/asm-lsp
+806cd71bec5cc7a27dba175d16881819bd19dc7a	not-for-merge	'refs/pull/180/head' of https://github.com/bergercookie/asm-lsp
+c1da7d6f561c08028a594ee7d6ec39ee8f9cd333	not-for-merge	'refs/pull/181/head' of https://github.com/bergercookie/asm-lsp
+d6b7ae4631f72541e52b98cc705d2503ef678bd5	not-for-merge	'refs/pull/183/head' of https://github.com/bergercookie/asm-lsp
+cc6dd7451299ac962831ba2d3d7a74581a2f588b	not-for-merge	'refs/pull/185/head' of https://github.com/bergercookie/asm-lsp
+8bda911bddd8e9c5ae0f71f1694d451c2ad28906	not-for-merge	'refs/pull/188/head' of https://github.com/bergercookie/asm-lsp
+9ab7033ae729b3a447abc516b08d540514e07a08	not-for-merge	'refs/pull/191/head' of https://github.com/bergercookie/asm-lsp
+0fcf26e1924daf3e71d90d8ec322d531e2d9eeac	not-for-merge	'refs/pull/195/head' of https://github.com/bergercookie/asm-lsp
+678a9f3b7410558de4829bf58ac76b0b5d79f237	not-for-merge	'refs/pull/196/head' of https://github.com/bergercookie/asm-lsp
+d415bc60350642cb35ca598df0f727cdbddc2e32	not-for-merge	'refs/pull/197/head' of https://github.com/bergercookie/asm-lsp
+4e6cbad2dbc64d9eaef022bfbe5aec8d959ca9b4	not-for-merge	'refs/pull/198/head' of https://github.com/bergercookie/asm-lsp
+ce1464cd3f650ec1bfb56cb0106d174bacbf97e9	not-for-merge	'refs/pull/199/head' of https://github.com/bergercookie/asm-lsp
+ae97f1662c6ac080926e99dc262ed145991aa1e5	not-for-merge	'refs/pull/20/head' of https://github.com/bergercookie/asm-lsp
+754e5f3bab915d19f729a96f6495668305a792fe	not-for-merge	'refs/pull/200/head' of https://github.com/bergercookie/asm-lsp
+0856365ce8d0b81d8e16f9dc91ebab107bee71ff	not-for-merge	'refs/pull/201/head' of https://github.com/bergercookie/asm-lsp
+ddceff6d44fc2a7e93132ae3a5af1e5e5e75cea3	not-for-merge	'refs/pull/202/head' of https://github.com/bergercookie/asm-lsp
+53cab9600f903cb434dc8af566578f05d37dc92a	not-for-merge	'refs/pull/203/head' of https://github.com/bergercookie/asm-lsp
+2ec2d8de3156d21e66e18f971db14f103eb25276	not-for-merge	'refs/pull/204/head' of https://github.com/bergercookie/asm-lsp
+39655747cb51ec89f3113b6596b2d66e1b256758	not-for-merge	'refs/pull/205/head' of https://github.com/bergercookie/asm-lsp
+16edb701d7a1b5109a4f95a165f970a18caa302a	not-for-merge	'refs/pull/206/head' of https://github.com/bergercookie/asm-lsp
+0ebad8129471c249bd2c0bb3f447b896fcf84a12	not-for-merge	'refs/pull/207/head' of https://github.com/bergercookie/asm-lsp
+2627e02372a63a090b42dfabfa0b9ae03856a062	not-for-merge	'refs/pull/209/head' of https://github.com/bergercookie/asm-lsp
+07054331f6a48185245b5a99d66e5196ffffa8a4	not-for-merge	'refs/pull/21/head' of https://github.com/bergercookie/asm-lsp
+684bcfd8552d8fb5cf693b0bfd36840a2f926af8	not-for-merge	'refs/pull/216/head' of https://github.com/bergercookie/asm-lsp
+09208e1299fa8cff1e8081df078861686c7ecb41	not-for-merge	'refs/pull/217/head' of https://github.com/bergercookie/asm-lsp
+a99c89f0114ad4ade8327f368afd7f02896746a5	not-for-merge	'refs/pull/219/head' of https://github.com/bergercookie/asm-lsp
+b269d43b3b1204c1fdc3297e7f069a2caa6add6d	not-for-merge	'refs/pull/22/head' of https://github.com/bergercookie/asm-lsp
+d52090cdd690e8a76fcaa3a8616747c1b9403ddc	not-for-merge	'refs/pull/220/head' of https://github.com/bergercookie/asm-lsp
+d0e9efaaa2043538345854bd7a2fec27133a2fae	not-for-merge	'refs/pull/221/head' of https://github.com/bergercookie/asm-lsp
+82cb577c12f668b5f6ecf05ede9b090ec132dd01	not-for-merge	'refs/pull/222/head' of https://github.com/bergercookie/asm-lsp
+59932b2d7711676f51cd654ad810bde00cc4421c	not-for-merge	'refs/pull/224/head' of https://github.com/bergercookie/asm-lsp
+e33b39c222077b2bf5747b4aa87302f5ddb7f72c	not-for-merge	'refs/pull/226/head' of https://github.com/bergercookie/asm-lsp
+51c122509475c755c3b3876d63d702da6f7137a6	not-for-merge	'refs/pull/24/head' of https://github.com/bergercookie/asm-lsp
+09f35780d3d6d39002665b2b62fc3270b0130aff	not-for-merge	'refs/pull/25/head' of https://github.com/bergercookie/asm-lsp
+5a508dd177e969a5026a49855f34705bccbee059	not-for-merge	'refs/pull/27/head' of https://github.com/bergercookie/asm-lsp
+6f80da488e53d97d85c6bb75ae767561b07d36d0	not-for-merge	'refs/pull/28/head' of https://github.com/bergercookie/asm-lsp
+b977efe4df9129b6ce3ec74581316215d3244b78	not-for-merge	'refs/pull/29/head' of https://github.com/bergercookie/asm-lsp
+d7c1f036548653d8c652a448b3c8db6c217bda69	not-for-merge	'refs/pull/3/head' of https://github.com/bergercookie/asm-lsp
+9c6ca03db507b2ae004aa347e58c748d9794dff6	not-for-merge	'refs/pull/33/head' of https://github.com/bergercookie/asm-lsp
+8f82a7a295a7e9f028f7307ef0a39bde2466feae	not-for-merge	'refs/pull/34/head' of https://github.com/bergercookie/asm-lsp
+f0625865327d01e04993670aef5d9710cb9b11d5	not-for-merge	'refs/pull/35/head' of https://github.com/bergercookie/asm-lsp
+a4f49429f78b310257e39b1afca619214d0108a8	not-for-merge	'refs/pull/36/head' of https://github.com/bergercookie/asm-lsp
+7dd3f35febb7b3f97eb984971afe6f90636efcae	not-for-merge	'refs/pull/37/head' of https://github.com/bergercookie/asm-lsp
+99c2cee85f10c052fe910884017e8e340f4d7d16	not-for-merge	'refs/pull/38/head' of https://github.com/bergercookie/asm-lsp
+fe2d362025a2669252395cc562dd66029515f95a	not-for-merge	'refs/pull/40/head' of https://github.com/bergercookie/asm-lsp
+984485e47c880d911710cd509c8846733c9be369	not-for-merge	'refs/pull/48/head' of https://github.com/bergercookie/asm-lsp
+e15fd65f6533b1cac4a95d876b69209bd26fb4a4	not-for-merge	'refs/pull/49/head' of https://github.com/bergercookie/asm-lsp
+1ad87ef236587a2cc43766cea0c7e671b897c3fb	not-for-merge	'refs/pull/5/head' of https://github.com/bergercookie/asm-lsp
+2c51d6212c6e5b37cc05796e87f9d22f02aa55db	not-for-merge	'refs/pull/50/head' of https://github.com/bergercookie/asm-lsp
+deee04baf74cf18e513a1398056def5fd5bb4e54	not-for-merge	'refs/pull/51/head' of https://github.com/bergercookie/asm-lsp
+7e8d587ae1b62c68912e1245dc49e12a578d2739	not-for-merge	'refs/pull/52/head' of https://github.com/bergercookie/asm-lsp
+a0443ab57e12df9c7edbf9ebdfbe0147df84ee42	not-for-merge	'refs/pull/53/head' of https://github.com/bergercookie/asm-lsp
+a4a032dfb4bbdde0652efa8238b4dad77af6d900	not-for-merge	'refs/pull/54/head' of https://github.com/bergercookie/asm-lsp
+a8452d1c1d0e488e23ef28c3f647cc4b4e74431a	not-for-merge	'refs/pull/55/head' of https://github.com/bergercookie/asm-lsp
+f396a7c3c848ad5ce883329696a05a256ee4fdb5	not-for-merge	'refs/pull/56/head' of https://github.com/bergercookie/asm-lsp
+3898f8b0e6376bab80217eb2de59eacf62cb35e9	not-for-merge	'refs/pull/57/head' of https://github.com/bergercookie/asm-lsp
+2eb1f4163eae1e28c94798248a1680038c22e290	not-for-merge	'refs/pull/59/head' of https://github.com/bergercookie/asm-lsp
+6d8ada710de20fb238b248ad35131784bbc387e2	not-for-merge	'refs/pull/61/head' of https://github.com/bergercookie/asm-lsp
+cb0ef5bcf53c523e5e5534bf96ecd3bd29e110c8	not-for-merge	'refs/pull/62/head' of https://github.com/bergercookie/asm-lsp
+67b80ae2db38107dbf6c66d7d76939cf83f52f1b	not-for-merge	'refs/pull/63/head' of https://github.com/bergercookie/asm-lsp
+fd37e6fff2f3e163768620d870694b6fe1d8877d	not-for-merge	'refs/pull/64/head' of https://github.com/bergercookie/asm-lsp
+564904b1b063dcf16673631438ccd57f9b0cb011	not-for-merge	'refs/pull/66/head' of https://github.com/bergercookie/asm-lsp
+99448023706e37978c434cd0f85819466e97c037	not-for-merge	'refs/pull/68/head' of https://github.com/bergercookie/asm-lsp
+4df0a888b40e1bf2a41250387595461090196700	not-for-merge	'refs/pull/69/head' of https://github.com/bergercookie/asm-lsp
+bb06f26a36636ba3a6c8f4d575c5493576c75d81	not-for-merge	'refs/pull/7/head' of https://github.com/bergercookie/asm-lsp
+19ce8587fe2068bd9a7ce79e901138933460a603	not-for-merge	'refs/pull/70/head' of https://github.com/bergercookie/asm-lsp
+a61a3c19d7a14cd1c59a2c5e561bb4eb8582066c	not-for-merge	'refs/pull/76/head' of https://github.com/bergercookie/asm-lsp
+403945e483efd729b24355016e924a22697b17b8	not-for-merge	'refs/pull/79/head' of https://github.com/bergercookie/asm-lsp
+a966f03dc3ce44776966088d1ffdc27dd5867118	not-for-merge	'refs/pull/81/head' of https://github.com/bergercookie/asm-lsp
+3f458d8ff00e1b81f3b05129bc03599b5a7a947a	not-for-merge	'refs/pull/82/head' of https://github.com/bergercookie/asm-lsp
+1181e98fa3a871816574a3237ea8d0e3b97b381a	not-for-merge	'refs/pull/83/head' of https://github.com/bergercookie/asm-lsp
+1d52d6c4a1fbdc96daebc5fc6db65337456eda34	not-for-merge	'refs/pull/84/head' of https://github.com/bergercookie/asm-lsp
+1455a477e806855302aef2ccdc617a00647b2da4	not-for-merge	'refs/pull/86/head' of https://github.com/bergercookie/asm-lsp
+a1cc80cbc350143180122d2c558b6abee83b4c08	not-for-merge	'refs/pull/87/head' of https://github.com/bergercookie/asm-lsp
+564638188f3b14b99b98eee4737a7b17371276a1	not-for-merge	'refs/pull/88/head' of https://github.com/bergercookie/asm-lsp
+44d848ad2c2e0b42b52f39388baeb9562247ff62	not-for-merge	'refs/pull/9/head' of https://github.com/bergercookie/asm-lsp
+d3bea5068e3248730f45a224b337cab13345b16b	not-for-merge	'refs/pull/90/head' of https://github.com/bergercookie/asm-lsp
+a40c41cbbb0defa12fed6737314d27b763c7d71b	not-for-merge	'refs/pull/91/head' of https://github.com/bergercookie/asm-lsp
+3f27c21d95bbdf2824699f15cbb046ef85836a50	not-for-merge	'refs/pull/92/head' of https://github.com/bergercookie/asm-lsp
+0706a7899e63b2fc8a99a223b0af5258c9992dd3	not-for-merge	'refs/pull/93/head' of https://github.com/bergercookie/asm-lsp
+653bd594a127e1a82ef457affbda9d1e9a661255	not-for-merge	'refs/pull/94/head' of https://github.com/bergercookie/asm-lsp
+71479560d91c6c08213b5e20b213988edfe274b0	not-for-merge	'refs/pull/95/head' of https://github.com/bergercookie/asm-lsp
+7a726c634d15ad0be74260549c47894154cc8103	not-for-merge	'refs/pull/96/head' of https://github.com/bergercookie/asm-lsp
+2a520bc14f30a2ea7a9955923d3f91dc52cfd1e6	not-for-merge	'refs/pull/97/head' of https://github.com/bergercookie/asm-lsp
+6d6058caea22b52bb0216f37b563cd7c42c63a81	not-for-merge	'refs/pull/98/head' of https://github.com/bergercookie/asm-lsp
+35c239cd7d489f23d77e0855ef4c3107cced50d4	not-for-merge	'refs/pull/99/head' of https://github.com/bergercookie/asm-lsp
+76dc067b406de9f5ddb32e209c2d36475d6f688b	not-for-merge	tag '0.1.0' of https://github.com/bergercookie/asm-lsp
+32874742eb59533c2d0255635de883f670b99556	not-for-merge	tag '0.2.0' of https://github.com/bergercookie/asm-lsp
+63f0de0c93a9351e379b4f846fa5567fc3cbb78e	not-for-merge	tag '0.3.2' of https://github.com/bergercookie/asm-lsp
+2b50e1562a8ee4a681ee380afd67e3b15722a815	not-for-merge	tag '0.3.3' of https://github.com/bergercookie/asm-lsp
+e99874ff892cf73f302668c956ecb24e4eca1d5f	not-for-merge	tag '0.4.2' of https://github.com/bergercookie/asm-lsp
+e92583040666d44cb86b9d9663bb5e6b7e1986f4	not-for-merge	tag 'v0.10.0' of https://github.com/bergercookie/asm-lsp
+0e44dd8fc0e893f6327fc4763fcfc3f1d8827e3d	not-for-merge	tag 'v0.4.0' of https://github.com/bergercookie/asm-lsp
+3c51f99eeedd2f781108f91100eca7bc157527e9	not-for-merge	tag 'v0.4.1' of https://github.com/bergercookie/asm-lsp
+6eecfd7fb080c9d99a16b396346bf04f96cf4eb2	not-for-merge	tag 'v0.4.2' of https://github.com/bergercookie/asm-lsp
+39d26dc651c93a33edb475ec44df6b338c1bf2b1	not-for-merge	tag 'v0.5.0' of https://github.com/bergercookie/asm-lsp
+fb71a59678ec5667fa7b4281981742c6e49a01c8	not-for-merge	tag 'v0.6.0' of https://github.com/bergercookie/asm-lsp
+0e63cfd8c3145324eedc9485afdb78b4fd4247cd	not-for-merge	tag 'v0.7.0' of https://github.com/bergercookie/asm-lsp
+a0ba554d2cb6f357b20548824e0a654b57498bdf	not-for-merge	tag 'v0.7.1' of https://github.com/bergercookie/asm-lsp
+7fdff669f6f5d976e4886dbdd8a74efbff5161be	not-for-merge	tag 'v0.7.2' of https://github.com/bergercookie/asm-lsp
+bec17d57c17c29bc3fba03e171f6d151a21e5533	not-for-merge	tag 'v0.7.3' of https://github.com/bergercookie/asm-lsp
+51b0728393deb564e44e49127aa92517100a61d1	not-for-merge	tag 'v0.7.4' of https://github.com/bergercookie/asm-lsp
+7faec93126df298f8cc41ce80a1387f15238aa3c	not-for-merge	tag 'v0.8.0' of https://github.com/bergercookie/asm-lsp
+e15b8fefe1e9803e6bd5a93a862aa87db85b54f0	not-for-merge	tag 'v0.9.0' of https://github.com/bergercookie/asm-lsp

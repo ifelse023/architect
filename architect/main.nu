@@ -7,7 +7,7 @@ def main [] {
     cd cachyos-repo
     ^sudo bash cachyos-repo.sh
     cd ..
-    ^sudo pacman -S paru-bin chezmoi nushell --noconfirm
+    ^sudo pacman -S paru-bin openssh chezmoi nushell --noconfirm
     ^chsh -s /usr/bin/nu
 
     nu ~/architect/architect/usb.nu

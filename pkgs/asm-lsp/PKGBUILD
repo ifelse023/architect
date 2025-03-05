@@ -1,0 +1,39 @@
+# Maintainer: [Your Name] <[Your Email]>
+pkgname=asm-lsp
+pkgver=0.10.0.r1.g32912c6 # This will be dynamically updated by pkgver()
+pkgrel=1
+pkgdesc="A language server for NASM/GAS/GO Assembly"
+arch=('any')
+url="https://crates.io/crates/asm-lsp"
+license=('custom:BSD-2-Clause')
+makedepends=('cargo' 'git') # Added 'git' for cloning the repo
+checkdepends=()
+optdepends=()
+source=("git+https://github.com/bergercookie/asm-lsp.git") # Clone the latest from Git
+sha256sums=('SKIP')                                        # No checksum for Git sources
+
+pkgver() {
+  cd "$srcdir/$pkgname"
+  # Generate version from latest tag + commit count + short hash
+  git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+prepare() {
+  cd "$srcdir/$pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+  cd "$srcdir/$pkgname"
+  export RUSTUP_TOOLCHAIN=stable
+  export CARGO_TARGET=target
+  cargo build --frozen --release --all-features
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  install -Dm0755 -t "$pkgdir/usr/bin" "target/release/$pkgname"
+  mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
+  cp LICENSE "${pkgdir}/usr/share/licenses/${pkgname}"
+}
