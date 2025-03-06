@@ -62,7 +62,7 @@ def main() -> int:
     log_level = logging.DEBUG if args.verbose else logging.INFO
     logging.basicConfig(level=log_level, format="%(levelname)s: %(message)s")
 
-    dirs_to_keep: set[str] = {".", "architect", "Downloads", "dev", "misc", "SoSe25"}
+    dirs_to_keep: set[str] = {".", "architect", "Downloads", "code", "misc", "semester"}
     home_dir = Path.home()
 
     if not args.dry_run:
