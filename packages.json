@@ -90,13 +90,12 @@
     "hyprcursor",
     "hyprpolkitagent",
     "glow",
-    "flameshot"
+    "flameshot",
+    "floorp-bin"
   ],
   "aur-packages": [
-    "floorp-bin",
     "profile-sync-daemon-floorp",
     "clipse-bin"
-
   ],
   "later-packages": [
     "moar",
