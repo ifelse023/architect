@@ -1,6 +1,10 @@
 {
   "packages": [
     "brightnessctl",
+    "arm-none-eabi-gcc",
+    "arm-none-eabi-newlib",
+    "arm-none-eabi-gdb",
+    "arm-none-eabi-binutils",
     "npm",
     "valgrind",
     "neovim-git",
@@ -91,6 +95,8 @@
     "hyprpolkitagent",
     "glow",
     "flameshot",
+    "efibootmgr",
+    "eza",
     "floorp-bin"
   ],
   "aur-packages": [
@@ -99,9 +105,15 @@
   ],
   "later-packages": [
     "moar",
-    "picotool",
     "dracula-icons-git",
     "catppuccin-cursors-mocha",
     "dracula-gtk-theme"
+  ],
+  "semester-packages": [
+    "mariadb",
+    "jdk21-openjdk",
+    "openvpn",
+    "networkmanager-openvpn",
+    "subversion"
   ]
 }
