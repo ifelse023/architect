@@ -7,13 +7,12 @@ main() {
   sudo bash cachyos-repo.sh
   cd ..
 
-  sudo pacman -S paru-bin openssh chezmoi --noconfirm
+  sudo pacman -S paru-bin chezmoi --noconfirm
   chsh -s /usr/bin/fish
 
   bash ~/architect/architect/usb.sh
 
-  chezmoi init --apply --verbose --ssh git@github.com:ifelse023/dotfiles.git
-  sleep 3
+  chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
 
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
 
