@@ -7,10 +7,8 @@ main() {
   sudo bash cachyos-repo.sh
   cd ..
 
-  sudo pacman -S paru-bin chezmoi --noconfirm
+  sudo pacman -S paru-bin python chezmoi --noconfirm
   chsh -s /usr/bin/fish
-
-  bash ~/architect/architect/usb.sh
 
   chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
 
@@ -30,9 +28,13 @@ main() {
   sudo journalctl --vacuum-size=1M
 
   sudo usermod -aG video,audio,network,git,wheel,input,mysql wasd
-  python ~/architect/architect/service_manager.py
+  python ~/architect/architect/service_manager.py --enable
 
   sudo cp ./config-files/limine.conf /boot
+
+  bash ~/misc/git.sh
+
+  pactl set-default-sink alsa_output.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
 
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
