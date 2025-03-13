@@ -1,4 +1,5 @@
 tt.*
+cachyos-repo*
 .tests
 doc/tags
 debug

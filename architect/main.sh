@@ -1,11 +1,14 @@
 #!/bin/bash
 
 main() {
+
   curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
   tar xvf cachyos-repo.tar.xz
   cd cachyos-repo
   sudo bash cachyos-repo.sh
   cd ..
+  rm -rf ~/architect/cachyos-repo
+  rm ~/architect/cachyos-repo.tar.xz
 
   sudo pacman -S paru-bin python chezmoi --noconfirm
   chsh -s /usr/bin/fish
