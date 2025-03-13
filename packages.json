@@ -1,20 +1,13 @@
 {
   "packages": [
     "brightnessctl",
-    "arm-none-eabi-gcc",
-    "arm-none-eabi-newlib",
-    "arm-none-eabi-gdb",
-    "arm-none-eabi-binutils",
     "npm",
-    "valgrind",
     "neovim-git",
     "neovide",
     "clang",
-    "bear",
     "fzf",
     "gdb",
     "lldb",
-    "llvm",
     "rsync",
     "iproute2",
     "inter-font",
@@ -30,7 +23,6 @@
     "noto-fonts-extra",
     "ttf-bitstream-vera",
     "ttf-dejavu",
-    "acpid",
     "pavucontrol",
     "alsa-firmware",
     "alsa-plugins",
@@ -64,7 +56,6 @@
     "ccache",
     "obsidian",
     "fwupd",
-    "hyperfine",
     "linux-cachyos",
     "wireless-regdb",
     "fuzzel",
@@ -106,14 +97,10 @@
   "later-packages": [
     "moar",
     "dracula-icons-git",
-    "catppuccin-cursors-mocha",
+    "bibata-cursor-git",
     "dracula-gtk-theme"
   ],
   "semester-packages": [
-    "mariadb",
-    "jdk21-openjdk",
-    "openvpn",
-    "networkmanager-openvpn",
     "subversion"
   ]
 }
