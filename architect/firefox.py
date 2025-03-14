@@ -10,28 +10,28 @@ import subprocess
 def main():
     """
     Main function to:
-    1. Delete all existing profile folders in ~/.floorp
-    2. Copy a specific profile folder from /mnt/usb to ~/.floorp
-    3. Modify the profiles.ini file in ~/.floorp
-    4. Modify the installs.ini file in ~/.floorp
+    1. Delete all existing profile folders in ~/.mozilla/firefox
+    2. Copy a specific profile folder from /mnt/usb to ~/.mozilla/firefox
+    3. Modify the profiles.ini file in ~/.mozilla/firefox
+    4. Modify the installs.ini file in ~/.mozilla/firefox
     """
     # Define paths
-    floorp_dir = os.path.expanduser("~/.floorp")
-    usb_profile_path = "/mnt/usb/2a4ivmxe.default-release"
-    profiles_ini_path = os.path.join(floorp_dir, "profiles.ini")
-    installs_ini_path = os.path.join(floorp_dir, "installs.ini")
+    firefox_dir = os.path.expanduser("~/.mozilla/firefox")
+    usb_profile_path = "/mnt/usb/itb0rded.hey"
+    profiles_ini_path = os.path.join(firefox_dir, "profiles.ini")
+    installs_ini_path = os.path.join(firefox_dir, "installs.ini")
 
-    print(f"Starting operations on {floorp_dir}")
+    print(f"Starting operations on {firefox_dir}")
 
     # Create directory if it doesn't exist
-    os.makedirs(floorp_dir, exist_ok=True)
+    os.makedirs(firefox_dir, exist_ok=True)
 
     # 1. Delete all existing profile folders
-    delete_profile_folders(floorp_dir)
+    delete_profile_folders(firefox_dir)
 
     # 2. Copy the profile folder from USB
     try:
-        copy_profile_folder(usb_profile_path, floorp_dir)
+        copy_profile_folder(usb_profile_path, firefox_dir)
     except FileNotFoundError:
         print(f"Error: Profile folder {usb_profile_path} not found on USB drive.")
         print("Make sure the USB drive is mounted at /mnt/usb")
@@ -52,8 +52,8 @@ def main():
 
 def is_profile_folder(folder_name):
     """
-    Check if a folder name follows the pattern of Floorp profile folders.
-    Profile folders typically have names like 'xxxxx.default' or 'xxxxx.default-release'.
+    Check if a folder name follows the pattern of Firefox profile folders.
+    Profile folders typically have names like 'xxxxx.default' or 'xxxxx.hey'.
 
     Args:
         folder_name: Name of the folder to check
@@ -61,41 +61,41 @@ def is_profile_folder(folder_name):
     Returns:
         bool: True if the folder name matches the pattern, False otherwise
     """
-    return bool(re.match(r"^[a-z0-9]+\.default(-release)?$", folder_name))
+    return bool(re.match(r"^[a-z0-9]+\.(default(-release)?|hey)$", folder_name))
 
 
-def delete_profile_folders(floorp_dir):
+def delete_profile_folders(firefox_dir):
     """
-    Delete all profile folders in the ~/.floorp directory.
+    Delete all profile folders in the ~/.mozilla/firefox directory.
 
     Args:
-        floorp_dir: Path to the ~/.floorp directory
+        firefox_dir: Path to the ~/.mozilla/firefox directory
     """
     print("Deleting existing profile folders...")
     try:
-        for item in os.listdir(floorp_dir):
-            item_path = os.path.join(floorp_dir, item)
+        for item in os.listdir(firefox_dir):
+            item_path = os.path.join(firefox_dir, item)
             if os.path.isdir(item_path) and is_profile_folder(item):
                 print(f"  Deleting: {item}")
                 shutil.rmtree(item_path)
     except FileNotFoundError:
-        print(f"  {floorp_dir} directory not found. Will be created.")
+        print(f"  {firefox_dir} directory not found. Will be created.")
     except PermissionError:
-        print(f"Error: Permission denied when accessing {floorp_dir}")
+        print(f"Error: Permission denied when accessing {firefox_dir}")
         print("Make sure you have write permissions for the directory")
         sys.exit(1)
 
 
-def copy_profile_folder(source_path, floorp_dir):
+def copy_profile_folder(source_path, firefox_dir):
     """
-    Copy the specified profile folder to ~/.floorp using rsync or cp -r.
+    Copy the specified profile folder to ~/.mozilla/firefox using rsync or cp -r.
 
     Args:
         source_path: Path to the source profile folder
-        floorp_dir: Path to the ~/.floorp directory
+        firefox_dir: Path to the ~/.mozilla/firefox directory
     """
     profile_name = os.path.basename(source_path)
-    dest_path = os.path.join(floorp_dir, profile_name)
+    dest_path = os.path.join(firefox_dir, profile_name)
 
     print(f"Copying profile folder from {source_path} to {dest_path}")
 
@@ -146,7 +146,7 @@ def modify_profiles_ini(profiles_ini_path):
     Args:
         profiles_ini_path: Path to the profiles.ini file
     """
-    profile_name = "2a4ivmxe.default-release"
+    profile_name = "itb0rded.hey"
 
     # Check if profiles.ini exists
     if not os.path.exists(profiles_ini_path):
@@ -204,7 +204,7 @@ def modify_profiles_ini(profiles_ini_path):
 
         # Add the new profile entry
         new_content.append("[Profile0]")
-        new_content.append("Name=default-release")
+        new_content.append("Name=hey")
         new_content.append("IsRelative=1")
         new_content.append(f"Path={profile_name}")
         new_content.append("")  # Empty line
@@ -236,7 +236,7 @@ def create_new_profiles_ini(profiles_ini_path, profile_name):
             "Locked=1",
             "",
             "[Profile0]",
-            "Name=default-release",
+            "Name=hey",
             "IsRelative=1",
             f"Path={profile_name}",
             "",
@@ -264,7 +264,7 @@ def modify_installs_ini(installs_ini_path):
     Args:
         installs_ini_path: Path to the installs.ini file
     """
-    profile_name = "2a4ivmxe.default-release"
+    profile_name = "itb0rded.hey"
 
     # Check if installs.ini exists
     if not os.path.exists(installs_ini_path):

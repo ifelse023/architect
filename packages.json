@@ -2,6 +2,7 @@
   "packages": [
     "brightnessctl",
     "npm",
+    "direnv",
     "neovim-git",
     "neovide",
     "clang",
