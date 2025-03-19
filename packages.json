@@ -55,6 +55,8 @@
     "linux-cachyos",
     "wireless-regdb",
     "fuzzel",
+    "sad",
+    "git-delta",
     "dbus-python",
     "efitools",
     "dosfstools",
