@@ -27,6 +27,8 @@ def copy_template(src: Path, dest: Path) -> bool:
 def initialize_git_repo(dest: Path) -> None:
     try:
         subprocess.run(["git", "init"], cwd=dest, check=True)
+        subprocess.run(["git", "add", "."], cwd=dest, check=True)
+
         print(f"Initialized a new git repository in {dest}")
     except subprocess.CalledProcessError as e:
         print(f"Failed to initialize git repository: {e}")
@@ -53,7 +55,7 @@ def main() -> None:
     )
 
     args = parser.parse_args()
-    templates_root = Path.home() / "architect/templates"
+    templates_root = Path.home() / "misc/dev-templates"
     src_path = templates_root / args.language
 
     print(f"Templates root: {templates_root}")

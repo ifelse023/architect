@@ -45,7 +45,7 @@ if [ ! -d "$MISC_DEST" ]; then
 fi
 
 cp -r "$MOUNT_POINT/books" "$MISC_DEST"
-cp -r "$MOUNT_POINT/firefox.sh" "$MISC_DEST"
+cp -r "$MOUNT_POINT/git.sh" "$MISC_DEST"
 
 # Unmount the USB
 sudo umount /mnt/usb
