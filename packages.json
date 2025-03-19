@@ -1,14 +1,9 @@
 {
   "packages": [
     "brightnessctl",
-    "npm",
     "direnv",
-    "neovim-git",
-    "neovide",
     "clang",
     "fzf",
-    "gdb",
-    "lldb",
     "rsync",
     "iproute2",
     "inter-font",
@@ -67,7 +62,6 @@
     "procs",
     "zoxide",
     "profile-sync-daemon",
-    "nwg-look",
     "fish-git",
     "x86_energy_perf_policy",
     "just",
@@ -87,12 +81,10 @@
     "hyprpolkitagent",
     "glow",
     "flameshot",
-    "efibootmgr",
     "eza",
-    "floorp-bin"
+"helix"
   ],
   "aur-packages": [
-    "profile-sync-daemon-floorp",
     "clipse-bin"
   ],
   "later-packages": [
@@ -100,8 +92,5 @@
     "dracula-icons-git",
     "bibata-cursor-git",
     "dracula-gtk-theme"
-  ],
-  "semester-packages": [
-    "subversion"
   ]
 }
