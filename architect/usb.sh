@@ -30,7 +30,7 @@ SSH_DEST="$HOME/.ssh"
 if [ -d "$SSH_SOURCE" ]; then
   rsync -avz --delete "$SSH_SOURCE" "$HOME"
 
-  sudo chown -R "$USER:$USER" "$SSH_DEST"
+  sudo chown -R "$USER:users" "$SSH_DEST"
 
   chmod 600 "$SSH_DEST/id_ed25519"
   chmod 644 "$SSH_DEST/id_ed25519.pub"
