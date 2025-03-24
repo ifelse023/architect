@@ -82,17 +82,16 @@
     "hyprcursor",
     "hyprpolkitagent",
     "glow",
-    "flameshot",
-    "eza",
-"helix"
+    "eza-git",
+    "helix",
+    "zellij-git",
+    "ant-dracula-theme-git"
   ],
   "aur-packages": [
     "clipse-bin"
   ],
   "later-packages": [
-    "moar",
-    "dracula-icons-git",
     "bibata-cursor-git",
-    "dracula-gtk-theme"
+    "papirus-folders-catppuccin-git"
   ]
 }
