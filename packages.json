@@ -1,5 +1,6 @@
 {
   "packages": [
+    "neovim-git",
     "brightnessctl",
     "direnv",
     "clang",
@@ -83,15 +84,17 @@
     "hyprpolkitagent",
     "glow",
     "eza-git",
-    "helix",
-    "zellij-git",
-    "ant-dracula-theme-git"
+    "ant-dracula-theme-git",
+    "efibootmgr",
+    "nwg-look",
   ],
   "aur-packages": [
-    "clipse-bin"
+    "clipse-bin",
+    "bibata-cursor-git",
+    "visual-studio-code-bin",
+    "firefox-beta-bin",
+    "papirus-folders-catppuccin-git"
   ],
   "later-packages": [
-    "bibata-cursor-git",
-    "papirus-folders-catppuccin-git"
   ]
 }
