@@ -82,11 +82,11 @@
     "xdg-desktop-portal-hyprland",
     "hyprcursor",
     "hyprpolkitagent",
-    "glow",
+    "npm",
     "eza-git",
     "ant-dracula-theme-git",
     "efibootmgr",
-    "nwg-look",
+    "nwg-look"
   ],
   "aur-packages": [
     "clipse-bin",
@@ -95,6 +95,5 @@
     "firefox-beta-bin",
     "papirus-folders-catppuccin-git"
   ],
-  "later-packages": [
-  ]
+  "later-packages": []
 }
