@@ -86,14 +86,14 @@
     "eza-git",
     "ant-dracula-theme-git",
     "efibootmgr",
-    "nwg-look"
+    "nwg-look",
+    "keyd",
+    "dracula-icons-git",
+    "dracula-cursors-git"
   ],
   "aur-packages": [
     "clipse-bin",
-    "bibata-cursor-git",
-    "visual-studio-code-bin",
-    "firefox-beta-bin",
-    "papirus-folders-catppuccin-git"
+    "firefox-beta-bin"
   ],
   "later-packages": []
 }

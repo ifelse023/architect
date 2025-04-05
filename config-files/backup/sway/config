@@ -68,11 +68,11 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
     bindsym Print exec uwsm app -- flameshot gui
 
 
-    bindsym XF86MonBrightnessDown exec uwsm app -- brightnessctl set 10%-
-    bindsym XF86MonBrightnessUp exec uwsm app -- brightnessctl set +10%
+    bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+    bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 
 # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec uwsm app -- swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 # Moving around:
 #
 # Move your focus around
@@ -195,7 +195,7 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 
 # Gaps and border adjustments
     gaps inner 2
-    gaps outer 0
+    gaps outer 1
     smart_gaps on
     smart_borders on
 #----------------------------------------#
@@ -246,7 +246,7 @@ client.background        $base# Assign workspaces
 
 
     exec_always  --no-startup-id uwsm app -- mako
-    exec_always uwsm app -- swayrd
+    # exec_always uwsm app -- swayrd
 
     exec uwsm app -- /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
     # exec uwsm app -- xremap /home/wasd/.config/xremap/config.yml
