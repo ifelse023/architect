@@ -1,6 +1,7 @@
 {
   "packages": [
     "neovim-git",
+    "neovide",
     "brightnessctl",
     "direnv",
     "clang",
@@ -85,13 +86,16 @@
     "npm",
     "eza-git",
     "ant-dracula-theme-git",
-    "efibootmgr",
     "nwg-look",
-    "dracula-icons-git"
+    "dracula-icons-git",
+    "jdk-openjdk ",
+    "maven",
+    "torbrowser-launcher",
+    "openvpn"
   ],
   "aur-packages": [
     "clipse-bin",
-        "keyd-git",
+    "keyd-git",
     "rose-pine-hyprcursor",
     "rose-pine-cursor",
     "firefox-beta-bin"
