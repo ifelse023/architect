@@ -51,26 +51,12 @@ def main():
 
 
 def is_profile_folder(folder_name):
-    """
-    Check if a folder name follows the pattern of Firefox profile folders.
-    Profile folders typically have names like 'xxxxx.default' or 'xxxxx.hey'.
 
-    Args:
-        folder_name: Name of the folder to check
-
-    Returns:
-        bool: True if the folder name matches the pattern, False otherwise
-    """
     return bool(re.match(r"^[a-z0-9]+\.(default(-release)?|hey)$", folder_name))
 
 
 def delete_profile_folders(firefox_dir):
-    """
-    Delete all profile folders in the ~/.mozilla/firefox directory.
 
-    Args:
-        firefox_dir: Path to the ~/.mozilla/firefox directory
-    """
     print("Deleting existing profile folders...")
     try:
         for item in os.listdir(firefox_dir):
@@ -87,13 +73,6 @@ def delete_profile_folders(firefox_dir):
 
 
 def copy_profile_folder(source_path, firefox_dir):
-    """
-    Copy the specified profile folder to ~/.mozilla/firefox using rsync or cp -r.
-
-    Args:
-        source_path: Path to the source profile folder
-        firefox_dir: Path to the ~/.mozilla/firefox directory
-    """
     profile_name = os.path.basename(source_path)
     dest_path = os.path.join(firefox_dir, profile_name)
 
@@ -140,12 +119,7 @@ def copy_profile_folder(source_path, firefox_dir):
 
 
 def modify_profiles_ini(profiles_ini_path):
-    """
-    Modify the profiles.ini file to remove existing profiles and add the new one.
 
-    Args:
-        profiles_ini_path: Path to the profiles.ini file
-    """
     profile_name = "itb0rded.hey"
 
     # Check if profiles.ini exists

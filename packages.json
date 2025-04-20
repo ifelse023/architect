@@ -87,12 +87,13 @@
     "ant-dracula-theme-git",
     "efibootmgr",
     "nwg-look",
-    "keyd",
-    "dracula-icons-git",
-    "dracula-cursors-git"
+    "dracula-icons-git"
   ],
   "aur-packages": [
     "clipse-bin",
+        "keyd-git",
+    "rose-pine-hyprcursor",
+    "rose-pine-cursor",
     "firefox-beta-bin"
   ],
   "later-packages": []
