@@ -88,14 +88,15 @@
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
-    "jdk-openjdk ",
+    "jdk-openjdk",
     "maven",
     "torbrowser-launcher",
+    "keyd",
     "openvpn"
   ],
   "aur-packages": [
     "clipse-bin",
-    "keyd-git",
+    "visual-studio-code-insiders-bin",
     "rose-pine-hyprcursor",
     "rose-pine-cursor",
     "firefox-beta-bin"
