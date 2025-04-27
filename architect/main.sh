@@ -10,7 +10,7 @@ main() {
   rm -rf ~/architect/cachyos-repo
   rm ~/architect/cachyos-repo.tar.xz
 
-  sudo pacman -S paru-bin openssh python chezmoi sccache ccache libc++ clang --noconfirm --needed
+  sudo pacman -S paru-bin openssh rsync python chezmoi sccache ccache libc++ clang --noconfirm --needed
   chsh -s /usr/bin/fish
 
   chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
