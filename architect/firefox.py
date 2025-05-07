@@ -23,13 +23,10 @@ def main():
 
     print(f"Starting operations on {firefox_dir}")
 
-    # Create directory if it doesn't exist
     os.makedirs(firefox_dir, exist_ok=True)
 
-    # 1. Delete all existing profile folders
     delete_profile_folders(firefox_dir)
 
-    # 2. Copy the profile folder from USB
     try:
         copy_profile_folder(usb_profile_path, firefox_dir)
     except FileNotFoundError:

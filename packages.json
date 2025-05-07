@@ -1,6 +1,6 @@
 {
   "packages": [
-    "neovim-git",
+    "neovim",
     "neovide",
     "brightnessctl",
     "direnv",
@@ -43,6 +43,8 @@
     "ffmpeg",
     "xdg-user-dirs",
     "xdg-utils",
+    "xdg-desktop-portal-wlr",
+    "xdg-desktop-portal-gtk",
     "polkit",
     "git",
     "lazygit",
@@ -78,13 +80,8 @@
     "scx-scheds-git",
     "xorg-xwayland",
     "bash-completion",
-    "hyprland",
-    "hyprpaper",
-    "xdg-desktop-portal-hyprland",
-    "hyprcursor",
-    "hyprpolkitagent",
     "npm",
-    "eza-git",
+    "eza",
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
@@ -97,9 +94,10 @@
   "aur-packages": [
     "clipse-bin",
     "visual-studio-code-insiders-bin",
-    "rose-pine-hyprcursor",
-    "rose-pine-cursor",
+    "bibata-cursor-theme",
     "firefox-beta-bin"
   ],
-  "later-packages": []
+  "later-packages": [ 
+    "swayr",
+    "sway-git"]
 }

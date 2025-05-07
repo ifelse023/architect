@@ -37,8 +37,6 @@ main() {
 
   bash ~/misc/git.sh
 
-  pactl set-default-sink alsa_output.usb-HP__Inc_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo
-
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
     sudo pacman -Rns $ORPHANED
