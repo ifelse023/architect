@@ -2,6 +2,7 @@
 
 main() {
 
+  sudo pacman -S openssh rsync python curl wget --noconfirm --needed
   curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
   tar xvf cachyos-repo.tar.xz
   cd cachyos-repo
@@ -10,7 +11,7 @@ main() {
   rm -rf ~/architect/cachyos-repo
   rm ~/architect/cachyos-repo.tar.xz
 
-  sudo pacman -S paru-bin openssh rsync python chezmoi sccache ccache libc++ clang --noconfirm --needed
+  sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang --noconfirm --needed
   chsh -s /usr/bin/fish
 
   chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
@@ -30,7 +31,7 @@ main() {
 
   sudo journalctl --vacuum-size=1M
 
-  sudo usermod -aG video,audio,network,git,wheel,input,mysql wasd
+  sudo usermod -aG video,audio,network,git,wheel,input wasd
   python ~/architect/architect/service_manager.py --enable
 
   sudo cp ./config-files/limine.conf /boot

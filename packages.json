@@ -43,8 +43,6 @@
     "ffmpeg",
     "xdg-user-dirs",
     "xdg-utils",
-    "xdg-desktop-portal-wlr",
-    "xdg-desktop-portal-gtk",
     "polkit",
     "git",
     "lazygit",
@@ -80,8 +78,13 @@
     "scx-scheds-git",
     "xorg-xwayland",
     "bash-completion",
+    "hyprland",
+    "hyprpaper",
+    "xdg-desktop-portal-hyprland",
+    "hyprcursor",
+    "hyprpolkitagent",
     "npm",
-    "eza",
+    "eza-git",
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
@@ -94,10 +97,9 @@
   "aur-packages": [
     "clipse-bin",
     "visual-studio-code-insiders-bin",
-    "bibata-cursor-theme",
+    "rose-pine-hyprcursor",
+    "rose-pine-cursor",
     "firefox-beta-bin"
   ],
-  "later-packages": [ 
-    "swayr",
-    "sway-git"]
+  "later-packages": []
 }
