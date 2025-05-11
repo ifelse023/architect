@@ -90,12 +90,12 @@
     "dracula-icons-git",
     "jdk-openjdk",
     "maven",
+    "cliphist",
     "torbrowser-launcher",
     "keyd",
     "openvpn"
   ],
   "aur-packages": [
-    "clipse-bin",
     "visual-studio-code-insiders-bin",
     "rose-pine-hyprcursor",
     "rose-pine-cursor",
