@@ -36,7 +36,7 @@ main() {
 
   sudo cp ./config-files/limine.conf /boot
 
-  bash ~/misc/git.sh
+  bash usb.sh
 
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then

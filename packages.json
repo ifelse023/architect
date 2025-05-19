@@ -84,7 +84,7 @@
     "hyprcursor",
     "hyprpolkitagent",
     "npm",
-    "eza-git",
+    "eza",
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
@@ -96,10 +96,8 @@
     "openvpn"
   ],
   "aur-packages": [
-    "visual-studio-code-insiders-bin",
     "rose-pine-hyprcursor",
-    "rose-pine-cursor",
-    "firefox-beta-bin"
+    "rose-pine-cursor"
   ],
   "later-packages": []
 }
