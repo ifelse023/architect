@@ -36,7 +36,7 @@ main() {
 
   sudo cp ./config-files/limine.conf /boot
 
-  bash usb.sh
+  bash ~/architect/architect/usb.sh
 
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
