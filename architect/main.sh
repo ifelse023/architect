@@ -2,7 +2,7 @@
 
 main() {
 
-  sudo pacman -S openssh rsync python curl wget --noconfirm --needed
+  sudo pacman -S openssh rsync python curl wget mold --noconfirm --needed
   curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
   tar xvf cachyos-repo.tar.xz
   cd cachyos-repo
@@ -14,6 +14,7 @@ main() {
   sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang --noconfirm --needed
   chsh -s /usr/bin/fish
 
+  bash ~/architect/architect/usb.sh
   chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
 
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
@@ -35,8 +36,6 @@ main() {
   python ~/architect/architect/service_manager.py --enable
 
   sudo cp ./config-files/limine.conf /boot
-
-  bash ~/architect/architect/usb.sh
 
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
