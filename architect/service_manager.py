@@ -35,6 +35,7 @@ class Service:
 
 SERVICES = [
     Service(name="tlp", type=ServiceType.SYSTEM, pkg="tlp"),
+    Service(name="throttled", type=ServiceType.SYSTEM, pkg="throttled"),
     Service(name="thermald", type=ServiceType.SYSTEM, pkg="thermald"),
     Service(name="scx", type=ServiceType.SYSTEM, pkg="scx-scheds-git"),
     Service(name="greetd", type=ServiceType.SYSTEM, pkg="greetd"),
