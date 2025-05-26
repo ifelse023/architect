@@ -14,7 +14,6 @@ main() {
   sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang --noconfirm --needed
   chsh -s /usr/bin/fish
 
-  bash ~/architect/architect/usb.sh
   chezmoi init --apply --branch thinkpad --ssh git@github.com:ifelse023/dotfiles.git
 
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/

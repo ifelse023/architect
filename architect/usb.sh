@@ -49,7 +49,6 @@ cp -r "$MOUNT_POINT/git.sh" "$MISC_DEST"
 mkdir ~/semester
 
 git clone git@github.com:ifelse023/SoSe25.git ~/semester/SoSe25
-git clone git@github.com:ifelse023/se-project.git ~/semester/se-project
 git clone git@github.com:ifelse023/lazyvim-config.git ~/.config/nvim
 git clone git@github.com:ifelse023/dev-templates.git ~/misc/dev-templates
 sudo umount /mnt/usb
