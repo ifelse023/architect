@@ -53,7 +53,6 @@
     "sccache",
     "ccache",
     "obsidian",
-    "fwupd",
     "linux-cachyos",
     "wireless-regdb",
     "fuzzel",
@@ -88,12 +87,9 @@
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
-    "jdk-openjdk",
-    "maven",
     "cliphist",
     "torbrowser-launcher",
-    "keyd",
-    "openvpn"
+    "keyd"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",

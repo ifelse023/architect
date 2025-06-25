@@ -6,7 +6,7 @@ USB="/dev/disk/by-label/linux-usb"
 
 # Create mount point if it doesn't exist
 if [ ! -d "$MOUNT_POINT" ]; then
-  sudo mkdir "$MOUNT_POINT"
+  sudo mkdir -p "$MOUNT_POINT"
 fi
 
 # Check if USB device exists
