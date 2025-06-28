@@ -11,10 +11,9 @@ main() {
   rm -rf ~/architect/cachyos-repo
   rm ~/architect/cachyos-repo.tar.xz
 
-  sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang --noconfirm --needed
+  sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang dosfstools e2fsprogs --noconfirm --needed
   chsh -s /usr/bin/fish
 
-  bash ~/architect/architect/usb.sh
   chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
 
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
