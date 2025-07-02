@@ -1,7 +1,5 @@
 {
   "packages": [
-    "neovim",
-    "neovide",
     "brightnessctl",
     "direnv",
     "clang",
@@ -86,11 +84,24 @@
     "dracula-icons-git",
     "cliphist",
     "torbrowser-launcher",
-    "keyd"
+    "keyd",
+    "cmake",
+    "ninja",
+    "gdb",
+    "vesktop",
+    "neovim-git",
+    "neovide"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
     "rose-pine-cursor"
   ],
-  "later-packages": []
+  "later-packages": [
+    "pico-sdk",
+    "openocd-raspberrypi-git",
+    "tio",
+    "anki-bin",
+    "hyprshot",
+    "picotool"
+  ]
 }

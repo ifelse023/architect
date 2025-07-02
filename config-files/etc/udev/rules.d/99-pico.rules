@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0009", ATTRS{serial}=="DE1B71E9AD0B4CCE", SYMLINK+="pico2w"

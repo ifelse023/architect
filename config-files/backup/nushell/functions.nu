@@ -18,11 +18,11 @@ def filter_rg [
 }
 
 def e [xyz: string] {
-    fd $xyz -X helix
+    fd $xyz -X nvim
 }
 
 def e-pattern [pattern]  {
-    ^fd -g $pattern -X helix
+    ^fd -g $pattern -X nvim
 }
 
 def gl [] {

@@ -7,9 +7,10 @@ import sys
 from pathlib import Path
 
 
-def copy_template(src: Path, dest: Path) -> bool:
+def copy_template(src: Path, dest: Path, copy_nix: bool) -> bool:
     try:
-        shutil.copytree(src, dest)
+        ignore = None if copy_nix else shutil.ignore_patterns("flake.nix", "flake.lock")
+        shutil.copytree(src, dest, ignore=ignore)
         print(f"Successfully copied {src} to {dest}")
     except FileNotFoundError as fnf_error:
         print(f"File not found: {fnf_error}")
@@ -53,6 +54,11 @@ def main() -> None:
         action="store_true",
         help="Initialize git repository in the new project directory",
     )
+    parser.add_argument(
+        "--nix",
+        action="store_true",
+        help="Include flake.nix and flake.lock when copying the template",
+    )
 
     args = parser.parse_args()
     templates_root = Path.home() / "misc/dev-templates"
@@ -70,7 +76,7 @@ def main() -> None:
         print(f"The destination directory {args.destination} already exists.")
         sys.exit(1)
 
-    if copy_template(src_path, args.destination) and not args.nogit:
+    if copy_template(src_path, args.destination, args.nix) and not args.nogit:
         initialize_git_repo(args.destination)
 
 
