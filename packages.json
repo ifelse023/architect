@@ -97,11 +97,8 @@
     "rose-pine-cursor"
   ],
   "later-packages": [
-    "pico-sdk",
-    "openocd-raspberrypi-git",
     "tio",
     "anki-bin",
     "hyprshot",
-    "picotool"
   ]
 }
