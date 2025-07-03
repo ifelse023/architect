@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 main() {
 
   sudo pacman -S openssh rsync python curl wget mold --noconfirm --needed

@@ -99,6 +99,6 @@
   "later-packages": [
     "tio",
     "anki-bin",
-    "hyprshot",
+    "hyprshot"
   ]
 }
