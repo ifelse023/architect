@@ -40,7 +40,6 @@
     "mako",
     "inxi",
     "wireplumber",
-    "throttled",
     "ffmpeg",
     "xdg-user-dirs",
     "xdg-utils",
@@ -89,12 +88,8 @@
     "ant-dracula-theme-git",
     "nwg-look",
     "dracula-icons-git",
-    "jdk-openjdk",
-    "maven",
     "cliphist",
-    "torbrowser-launcher",
-    "keyd",
-    "openvpn"
+    "torbrowser-launcher"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",

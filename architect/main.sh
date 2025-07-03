@@ -34,8 +34,6 @@ main() {
   sudo usermod -aG video,audio,network,git,wheel,input wasd
   python ~/architect/architect/service_manager.py --enable
 
-  sudo cp ./config-files/limine.conf /boot
-
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
     sudo pacman -Rns $ORPHANED
