@@ -21,7 +21,7 @@ main() {
   sudo pacman -Syu
 
   python ~/architect/architect/install_packages.py
-
+  bash undervolt.sh
   sudo dosfslabel /dev/nvme0n1p1 BOOT
   sudo e2label /dev/nvme0n1p2 ROOT
 
