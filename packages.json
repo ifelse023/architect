@@ -80,7 +80,6 @@
     "npm",
     "eza",
     "ant-dracula-theme-git",
-    "nwg-look",
     "dracula-icons-git",
     "cliphist",
     "torbrowser-launcher",
@@ -89,19 +88,26 @@
     "ninja",
     "gdb",
     "vesktop",
-    "neovim-git",
-    "neovide",
     "zellij-git",
     "python-pygments",
-    "skim"
+    "skim",
+    "shfmt",
+    "lua-language-server",
+    "stylua",
+    "vscode-json-languageserver"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
     "rose-pine-cursor"
   ],
   "later-packages": [
+    "neocmakelsp",
+    "cmake-lint",
     "tio",
     "anki-bin",
-    "hyprshot"
+    "hyprshot",
+    "neovim-git",
+    "hyprshot",
+    "openocd-raspberrypi-git"
   ]
 }

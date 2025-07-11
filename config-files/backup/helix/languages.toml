@@ -1,1 +1,0 @@
-use-grammars = { only = ["bash", "c", "cpp", "css", "dockerfile", "html", "ini", "java", "javascript", "json", "lua", "markdown", "nix", "nu", "python", "rust", "toml", "typescript", "yaml", "kdl", "gitconfig", "zig"] }

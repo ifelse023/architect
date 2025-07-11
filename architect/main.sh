@@ -35,7 +35,6 @@ main() {
   python ~/architect/architect/service_manager.py --enable
 
   sudo cp ./config-files/limine.conf /boot
-  chmod +x /home/wasd/architect/scripts/zellij.sh
   ORPHANED=$(pacman -Qtdq)
   if [ -n "$ORPHANED" ]; then
     sudo pacman -Rns $ORPHANED
