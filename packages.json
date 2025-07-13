@@ -90,11 +90,11 @@
     "vesktop",
     "zellij-git",
     "python-pygments",
-    "skim",
     "shfmt",
     "lua-language-server",
     "stylua",
-    "vscode-json-languageserver"
+    "vscode-json-languageserver",
+    "bear"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
