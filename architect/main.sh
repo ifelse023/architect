@@ -8,15 +8,13 @@ main() {
   cd cachyos-repo
   sudo bash cachyos-repo.sh
   cd ..
-  rm -rf ~/architect/cachyos-repo
-  rm ~/architect/cachyos-repo.tar.xz
+  rm -rf ~/architect/cachyos-repo{,.tar.xz}
 
   sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang dosfstools e2fsprogs --noconfirm --needed
   chsh -s /usr/bin/fish
 
-  chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
-
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
+  chezmoi init --apply --ssh git@github.com:ifelse023/dotfiles.git
 
   sudo pacman -Syu
 
@@ -27,18 +25,17 @@ main() {
 
   sudo mount -a
 
-  paru -Scc
-
   sudo journalctl --vacuum-size=1M
 
   sudo usermod -aG video,audio,network,git,wheel,input wasd
   python ~/architect/architect/service_manager.py --enable
-
+  nvim --headless "+Lazy! install" +qa
   sudo cp ./config-files/limine.conf /boot
-  ORPHANED=$(pacman -Qtdq)
-  if [ -n "$ORPHANED" ]; then
-    sudo pacman -Rns $ORPHANED
-  fi
+
+  sudo pacman -R $(pacman -Qtdq)
+
+  sudo pacman -Sc --noconfirm
+  paru -Sc --noconfirm
 }
 
 main

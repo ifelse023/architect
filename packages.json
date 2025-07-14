@@ -94,7 +94,8 @@
     "lua-language-server",
     "stylua",
     "vscode-json-languageserver",
-    "bear"
+    "bear",
+    "libqalculate"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
