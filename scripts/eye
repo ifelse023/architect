@@ -1,0 +1,5 @@
+#!/bin/bash
+while true; do
+  sleep 1200 # 20 minutes
+  notify-send "Eye Break"
+done
