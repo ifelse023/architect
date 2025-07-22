@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BOOK_DIR="$HOME/misc/books"
+
+cd "$BOOK_DIR" || exit 1
+
+selection=$(fd -t f -e pdf -e epub | fuzzel -d --prompt 'Open Book: ' --width 80)
+
+if [ -n "$selection" ]; then
+  zathura "$selection" &
+fi

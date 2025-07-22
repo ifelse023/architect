@@ -91,11 +91,13 @@
     "zellij-git",
     "python-pygments",
     "shfmt",
-    "lua-language-server",
-    "stylua",
     "vscode-json-languageserver",
+    "bash-language-server",
     "bear",
-    "libqalculate"
+    "libqalculate",
+    "python-capstone",
+    "llvm",
+    "glow"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
