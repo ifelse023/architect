@@ -96,8 +96,9 @@
     "bear",
     "libqalculate",
     "python-capstone",
-    "llvm",
-    "glow"
+    "glow",
+    "zathura",
+    "zathura-pdf-mupdf"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
@@ -110,7 +111,6 @@
     "anki-bin",
     "hyprshot",
     "neovim-git",
-    "hyprshot",
-    "openocd-raspberrypi-git"
+    "hyprshot"
   ]
 }

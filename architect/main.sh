@@ -29,9 +29,9 @@ main() {
 
   sudo usermod -aG video,audio,network,git,wheel,input wasd
   python ~/architect/architect/service_manager.py --enable
-  nvim --headless "+Lazy! install" +qa
   sudo cp ./config-files/limine.conf /boot
 
+  nvim --headless "+Lazy! install" +qa
   sudo pacman -R $(pacman -Qtdq)
 
   sudo pacman -Sc --noconfirm
