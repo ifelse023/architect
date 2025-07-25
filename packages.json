@@ -76,15 +76,12 @@
     "xdg-desktop-portal-hyprland",
     "hyprcursor",
     "hyprpolkitagent",
-    "npm",
     "eza",
     "ant-dracula-theme-git",
     "dracula-icons-git",
     "cliphist",
     "torbrowser-launcher",
     "keyd",
-    "cmake",
-    "ninja",
     "gdb",
     "vesktop",
     "zellij-git",
@@ -101,15 +98,12 @@
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
-    "rose-pine-cursor"
+    "rose-pine-cursor",
+    "otf-atkinson-hyperlegible-next"
   ],
   "later-packages": [
-    "neocmakelsp",
-    "cmake-lint",
     "tio",
-    "anki-bin",
-    "hyprshot",
     "neovim-git",
-    "hyprshot"
+    "pico-sdk-develop-git"
   ]
 }
