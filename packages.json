@@ -12,9 +12,6 @@
     "ttf-jetbrains-mono-nerd",
     "ttf-nerd-fonts-symbols",
     "ttf-nerd-fonts-symbols-mono",
-    "noto-fonts",
-    "noto-fonts-emoji",
-    "noto-fonts-extra",
     "ttf-bitstream-vera",
     "ttf-dejavu",
     "pavucontrol",
@@ -94,7 +91,8 @@
     "python-capstone",
     "glow",
     "zathura",
-    "zathura-pdf-mupdf"
+    "zathura-pdf-mupdf",
+    "neovide"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
@@ -103,7 +101,6 @@
   ],
   "later-packages": [
     "tio",
-    "neovim-git",
-    "pico-sdk-develop-git"
+    "neovim-git"
   ]
 }
