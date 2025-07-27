@@ -66,7 +66,6 @@
     "libnewt",
     "greetd",
     "scx-scheds-git",
-    "xorg-xwayland",
     "bash-completion",
     "hyprland",
     "hyprpaper",
@@ -81,26 +80,25 @@
     "keyd",
     "gdb",
     "vesktop",
-    "zellij-git",
     "python-pygments",
     "shfmt",
     "vscode-json-languageserver",
     "bash-language-server",
+    "just-lsp",
     "bear",
     "libqalculate",
     "python-capstone",
-    "glow",
     "zathura",
     "zathura-pdf-mupdf",
-    "neovide"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
     "rose-pine-cursor",
-    "otf-atkinson-hyperlegible-next"
   ],
   "later-packages": [
     "tio",
+    "fish-lsp-git",
+    "hyprshot",
     "neovim-git"
   ]
 }
