@@ -1,0 +1,17 @@
+dashboard -style syntax_highlighting 'dracula'
+
+define view-default
+  dashboard -layout registers source assembly variables
+  dashboard -enabled on
+end
+
+
+define view-memory
+  dashboard -layout stack memory variables
+  dashboard -enabled on
+end
+
+view-default
+set confirm off
+set output-radix 16
+dashboard registers -style column-major True
