@@ -31,6 +31,9 @@ main() {
   python ~/architect/architect/service_manager.py --enable
   sudo cp ./config-files/limine.conf /boot
 
+  sudo udevadm control --reload
+  sudo udevadm trigger
+
   nvim --headless "+Lazy! install" +qa
   sudo pacman -R $(pacman -Qtdq)
 

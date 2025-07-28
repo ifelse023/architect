@@ -1,0 +1,52 @@
+[use-grammars]
+only = [
+  "asm",
+  "nasm",
+  "bash",
+  "fish",
+  "c",
+  "cpp",
+  "dockerfile",
+  "gitconfig",
+  "html",
+  "ini",
+  "java",
+  "json",
+  "jsonc",
+  "kdl",
+  "lua",
+  "markdown",
+  "markdown_inline",
+  "hyprlang",
+  "printf",
+  "nasm",
+  "nix",
+  "just",
+  "query",
+  "diff",
+  "python",
+  "regex",
+  "rust",
+  "sql",
+  "toml",
+  "x86asm",
+  "yaml",
+  "zig",
+]
+
+[[language]]
+name = "c"
+auto-format = true
+roots = ["flake.nix"]
+formatter = { command = "clang-format" }
+
+[[language]]
+name = "nix"
+auto-format = true
+
+[language-server.clangd]
+command = "clangd"
+config = { fallbackFlags = ["-std=c23"] }
+args = ["--enable-config"]
+[language-server.nil]
+config.nil.formatting.command = ["nixfmt-rfc-style"]

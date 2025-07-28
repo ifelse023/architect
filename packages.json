@@ -59,7 +59,10 @@
     "fish-git",
     "x86_energy_perf_policy",
     "just",
-    "ghostty",
+    "kitty",
+    "taplo-cli",
+    "less",
+    "llvm",
     "util-linux",
     "tlp",
     "uwsm",
@@ -89,16 +92,17 @@
     "libqalculate",
     "python-capstone",
     "zathura",
-    "zathura-pdf-mupdf",
+    "zathura-pdf-mupdf"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
-    "rose-pine-cursor",
+    "rose-pine-cursor"
   ],
   "later-packages": [
     "tio",
-    "fish-lsp-git",
+    "fish-lsp",
     "hyprshot",
-    "neovim-git"
+    "neovim-git",
+    "ianny-bin"
   ]
 }

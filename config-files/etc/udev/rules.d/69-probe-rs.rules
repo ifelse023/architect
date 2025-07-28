@@ -1,0 +1,59 @@
+# Copy this file to /etc/udev/rules.d/
+# If rules fail to reload automatically, you can refresh udev rules
+# with the command "udevadm control --reload"
+
+# This rules are based on the udev rules from the OpenOCD project, with unsupported probes removed.
+# See http://openocd.org/ for more details.
+#
+# This file is available under the GNU General Public License v2.0
+
+ACTION!="add|change", GOTO="probe_rs_rules_end"
+
+SUBSYSTEM=="gpio", MODE="0660", TAG+="uaccess"
+
+SUBSYSTEM!="usb|tty|hidraw", GOTO="probe_rs_rules_end"
+
+# Please keep this list sorted by VID:PID
+
+# STMicroelectronics ST-LINK V1
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3744", MODE="0660", TAG+="uaccess"
+
+# STMicroelectronics ST-LINK/V2
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3748", MODE="0660", TAG+="uaccess"
+
+# STMicroelectronics ST-LINK/V2.1
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3752", MODE="0660", TAG+="uaccess"
+
+# STMicroelectronics STLINK-V3
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374d", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374e", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374f", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3753", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3754", MODE="0660", TAG+="uaccess"
+
+# SEGGER J-Link
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1366", ATTRS{idProduct}=="[0-9a-f]*", MODE="0660", TAG+="uaccess"
+
+# FTDI Family
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6011", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", MODE="0660", TAG+="uaccess"
+
+# FTDI-based Olimex devices
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="15ba", ATTRS{idProduct}=="0003", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="15ba", ATTRS{idProduct}=="0004", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="15ba", ATTRS{idProduct}=="002a", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="15ba", ATTRS{idProduct}=="002b", MODE="0660", TAG+="uaccess"
+
+# Espressif Devices
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1001", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="303a", ATTRS{idProduct}=="1002", MODE="0660", TAG+="uaccess"
+
+# CMSIS-DAP compatible adapters
+SUBSYSTEMS=="usb", ATTR{product}=="*CMSIS-DAP*", MODE="0660", TAG+="uaccess"
+# WCH Link (CMSIS-DAP compatible adapter)
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="8010", MODE="0660", TAG+="uaccess"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="8011", MODE="0660", TAG+="uaccess"
+
+LABEL="probe_rs_rules_end"
