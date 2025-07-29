@@ -34,11 +34,13 @@ main() {
   sudo udevadm control --reload
   sudo udevadm trigger
 
-  nvim --headless "+Lazy! install" +qa
   sudo pacman -R $(pacman -Qtdq)
 
   sudo pacman -Sc --noconfirm
   paru -Sc --noconfirm
+
+  curl -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
+  
 }
 
 main

@@ -61,6 +61,7 @@
     "just",
     "kitty",
     "taplo-cli",
+    "tombi",
     "less",
     "llvm",
     "util-linux",
@@ -92,17 +93,18 @@
     "libqalculate",
     "python-capstone",
     "zathura",
-    "zathura-pdf-mupdf"
+    "zathura-pdf-mupdf",
+    "nwg-look"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
-    "rose-pine-cursor"
+    "rose-pine-cursor",
+    "otf-atkinson-hyperlegible-next-mono"
   ],
   "later-packages": [
     "tio",
     "fish-lsp",
     "hyprshot",
-    "neovim-git",
     "ianny-bin"
   ]
 }
