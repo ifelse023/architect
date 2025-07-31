@@ -34,13 +34,12 @@ main() {
   sudo udevadm control --reload
   sudo udevadm trigger
 
-  sudo pacman -R $(pacman -Qtdq)
+  curl -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
 
+  bat cache --build
   sudo pacman -Sc --noconfirm
   paru -Sc --noconfirm
-
-  curl -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
-  
+  sudo pacman -R $(pacman -Qtdq)
 }
 
 main

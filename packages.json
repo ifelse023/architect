@@ -4,6 +4,7 @@
     "direnv",
     "clang",
     "fzf",
+    "atuin",
     "rsync",
     "iproute2",
     "inter-font",
@@ -59,7 +60,8 @@
     "fish-git",
     "x86_energy_perf_policy",
     "just",
-    "kitty",
+    "just-lsp",
+    "ghostty",
     "taplo-cli",
     "tombi",
     "less",
@@ -88,7 +90,6 @@
     "shfmt",
     "vscode-json-languageserver",
     "bash-language-server",
-    "just-lsp",
     "bear",
     "libqalculate",
     "python-capstone",
@@ -99,7 +100,7 @@
   "aur-packages": [
     "rose-pine-hyprcursor",
     "rose-pine-cursor",
-    "otf-atkinson-hyperlegible-next-mono"
+    "ttf-atkinson-hyperlegible-nerd"
   ],
   "later-packages": [
     "tio",
