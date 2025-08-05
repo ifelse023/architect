@@ -4,6 +4,7 @@
     "direnv",
     "clang",
     "fzf",
+    "yazi",
     "atuin",
     "rsync",
     "iproute2",
@@ -11,6 +12,7 @@
     "starship",
     "ttf-font-awesome",
     "ttf-jetbrains-mono-nerd",
+    "ttf-jetbrains-mono",
     "ttf-nerd-fonts-symbols",
     "ttf-nerd-fonts-symbols-mono",
     "ttf-bitstream-vera",
@@ -34,7 +36,7 @@
     "mako",
     "inxi",
     "wireplumber",
-    "ffmpeg",
+    "gst-libav",
     "xdg-user-dirs",
     "xdg-utils",
     "polkit",
@@ -50,7 +52,6 @@
     "linux-cachyos",
     "wireless-regdb",
     "fuzzel",
-    "sad",
     "firefox-nightly",
     "git-delta",
     "dust",
@@ -61,7 +62,8 @@
     "x86_energy_perf_policy",
     "just",
     "just-lsp",
-    "ghostty",
+    "foot",
+    "zellij-git",
     "taplo-cli",
     "tombi",
     "less",
@@ -76,6 +78,7 @@
     "hyprland",
     "hyprpaper",
     "xdg-desktop-portal-hyprland",
+    "xdg-desktop-portal-gtk",
     "hyprcursor",
     "hyprpolkitagent",
     "eza",
@@ -99,13 +102,13 @@
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
-    "rose-pine-cursor",
-    "ttf-atkinson-hyperlegible-nerd"
+    "rose-pine-cursor"
   ],
   "later-packages": [
-    "tio",
     "fish-lsp",
+    "scooter-bin",
     "hyprshot",
+    "ttf-google-sans-code-vf",
     "ianny-bin"
   ]
 }

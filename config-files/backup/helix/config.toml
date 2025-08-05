@@ -1,0 +1,51 @@
+theme = "cat"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+shell = ["fish", "-c"]
+trim-final-newlines = true
+trim-trailing-whitespace = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.whitespace.characters]
+tab = "→"
+
+[editor.whitespace.render]
+tab = "all"
+
+[keys.normal.space]
+space = "file_picker_in_current_buffer_directory"
+
+[keys.normal.space.","]
+d = ":yank-diagnostic"
+c = ":sh chezmoi apply"
+n = ":open ~/misc/notes/quicknotes.md"
+
+[keys.normal]
+0 = "goto_line_start"
+")" = "goto_line_end"
+tab = "rotate_view"
+"A-q" = ":wbc"
+"C-tab" = "goto_next_buffer"
+"C-S-ret" = ":vnew"
+
+[keys.normal.g]
+f = "goto_word"
+
+[keys.select.g]
+f = "extend_to_word"

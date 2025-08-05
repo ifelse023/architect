@@ -1,0 +1,67 @@
+[use-grammars]
+only = [
+  "asm",
+  "bash",
+  "ld",
+  "ghostty",
+  "fish",
+  "c",
+  "cpp",
+  "dockerfile",
+  "gitconfig",
+  "html",
+  "ini",
+  "json",
+  "jsonc",
+  "markdown",
+  "markdown_inline",
+  "hyprlang",
+  "printf",
+  "nix",
+  "just",
+  "query",
+  "diff",
+  "python",
+  "regex",
+  "rust",
+  "toml",
+  "yaml",
+  "zig",
+  "gas"
+]
+[[grammar]]
+name = "asm"
+source = { git = "https://github.com/rush-rs/tree-sitter-asm", rev = "04962e15f6b464cf1d75eada59506dc25090e186" }
+[[language]]
+name = "c"
+auto-format = true
+roots = ["flake.nix"]
+formatter = { command = "clang-format" }
+
+[[language]]
+name = "nix"
+auto-format = true
+
+[[language]]
+name = "gas"
+comment-token = "//"
+
+
+# [[language]]
+# name = "asm"
+# language-servers = ["asm"]
+# scope = "source.asm"
+# file-types = ["S", "s", "asm"]
+# roots = []
+# comment-token = "//"
+
+# [language-server.asm]
+# command = "asm-lsp"
+
+[language-server.clangd]
+command = "clangd"
+config = { fallbackFlags = ["-std=c23"] }
+args = ["--enable-config"]
+
+[language-server.nil]
+config.nil.formatting.command = ["nixfmt-rfc-style"]
