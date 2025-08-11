@@ -1,7 +1,4 @@
-# Syntax highlighting
-# -------------------
-"attribute" = "yellow"
-
+"attribute" = "peach"
 "type" = "yellow"
 "type.enum.variant" = "teal"
 
@@ -25,20 +22,22 @@
 
 "label" = "sapphire" # used for lifetimes
 
-"punctuation" = "overlay2"
+"punctuation" = "overlay1"
 "punctuation.special" = "sky"
 
 "keyword" = "mauve"
+"keyword.directive" = "#c4a7e7"
 "keyword.control.conditional" = { fg = "mauve", modifiers = ["italic"] }
 
-"operator" = "sky"
+"operator" = "lavender"
 
 "function" = "blue"
 "function.macro" = "rosewater"
+"function.special" = "#31748f"
 
 "tag" = "blue"
 
-"namespace" = { fg = "yellow", modifiers = ["italic"] }
+"namespace" = { fg = "sapphire", modifiers = ["italic"] }
 
 "special" = "blue" # fuzzy highlight
 
@@ -73,13 +72,12 @@
 "ui.statusline" = { fg = "subtext1", bg = "mantle" }
 "ui.statusline.inactive" = { fg = "surface2", bg = "mantle" }
 "ui.statusline.normal" = { fg = "base", bg = "rosewater", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "base", bg = "green", modifiers = ["bold"]  }
-"ui.statusline.select" = { fg = "base", bg = "lavender", modifiers = ["bold"]  }
+"ui.statusline.insert" = { fg = "base", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "base", bg = "lavender", modifiers = ["bold"] }
 
-"ui.popup" = { fg = "text", bg = "surface0" }
+"ui.popup" = { fg = "text", bg = "base_org" }
 "ui.window" = { fg = "crust" }
-"ui.help" = { fg = "overlay2", bg = "surface0" }
-
+"ui.help" = { fg = "subtext0", bg = "base_org" }
 "ui.bufferline" = { fg = "subtext0", bg = "mantle" }
 "ui.bufferline.active" = { fg = "mauve", bg = "base", underline = { color = "mauve", style = "line" } }
 "ui.bufferline.background" = { bg = "crust" }
@@ -92,8 +90,8 @@
 "ui.virtual" = "overlay0"
 "ui.virtual.ruler" = { bg = "surface0" }
 "ui.virtual.indent-guide" = "surface0"
-"ui.virtual.inlay-hint" = { fg = "surface1", bg = "mantle" }
-"ui.virtual.jump-label" = { fg = "rosewater", modifiers = ["bold"] }
+"ui.virtual.inlay-hint" = { fg = "overlay1", modifiers = ["italic", "dim"] }
+"ui.virtual.jump-label" = { fg = "#ff9e64", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "surface1" }
 
@@ -109,25 +107,29 @@
 "ui.cursor.insert" = { fg = "base", bg = "secondary_cursor_insert" }
 "ui.cursor.select" = { fg = "base", bg = "secondary_cursor_select" }
 
+"ui.gutter" = { fg = "surface1" }
+"ui.gutter.selected" = { fg = "lavender" }
+
 "ui.cursorline.primary" = { bg = "cursorline" }
 
 "ui.highlight" = { bg = "surface1", modifiers = ["bold"] }
 
-"ui.menu" = { fg = "overlay2", bg = "surface0" }
+"ui.menu" = { fg = "subtext0", bg = "base_org" }
 "ui.menu.selected" = { fg = "text", bg = "surface1", modifiers = ["bold"] }
 
-"diagnostic.error" = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.error"   = { fg = "red",    underline = { color = "red",    style = "curl" } }
+"diagnostic.warning" = { fg = "yellow", underline = { color = "yellow", style = "curl" } }
 "diagnostic.info" = { underline = { color = "sky", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "teal", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated"  = { modifiers = ["crossed_out"] }
 
 error = "red"
 warning = "yellow"
 info = "sky"
 hint = "teal"
 
-rainbow = ["red", "peach", "yellow", "green", "sapphire", "lavender"]
+rainbow = ["mauve","sapphire","sky","teal","green","yellow","peach","red"]
 
 [palette]
 rosewater = "#f5e0dc"
@@ -153,9 +155,10 @@ overlay0 = "#6c7086"
 surface2 = "#585b70"
 surface1 = "#45475a"
 surface0 = "#313244"
-base = "#1e1e2e"
+base = "#11111b"
 mantle = "#181825"
-crust = "#11111b"
+crust = "#0b0b12"
+base_org = "#1e1e2e"
 
 cursorline = "#2a2b3c"
 secondary_cursor = "#b5a6a8"

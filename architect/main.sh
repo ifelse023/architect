@@ -34,8 +34,6 @@ main() {
   sudo udevadm control --reload
   sudo udevadm trigger
 
-  curl -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
-
   bat cache --build
   ya pack --install
   sudo pacman -Sc --noconfirm

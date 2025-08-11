@@ -2,6 +2,7 @@
 only = [
   "asm",
   "bash",
+  "kdl",
   "ld",
   "ghostty",
   "fish",
