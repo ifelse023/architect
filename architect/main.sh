@@ -34,8 +34,6 @@ main() {
   sudo udevadm control --reload
   sudo udevadm trigger
 
-  bat cache --build
-  ya pack --install
   sudo pacman -Sc --noconfirm
   paru -Sc --noconfirm
   sudo pacman -R $(pacman -Qtdq)
