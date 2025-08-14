@@ -99,7 +99,8 @@
     "python-capstone",
     "zathura",
     "zathura-pdf-mupdf",
-    "nwg-look"
+    "nwg-look",
+    "marksman"
   ],
   "aur-packages": [
     "rose-pine-hyprcursor",
