@@ -2,7 +2,9 @@
 set -e
 main() {
 
-  sudo pacman -Rns linux-firmware
+  if pacman -Qq linux-firmware >/dev/null 2>&1; then
+    sudo pacman -Rns linux-firmware --noconfirm
+  fi
   sudo pacman -S linux-firmware-intel linux-firmware-whence rsync python curl wget --noconfirm --needed
 
   sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
