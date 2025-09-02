@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+notify-send -u normal -a "RSI" "eyes" -t 8000

@@ -1,9 +1,0 @@
-[mgr]
-layout = [1, 4, 3]
-linemode = "none"
-show_hidden = true
-show_symlink = true
-sort_by = "alphabetical"
-sort_dir_first = true
-sort_reverse = false
-sort_sensitive = true

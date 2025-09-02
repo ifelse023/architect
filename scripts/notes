@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if ! zellij list-sessions &> /dev/null; then
+    zellij --session notes
+fi
+
+# Create a new tab and run glow in ~/notes
+zellij action new-tab --name "notes"
+zellij action write-chars "cd ~/notes && glow"
+zellij action write 10  # Send Enter key (ASCII code 10)

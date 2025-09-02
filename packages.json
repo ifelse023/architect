@@ -8,6 +8,8 @@
     "rsync",
     "iproute2",
     "inter-font",
+    "qt5-wayland",
+    "qt6-wayland",
     "starship",
     "ttf-font-awesome",
     "ttf-jetbrains-mono-nerd",
@@ -39,6 +41,7 @@
     "xdg-user-dirs",
     "xdg-utils",
     "polkit",
+    "polkit-kde-agent",
     "git",
     "lazygit",
     "wl-clipboard",
@@ -74,12 +77,10 @@
     "greetd",
     "scx-scheds-git",
     "bash-completion",
-    "hyprland",
+    "niri",
     "hyprpaper",
-    "xdg-desktop-portal-hyprland",
+    "xdg-desktop-portal-wlr",
     "xdg-desktop-portal-gtk",
-    "hyprcursor",
-    "hyprpolkitagent",
     "eza",
     "ant-dracula-theme-git",
     "dracula-icons-git",
@@ -91,10 +92,13 @@
     "gdb",
     "vesktop",
     "python-pygments",
+    "ruff",
+    "uv",
     "shfmt",
     "vscode-json-languageserver",
     "bash-language-server",
     "bear",
+    "glow",
     "libqalculate",
     "python-capstone",
     "zathura",
@@ -103,14 +107,11 @@
     "marksman"
   ],
   "aur-packages": [
-    "rose-pine-hyprcursor",
-    "rose-pine-cursor"
+    "bibata-cursor-theme"
   ],
   "later-packages": [
     "fish-lsp",
     "scooter-bin",
-    "hyprshot",
-    "ttf-google-sans-code-vf",
-    "ianny-bin"
+    "ttf-google-sans-code-vf"
   ]
 }
