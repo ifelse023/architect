@@ -5,19 +5,19 @@ main() {
   if pacman -Qq linux-firmware >/dev/null 2>&1; then
     sudo pacman -Rns linux-firmware --noconfirm
   fi
-  sudo pacman -S linux-firmware-intel linux-firmware-whence rsync python curl wget --noconfirm --needed
+  sudo pacman -S linux-firmware-intel linux-firmware-whence python --noconfirm --needed
 
   sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
   sudo pacman-key --lsign-key F3B607488DB35A47
 
-  sudo pacman -U 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst' \
+  sudo pacman -U --noconfirm 'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-keyring-20240331-1-any.pkg.tar.zst' \
     'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-mirrorlist-22-1-any.pkg.tar.zst' \
     'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v3-mirrorlist-22-1-any.pkg.tar.zst' \
     'https://mirror.cachyos.org/repo/x86_64/cachyos/cachyos-v4-mirrorlist-22-1-any.pkg.tar.zst' \
     'https://mirror.cachyos.org/repo/x86_64/cachyos/pacman-7.0.0.r7.g1f38429-1-x86_64.pkg.tar.zst'
 
   sudo rsync -rvh --no-perms --no-owner --no-group ~/architect/config-files/etc/ /etc/
-  sudo pacman -Scc
+  sudo pacman -Scc --noconfirm
   sudo pacman -Syyu --noconfirm
 
   sudo pacman -S paru-bin chezmoi sccache ccache libc++ clang dosfstools e2fsprogs mold --noconfirm --needed
